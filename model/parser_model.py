@@ -3,6 +3,9 @@
 """Parser model for document parsing."""
 
 from model.neural_network import NeuralNetwork
+from torch import optim, from_numpy
+from torch.nn import CrossEntropyLoss
+import numpy as np
 
 
 class ParserModel():
@@ -13,7 +16,7 @@ class ParserModel():
     def __init__(self, n_features, n_buffer_items=3, n_stack_items=3,
                  n_linked_stack_items=2, n_linked_items=2,
                  n_linked_to_linked_items=1, hidden_size=200,
-                 dropout_prob=0.5):
+                 dropout_prob=0.5, learning_rate=0.0005, batch_size=1024):
         """Initialize the parser model.
 
         Args:
@@ -37,6 +40,8 @@ class ParserModel():
         self.n_linked_stack_items = n_linked_stack_items
         self.n_linked_items = n_linked_items
         self.n_linked_to_linked_items = n_linked_to_linked_items
+        self.learning_rate = learning_rate
+        self.batch_size = batch_size
 
         network_input_size = n_features * (
                              n_buffer_items + n_stack_items +
@@ -46,6 +51,60 @@ class ParserModel():
 
         self.nn = NeuralNetwork(network_input_size, hidden_size, 2,
                                 dropout_prob)
+        self.optimizer = optim.Adam(self.nn.parameters(),
+                                    lr=self.learning_rate)
+        self.loss_function = CrossEntropyLoss()
+
+    def train(self, train_dataset, dev_dataset, n_epochs=10):
+        """Train parser model for n_epochs."""
+        X_train, Y_train = self._format_dataset_for_parsing(train_dataset)
+        X_dev, Y_dev = self._format_dataset_for_parsing(dev_dataset)
+
+        best_dev_loss = 1e10
+        for epoch in range(n_epochs):
+            print("Epoch {}/{}...".format(epoch + 1, n_epochs))
+            dev_loss = self.train_for_epoch(X_train, Y_train, X_dev, Y_dev)
+            if dev_loss < best_dev_loss:
+                best_dev_loss = dev_loss
+                print("New best dev loss!")
+            print("")
+
+    def train_for_epoch(self, X_train, Y_train, X_dev, Y_dev):
+        """Train parser model on one epoch."""
+        self.nn.train()
+        minibatches = [(X_train[x:x+self.batch_size],
+                        Y_train[x:x+self.batch_size])
+                       for x in range(0, len(X_train)-self.batch_size,
+                                      self.batch_size)]
+
+        for (X, Y) in minibatches:
+            self.optimizer.zero_grad()
+            X = from_numpy(np.array(X)).long()
+            Y = from_numpy(np.array(Y)).long()
+            logits = self.nn(X)
+            loss = self.loss_function(logits, Y)
+            loss.backward()
+            self.optimizer.step()
+
+        print("Evaluating on dev set",)
+        self.nn.eval()
+        X = from_numpy(np.array(X_dev)).long()
+        Y = from_numpy(np.array(Y_dev)).long()
+        logits = self.nn(X)
+        dev_loss = self.loss_function(logits, Y)
+        print("- dev loss: {:.2f}".format(dev_loss))
+        return dev_loss
+
+    def _format_dataset_for_parsing(self, dataset):
+        """Extract X and Y of dataset documents and convert to transition."""
+        X_transition_list = []
+        Y_transition_list = []
+        for document in dataset.documents:
+            X_transition, Y_transition = self._convert_dependencies_to_transition_problem(
+                                            document.X, document.Y)
+            X_transition_list += X_transition
+            Y_transition_list += Y_transition
+        return X_transition_list, Y_transition_list
 
     def _convert_dependencies_to_transition_problem(self, X, Y):
         """Convert dependencies problem to stack manipulation problem."""
@@ -80,7 +139,7 @@ class ParserModel():
 
                 else:
                     # Element linked to rook -> arc
-                    if item["Y"] == -1 and len(stack) == 1:
+                    if item["Y"] == -1:
                         Y_transition = self.CLASSES["arc"]
                         arc = (item["index"], -1)
                         stack, buffer, links = self._arc(arc, stack, buffer,
