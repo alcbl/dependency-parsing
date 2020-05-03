@@ -95,6 +95,14 @@ class ParserModel():
         print("- dev loss: {:.2f}".format(dev_loss))
         return dev_loss
 
+    def predict(self, dataset):
+        """Predict dependencies for dataset."""
+        Y_list = []
+        for document in dataset.documents:
+            Y = self._predict_dependencies(document.X)
+            Y_list.append(Y)
+        return Y_list
+
     def _format_dataset_for_parsing(self, dataset):
         """Extract X and Y of dataset documents and convert to transition."""
         X_transition_list = []
@@ -169,6 +177,48 @@ class ParserModel():
         links = []
         while len(Y_transition) > 0:
             transition = Y_transition.pop()
+
+            if transition == self.CLASSES["shift"]:
+                stack, buffer, links = self._shift(stack, buffer, links)
+
+            elif transition == self.CLASSES["arc"]:
+                if len(stack) > 1:
+                    arc = (stack[-1]["index"], stack[-2]["index"])
+                else:
+                    arc = (stack[-1]["index"], -1)
+                stack, buffer, links = self._arc(arc, stack, buffer, links)
+
+            else:
+                raise TypeError("Invalid transitions")
+
+        Y = [-2 for index in range(len(X))]
+        for link in links:
+            Y[link[0]] = link[1]
+
+        if -2 in Y:
+            raise RuntimeError("Invalid dependencies generation")
+
+        return Y
+
+    def _predict_dependencies(self, X):
+        """Generate dependencies an input X."""
+        self.nn.eval()
+        buffer = self._generate_buffer(X)
+        stack = []
+        links = []
+        while len(buffer) > 0 or len(stack) > 0:
+            X_transition = self._generate_X_transition(X, stack, buffer, links)
+            X_transition = from_numpy(np.array(X_transition)).long()
+
+            # If buffer empty, arc is only option
+            if len(buffer) == 0:
+                transition = self.CLASSES["arc"]
+            # If stack empty, stack is only option
+            elif len(stack) == 0:
+                transition = self.CLASSES["shift"]
+            else:
+                logits = self.nn(X_transition)
+                transition = argmax(logits, dim=0)
 
             if transition == self.CLASSES["shift"]:
                 stack, buffer, links = self._shift(stack, buffer, links)
