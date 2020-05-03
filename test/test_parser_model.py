@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 """Unit tests for `parser_model` module."""
 
+import os
+from torch import eq, all
 from unittest import TestCase
 from model.parser_model import ParserModel
 
@@ -91,10 +93,27 @@ class TestParserModel(TestCase):
         self.assertEqual(n_buffer, buffer)
         self.assertEqual(n_links, links + [(2, 1)])
 
-    def test_test_conversions(self):
+    def test_conversions(self):
         """Test transition to dependencies conversions."""
         model = ParserModel(2)
         X_t, Y_t = model._convert_dependencies_to_transition_problem(self.X,
                                                                      self.Y)
         Y_n = model._convert_transitions_to_dependencies(self.X, Y_t)
         self.assertEqual(self.Y, Y_n)
+
+    def test_save_model(self):
+        """Test saving model."""
+        model = ParserModel(2)
+        filename = model.save_model("test")
+        self.assertTrue(os.path.exists(filename))
+
+    def test_load_model(self):
+        """Test loading model."""
+        model = ParserModel(2)
+        model.save_model("test")
+
+        model_new = ParserModel(2)
+        model_new.load_model("test")
+        for layer in model.nn.state_dict().keys():
+            self.assertTrue(all(eq(model.nn.state_dict()[layer],
+                                model_new.nn.state_dict()[layer])))

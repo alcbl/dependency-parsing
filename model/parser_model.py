@@ -2,10 +2,14 @@
 # -*- coding: utf-8 -*-
 """Parser model for document parsing."""
 
+import os
 from model.neural_network import NeuralNetwork
-from torch import optim, from_numpy
+from torch import optim, from_numpy, argmax, save, load
 from torch.nn import CrossEntropyLoss
+from datetime import datetime
+from time import strftime
 import numpy as np
+import math
 
 
 class ParserModel():
@@ -16,7 +20,8 @@ class ParserModel():
     def __init__(self, n_features, n_buffer_items=3, n_stack_items=3,
                  n_linked_stack_items=2, n_linked_items=2,
                  n_linked_to_linked_items=1, hidden_size=200,
-                 dropout_prob=0.5, learning_rate=0.0005, batch_size=1024):
+                 dropout_prob=0.5, learning_rate=0.0005, batch_size=1024,
+                 model_folder="data/models"):
         """Initialize the parser model.
 
         Args:
@@ -42,6 +47,8 @@ class ParserModel():
         self.n_linked_to_linked_items = n_linked_to_linked_items
         self.learning_rate = learning_rate
         self.batch_size = batch_size
+        self.model_folder = model_folder
+        self.name = ""
 
         network_input_size = n_features * (
                              n_buffer_items + n_stack_items +
@@ -55,8 +62,13 @@ class ParserModel():
                                     lr=self.learning_rate)
         self.loss_function = CrossEntropyLoss()
 
+        if not os.path.exists(self.model_folder):
+            os.makedirs(self.model_folder)
+
     def train(self, train_dataset, dev_dataset, n_epochs=10):
         """Train parser model for n_epochs."""
+        self._set_training_session_name()
+
         X_train, Y_train = self._format_dataset_for_parsing(train_dataset)
         X_dev, Y_dev = self._format_dataset_for_parsing(dev_dataset)
 
@@ -66,6 +78,7 @@ class ParserModel():
             dev_loss = self.train_for_epoch(X_train, Y_train, X_dev, Y_dev)
             if dev_loss < best_dev_loss:
                 best_dev_loss = dev_loss
+                self.save_model(self.name)
                 print("New best dev loss!")
             print("")
 
@@ -102,6 +115,26 @@ class ParserModel():
             Y = self._predict_dependencies(document.X)
             Y_list.append(Y)
         return Y_list
+
+    def save_model(self, name):
+        """Save neural network state."""
+        info_filename = "{}/{}.info".format(self.model_folder, name)
+        with open(info_filename, "w") as f:
+            attrs = vars(self)
+            f.write('\n'.join("%s: %s" % item for item in attrs.items()))
+            
+        filename = "{}/{}.weights".format(self.model_folder, name)
+        save(self.nn.state_dict(), filename)
+        return filename
+
+    def load_model(self, name):
+        """Load neural network state from file."""
+        filename = "{}/{}.weights".format(self.model_folder, name)
+        self.nn.load_state_dict(load(filename))
+
+    def _set_training_session_name(self):
+        """Get name for current training session."""
+        self.name = datetime.now().strftime("%Y%m%d-%H%M")
 
     def _format_dataset_for_parsing(self, dataset):
         """Extract X and Y of dataset documents and convert to transition."""
