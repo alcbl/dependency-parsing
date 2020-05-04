@@ -62,4 +62,5 @@ class NeuralNetwork(nn.Module):
         x = t.float()
         hidden_state = nn.functional.relu(self.input_to_hidden(x))
         dropped_hidden_state = self.dropout(hidden_state)
-        return self.hidden_to_logits(dropped_hidden_state)
+        logits = self.hidden_to_logits(dropped_hidden_state)
+        return nn.functional.sigmoid(logits)

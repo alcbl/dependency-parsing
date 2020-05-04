@@ -5,7 +5,7 @@
 import os
 from model.neural_network import NeuralNetwork
 from torch import optim, from_numpy, argmax, save, load
-from torch.nn import CrossEntropyLoss
+from torch.nn import CrossEntropyLoss, BCELoss
 from datetime import datetime
 from time import strftime
 import numpy as np
@@ -15,7 +15,7 @@ import math
 class ParserModel():
     """Parser model to be trained for document parsing."""
 
-    CLASSES = {"shift": 0, "arc": 1}
+    CLASSES = {"shift": [1, 0], "arc": [0, 1]}
 
     def __init__(self, n_features, n_buffer_items=3, n_stack_items=3,
                  n_linked_stack_items=2, n_linked_items=2,
@@ -60,7 +60,7 @@ class ParserModel():
                                 dropout_prob)
         self.optimizer = optim.Adam(self.nn.parameters(),
                                     lr=self.learning_rate)
-        self.loss_function = CrossEntropyLoss()
+        self.loss_function = BCELoss()
 
         if not os.path.exists(self.model_folder):
             os.makedirs(self.model_folder)
@@ -71,6 +71,11 @@ class ParserModel():
 
         X_train, Y_train = self._format_dataset_for_parsing(train_dataset)
         X_dev, Y_dev = self._format_dataset_for_parsing(dev_dataset)
+
+        '''
+        X_train = X_train[:31] + [X_train[19]] * 3
+        Y_train = Y_train[:31] + [Y_train[19]] * 3
+        '''
 
         best_dev_loss = 1e10
         for epoch in range(n_epochs):
@@ -92,20 +97,34 @@ class ParserModel():
 
         for (X, Y) in minibatches:
             self.optimizer.zero_grad()
-            X = from_numpy(np.array(X)).long()
-            Y = from_numpy(np.array(Y)).long()
+            X = from_numpy(np.array(X))
+            Y = from_numpy(np.array(Y)).float()
             logits = self.nn(X)
             loss = self.loss_function(logits, Y)
             loss.backward()
             self.optimizer.step()
 
-        print("Evaluating on dev set",)
+        print("Evaluating epoch:")
         self.nn.eval()
+        X = from_numpy(np.array(X_train))
+        Y = from_numpy(np.array(Y_train)).float()
+        logits = self.nn(X)
+        train_loss = self.loss_function(logits, Y)
+        print("- train loss: {:.2f}".format(train_loss))
+        print(Y[:21].tolist())
+        print(logits.tolist()[19])
+
+        transitions = argmax(logits[:21], dim=1)
+        print(transitions.tolist())
+
+        '''
         X = from_numpy(np.array(X_dev)).long()
         Y = from_numpy(np.array(Y_dev)).long()
         logits = self.nn(X)
         dev_loss = self.loss_function(logits, Y)
         print("- dev loss: {:.2f}".format(dev_loss))
+        '''
+        dev_loss = train_loss
         return dev_loss
 
     def predict(self, dataset):
@@ -122,7 +141,7 @@ class ParserModel():
         with open(info_filename, "w") as f:
             attrs = vars(self)
             f.write('\n'.join("%s: %s" % item for item in attrs.items()))
-            
+
         filename = "{}/{}.weights".format(self.model_folder, name)
         save(self.nn.state_dict(), filename)
         return filename
@@ -145,6 +164,7 @@ class ParserModel():
                                             document.X, document.Y)
             X_transition_list += X_transition
             Y_transition_list += Y_transition
+
         return X_transition_list, Y_transition_list
 
     def _convert_dependencies_to_transition_problem(self, X, Y):
