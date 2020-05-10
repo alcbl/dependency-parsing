@@ -87,6 +87,8 @@ class ParserModel():
                 print("New best dev loss!")
             print("")
 
+        return best_dev_loss
+
     def train_for_epoch(self, X_train, Y_train, X_dev, Y_dev):
         """Train parser model on one epoch."""
         self.nn.train()
