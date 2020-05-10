@@ -263,7 +263,7 @@ class ParserModel():
         links = []
         while len(buffer) > 0 or len(stack) > 0:
             X_transition = self._generate_X_transition(X, stack, buffer, links)
-            X_transition = from_numpy(np.array(X_transition)).long()
+            X_transition = from_numpy(np.array(X_transition))
 
             # If buffer empty, arc is only option
             if len(buffer) == 0:
@@ -273,7 +273,8 @@ class ParserModel():
                 transition = self.CLASSES["shift"]
             else:
                 logits = self.nn(X_transition)
-                transition = argmax(logits, dim=0)
+                transition = [0, 0]
+                transition[argmax(logits, dim=0)] = 1
 
             if transition == self.CLASSES["shift"]:
                 stack, buffer, links = self._shift(stack, buffer, links)
