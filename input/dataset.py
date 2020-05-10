@@ -27,16 +27,19 @@ class Dataset():
 
         documents = []
         X_document, Y_document, text_document = [], [], []
+        name = ""
         with open(feature_file, "r") as f:
             for line in f.readlines():
                 elements = line.split("\t")
 
                 if len(elements) < 3:
                     if len(X_document) > 0:
-                        documents.append(Document(X_document, Y_document,
+                        documents.append(Document(name, X_document, Y_document,
                                                   text_document))
                     X_document, Y_document, text_document = [], [], []
                     continue
+
+                name = elements[0]
 
                 key = "-".join(elements[:2])
                 if key in text_dict.keys():
@@ -48,7 +51,7 @@ class Dataset():
                 X_document.append([float(elem) for elem in elements[3:]])
 
             if len(X_document) > 0:
-                documents.append(Document(X_document, Y_document,
+                documents.append(Document(name, X_document, Y_document,
                                           text_document))
 
         return Dataset(documents)
