@@ -337,7 +337,7 @@ class ParserModel():
                                      {"index": None,
                                       "X": [self.null] * self.n_features})
         X_new = [feature
-                 for item in stack[:self.n_stack_items]
+                 for item in stack[-self.n_stack_items:]
                  for feature in item["X"]]
 
         # Get first buffer elements
@@ -345,7 +345,7 @@ class ParserModel():
                                       {"index": None,
                                        "X": [self.null] * self.n_features})
         X_new += [feature
-                  for item in buffer[:self.n_buffer_items]
+                  for item in buffer[-self.n_buffer_items:]
                   for feature in item["X"]]
 
         # Get elements linked to first stack elements
@@ -359,7 +359,7 @@ class ParserModel():
                             {"index": None,
                              "X": [self.null] * self.n_features})
             X_new += [feature
-                      for item in linked_items[:self.n_linked_items]
+                      for item in linked_items[-self.n_linked_items:]
                       for feature in item["X"]]
 
             # Investigate more the first linked item
