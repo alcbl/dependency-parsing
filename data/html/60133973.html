@@ -1,0 +1,467 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-60133973">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 01/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=60133973' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=60133973&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=60133973&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 20/12/2018</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><span lang=EN-US>Chlorhydrate de tamsulosine</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279004">La tamsulosine est un antagoniste des récepteurs adrénergiques-alpha1A. Il relaxe les muscles de la prostate et des voies urinaires.</a></p>
+<p class=AmmCorpsTexte>Ce médicament est indiqué dans le traitement de certains symptômes de l'hypertrophie bénigne de la prostate (augmentation de volume de la prostate).</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;page-break-after:avoid'><a name="_Toc142279015"><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Ne prenez jamais TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée :</span></span></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes allergiqueà la tamsulosine ou à l’un des autres composants contenus dans ce médicament (listés en rubrique 6) (symptôme avez des antécédents d’œdème (gonflement du visage, des lèvres, des muqueuses) suite à la prise de ce médicament ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Antécédents d'hypotension orthostatique (baisse de la pression artérielle lors du passage de la position couchée à la position verticale pouvant s'accompagner de vertiges et de malaises) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Insuffisance hépatique sévère.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Avertissements et précautions</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Parlez à votre médecin ou votre pharmacien avant d’utiliser TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée : si vous ressentez une impression de malaise, de vertiges, de fatigue (à cause par exemple d'une chute de tension lors d'un changement de position) : dans ce cas adopter la position assise ou allongée, jusqu’à la disparition complète de ces symptômes.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous souffrez de problèmes rénaux sévères, l’efficacité de la tamsulosine peut être différente. </p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:-17.85pt;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous devez prochainement vous faire opérer de la cataracte, informer votre ophtalmologiste si vous avez été ou êtes actuellement traité par TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée. Il pourra alors prendre des précautions appropriées en fonction de votre traitement au moment de l’intervention chirurgicale. Demandez à votre médecin si vous devez ou non remettre à plus tard ou interrompre provisoirement votre traitement, en cas d’opération de l’œil en raison d’une opacification du cristallin (cataracte) ou d’une élévation de la pression intraoculaire (glaucome).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Avant de commencer un traitement avec de la tamsulosine, votre médecin doit vous examiner afin de confirmer que vos symptômes sont causés par une augmentation de volume de la prostate.</p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>Ne pas donner ce médicament aux enfants ou adolescents de moins de 18 ans car il n’est pas indiqué dans cette population</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée</p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif;color:black'>Certains médicaments peuvent interagir avec la tamsulosine :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le diclofénac, un antalgique et un anti-inflammatoire. Ce médicament peut accélérer l'élimination de la tamsulosine, ce qui diminue sa durée d’efficacité.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>la warfarine, un anti-coagulant. Ce médicament peut accélérer l'élimination de la tamsulosine, ce qui diminue sa durée d’efficacité.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un autre antagoniste des récepteurs &#945;1-adrénergiques. L’association peut diminuer votre tension artérielle, provoquant des vertiges ou des étourdissements.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Kétoconazole, un médicament traitant les infections fongiques de la peau. Ce médicament peut augmenter l’effet de la tamsulosine.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Parlez à votre médecin ou pharmacien si vous prenez, avez pris récemment ou allez prendre un autre médicament.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">TAMSULOSINE ZYDUS <span style='text-transform:uppercase'>France</span> LP 0,4 mg, gélule à libération prolongée avec des aliments, boissons et de l’alcool</a></p>
+<p class=AmmCorpsTexte>Vous devez prendre tamsulosine avec un verre d’eau après votre petit déjeuner ou après votre premier repas de la journée.</p>
+<p class=AmmCorpsTexteGras>Grossesse, allaitement </p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Tamsulosine n’est pas indiqué chez la femme.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Chez l’homme, une éjaculation anormale a été rapportée (trouble de l’éjaculation). Le sperme ne sort pas via l’urètre mais est renvoyé vers la vessie (éjaculation rétrograde) ou le volume de l’éjaculat est diminué ou absent (incapacité d’éjaculation). Cet effet est sans danger.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Il n’existe pas de données sur les effets de la tamsulosine sur l’aptitude à conduire des véhicules ou à utiliser des machines.</p>
+<p class=AmmCorpsTexte>Toutefois, les patients doivent être avertis du risque des sensations vertigineuses liées à l’emploi de ce médicament.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt; margin-left:0cm;page-break-after:avoid'><a name="_Toc142279021"><span class='gras'><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Posologie</span></span></span></a></p>
+<p class=AmmCorpsTexte>Respectez toujours la posologie indiquée par votre médecin. En cas d’incertitude, consultez votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexte>La dose habituelle est d’une gélule par jour à prendre à la fin du petit déjeuner ou à la fin du premier repas de la journée.</p>
+<p class=AmmCorpsTexte>La gélule doit être avalée entière, avec un verre d'eau, en position debout ou assise (pas en position couchée).</p>
+<p class=AmmCorpsTexte>Il est important de ne pas casser ni croquer la gélule car cela peut avoir une influence sur son effet.</p>
+<p class=AmmCorpsTexte>Si vous souffrez d’insuffisance rénale légère à modérée ou d’insuffisance hépatique légère à modérée, aucune adaptation de la posologie n’est nécessaire. </p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée que vous n’auriez dû</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Votre pression artérielle peut baisser brutalement. Vous pouvez ressentir des sensations de vertige, faiblesse, évanouissements, vomissements et diarrhées. Allongez-vous et consultez immédiatement votre médecin ou votre pharmacien. Votre médecin peut vous prescrire des médicaments pour restaurer votre pression artérielle et votre niveau de liquide, et peut surveiller vos fonctions vitales. Si nécessaire, votre médecin peut vous faire un lavage gastrique et vous donner un laxatif pour éliminer la tamsulosine.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Allongez-vous et consultez immédiatement votre médecin ou votre pharmacien.</span></p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée</p>
+<p class=AmmCorpsTexte><a name="_Toc142279020">Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</a></p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée </p>
+<p class=AmmCorpsTexte>Lorsque le traitement avec la tamsulosine est arrêté prématurément, vos douleurs peuvent revenir. Utiliser la tamsulosine aussi longtemps que votre médecin vous l’a prescrit, même si vos douleurs ont disparu. Consultez votre médecin, si vous souhaitez arrêter le traitement.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif;color:black'>Des réactions graves sont très rares. </span><span style='font-size:10.0pt;font-family: "Arial",sans-serif'>Contactez votre médecin immédiatement si vous avez :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Une réaction allergique grave entrainant un gonflement du visage ou de la gorge (angiœdème). Vous ne devez pas reprendre TAMSULOSINE ZYDUS FRANCE (voir rubrique 2 Ne prenez jamais TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée).</p>
+<p class=AmmAnnexeTitre3>Effets indésirables fréquents (peut toucher 1 patient sur 10) :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Sensations vertigineuses.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ejaculation anormale, éjaculation rétrograde, incapacité à éjaculer.</p>
+<p class=AmmAnnexeTitre3>Effets indésirables peu fréquents (peut toucher 1 patient sur 100) :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Maux de tête,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Palpitations (irrégularité <span class='italique'>des battements du cœur</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypotension orthostatique,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rhinites,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles gastro-intestinaux : constipation, diarrhée, nausées, vomissements,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réactions allergiques cutanées à type d’éruption et de démangeaisons.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fatigue.</p>
+<p class=AmmAnnexeTitre3>Effets indésirables rares (peut toucher1 patient sur 1000) :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Syncope (perte de connaissance brutale)</p>
+<p class=AmmAnnexeTitre3>Effets indésirables très rares (peut toucher 1 patient sur 10 000)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Erection douloureuse (priapisme)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactions allergiques à type de gonflement de <span class=hps>la peau</span><span class=apple-style-span>, de</span><span class=apple-converted-space> </span><span class=hps>la bouche</span><span class=apple-style-span>,</span><span class=apple-converted-space> </span><span class=hps>des yeux</span><span class=apple-converted-space> </span><span class=hps>et des organes génitaux</span> (Syndrome de Stevens Johnson)</p>
+<p class=AmmAnnexeTitre3>Effets indésirables inconnus (la fréquence ne peut être estimée à partir des données disponibles) :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vision floue </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Perte de la vision </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Saignement de nez </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Sécheresse de la bouche</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Éruptions cutanées graves (érythème polymorphe, dermatite exfoliative)</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt; margin-left:0cm'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Si vous devez subir une opération en raison d’une opacification de l’œil (cataracte) ou d’une augmentation de la pression de l’œil (glaucome) un syndrome de l’iris flasque peropératoire (IFIS) peut survenir : la pupille peut mal se dilater et l’iris (<span class='italique'>la partie colorée de l’œil</span>) peut devenir flasque pendant l’intervention. Pour plus d’information voir rubrique 2, avertissements et précautions.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Si vous remarquez des effets indésirables non mentionnés dans cette notice, ou si certains effets indésirables deviennent graves, veuillez en informer votre médecin ou votre pharmacien.</span></p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - <span style='color:#353838'>Site internet : </span><a href="../AppData/Local/Temp/XPgrpwise/5BE18C64Agence%20Du%20MedicamentPOA41001736C651187101/www.signalement-sante.gouv.fr"><span style='background:white'>www.signalement-sante.gouv.fr</span></a></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Ne pas utiliser TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée après la date de péremption mentionnée sur la boîte.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>La date d’expiration fait référence au dernier jour du mois.<a name="_Toc142279025"></a></span></p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Plaquettes</span></span> : A conserver dans l’emballage extérieur d'origine.</p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Pilulier</span></span> : A maintenir correctement fermé dans l’emballage d’origine.</p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Les médicaments ne doivent pas être jetés au tout à l’égout ou avec les ordures ménagères. Demandez à votre pharmacien ce qu’il faut faire des médicaments inutilisés. Ces mesures permettront de protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Chlorhydrate de tamsulosine............................................................................................ 0,4 mg</p>
+<p class=AmmComposition align=center style='text-align:center'>Pour une gélule à libération prolongée</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont :</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:18.0pt'>Contenu de la gélule : </p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt'>Cellulose microcristalline, copolymère acide méthacrylique-acrylate d’éthyle, polysorbate 80, laurilsulfate de sodium, citrate de triéthyle, talc</p>
+<p class=AmmAnnexeTitre4 style='margin-left:18.0pt'>Enveloppe de la gélule : </p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt'>Gélatine, indigotine (E132), dioxyde de titane (E171), oxyde de fer jaune (E172), oxyde de fer rouge (E172), oxyde de fer noir (E172).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que TAMSULOSINE ZYDUS FRANCE LP 0,4 mg, gélule à libération prolongée et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de gélules orange/vert olive (19,3 x 6,4 mm). Les gélules contiennent des microgranules de couleur blanche à blanc cassé.</p>
+<p class=AmmCorpsTexte>Boîtes de 10, 14, 20, 28, 30, 50, 56, 60, 90, 100 ou 200 gélules.</p>
+<p class=AmmCorpsTexte>Toutes les tailles de conditionnements peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031">ZYDUS FRANCE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ZAC DES HAUTES PATURES</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>25 RUE DES PEUPLIERS</p>
+<p class=AmmCorpsTexte>92000 NANTERRE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>ZYDUS FRANCE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ZAC DES HAUTES PATURES</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>25 RUE DES PEUPLIERS</p>
+<p class=AmmCorpsTexte>92000 NANTERRE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033">SYNTHON BV</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>MICROWEG 22</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>6545 CM NIMEGUE</p>
+<p class=AmmCorpsTexte>PAYS-BAS</p>
+<p class=AmmCorpsTexte>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>SYNTHON HISPANIA S.L.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>CASTELLO, 1</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>POLIGONO LAS SALINAS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>08830 SANT BOI DE LLOBREGAT</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ESPAGNE</p>
+<p class=AmmCorpsTexte>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>QUINTA-ANALYTICA <span style='text-transform:uppercase'>s.r.o.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>PRAZSKA 1486/18C</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>102 00 PRAGUE 10</p>
+<p class=AmmCorpsTexte>REPUBLIQUE TCHEQUE</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>ADAMED PHARMA S.A.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>PIENKOW 149</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>05-152 CZOSNOW</p>
+<p class=AmmCorpsTexte>POLOGNE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Ce médicament est autorisé dans les Etats membres de l'Espace Economique Européen sous les noms suivants : Conformément à la réglementation en vigueur.</p>
+<p class=AmmCorpsTexte>[À compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+</div>
+<div><br clear=all>
+<hr align=left size=1 width="33%">
+<div id=ftn1>
+<p class=MsoFootnoteText><a href="#_ftnref1" name="_ftn1" title=""><span class=MsoFootnoteReference><span lang=FR-BE style='font-size:8.0pt;font-family: "Arial",sans-serif'><span class=MsoFootnoteReference><span lang=FR-BE style='font-size:8.0pt;font-family:"Arial",sans-serif'>[1]</span></span></span></span></a><span lang=FR-BE style='font-size:8.0pt;font-family:"Arial",sans-serif'> A préciser pour les demandes de modification et indiquer le code la modification selon les lignes directrices </span><span lang=FR-BE><a href="https://ec.europa.eu/health/sites/health/files/files/eudralex/vol-2/c_2013_2008/c_2013_2008_pdf/c_2013_2804_fr.pdf"><span style='font-size:8.0pt;font-family:"Arial",sans-serif'>https://ec.europa.eu/health//sites/health/files/files/eudralex/vol-2/c_2013_2008/c_2013_2008_pdf/c_2013_2804_fr.pdf</span></a></span></p>
+</div>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

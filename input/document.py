@@ -13,6 +13,10 @@ class Document():
         self.Y = Y
         self.text = text
 
+    def compute_accuracy(self, Y):
+        correct = [index for index in range(len(Y)) if Y[index] == self.Y[index]]
+        return round(len(correct) / float(len(Y)), 2)
+
     def write_gt(self):
         """Write groundtruth file from Y."""
         filename = "{}.gt".format(self.name)

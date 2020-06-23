@@ -72,11 +72,6 @@ class ParserModel():
         X_train, Y_train = self._format_dataset_for_parsing(train_dataset)
         X_dev, Y_dev = self._format_dataset_for_parsing(dev_dataset)
 
-        '''
-        X_train = X_train[:31] + [X_train[19]] * 3
-        Y_train = Y_train[:31] + [Y_train[19]] * 3
-        '''
-
         best_dev_loss = 1e10
         for epoch in range(n_epochs):
             print("Epoch {}/{}...".format(epoch + 1, n_epochs))
@@ -106,6 +101,7 @@ class ParserModel():
             loss.backward()
             self.optimizer.step()
 
+        """
         print("Evaluating epoch:")
         self.nn.eval()
         X = from_numpy(np.array(X_train))
@@ -113,20 +109,15 @@ class ParserModel():
         logits = self.nn(X)
         train_loss = self.loss_function(logits, Y)
         print("- train loss: {:.2f}".format(train_loss))
-        print(Y[:21].tolist())
-        print(logits.tolist()[19])
+        """
 
-        transitions = argmax(logits[:21], dim=1)
-        print(transitions.tolist())
-
-        '''
-        X = from_numpy(np.array(X_dev)).long()
-        Y = from_numpy(np.array(Y_dev)).long()
+        self.nn.eval()
+        X = from_numpy(np.array(X_dev))
+        Y = from_numpy(np.array(Y_dev)).float()
         logits = self.nn(X)
         dev_loss = self.loss_function(logits, Y)
         print("- dev loss: {:.2f}".format(dev_loss))
-        '''
-        dev_loss = train_loss
+
         return dev_loss
 
     def predict(self, dataset):

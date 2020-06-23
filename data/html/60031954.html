@@ -1,0 +1,506 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - PERINDOPRIL EVOLUGEN 8 mg, comprimé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, PERINDOPRIL EVOLUGEN 8 mg, comprimé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-60031954">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 01/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bInfoSupp");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=60031954' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=60031954&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=60031954&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">PERINDOPRIL EVOLUGEN 8 mg, comprimé  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 07/09/2015</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmDenomination align=center style='text-align:center'>PERINDOPRIL EVOLUGEN 8 mg, comprimé</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'>Périndopril tert-butylamine</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Veuillez lire attentivement l'intégralité de cette notice avant de prendre ce médicament.</span></p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gardez cette notice, vous pourriez avoir besoin de la relire.</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez toute autre question, si vous avez un doute, demandez plus d'informations à votre médecin ou à votre pharmacien.</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ce médicament vous a été personnellement prescrit. Ne le donnez jamais à quelqu'un d'autre, même en cas de symptômes identiques, cela pourrait lui être nocif.</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si l'un des effets indésirables devient grave ou si vous remarquez un effet indésirable non mentionné dans cette notice, parlez-en à votre médecin ou à votre pharmacien.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Sommaire notice</a></p>
+<p class=AmmAnnexeTitre3>Dans cette notice :</p>
+<p class=AmmCorpsTexte>1. QU'EST-CE QUE PERINDOPRIL EVOLUGEN 8 mg, comprimé ET DANS QUELS CAS EST-IL UTILISE ?</p>
+<p class=AmmCorpsTexte>2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE PERINDOPRIL EVOLUGEN 8 mg, comprimé ?</p>
+<p class=AmmCorpsTexte>3. COMMENT PRENDRE PERINDOPRIL EVOLUGEN 8 mg, comprimé ?</p>
+<p class=AmmCorpsTexte>4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</p>
+<p class=AmmCorpsTexte>5. COMMENT CONSERVER PERINDOPRIL EVOLUGEN 8 mg, comprimé ?</p>
+<p class=AmmCorpsTexte>6. INFORMATIONS SUPPLEMENTAIRES</p>
+<h2><a name="Ann3bQuestceque">1. QU'EST-CE QUE PERINDOPRIL EVOLUGEN 8 mg, comprimé ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bClassPharma">Classe pharmacothérapeutique</a></p>
+<p class=AmmCorpsTexte>PERINDOPRIL EVOLUGEN est un inhibiteur de l'enzyme de conversion de l'angiotensine (IEC). Ceux-ci agissent en dilatant les vaisseaux sanguins, facilitant ainsi le travail du cœur pour expulser le sang dans les vaisseaux.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bIndicTherap">Indications thérapeutiques</a></p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'>PERINDOPRIL EVOLUGEN 8 mg, comprimé est utilisé:</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pour traiter l'hypertension artérielle,</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pour réduire le risque d'évènements cardiaques tels qu'un infarctus chez les patients ayant une maladie coronaire stable (maladie où l'alimentation du cœur est réduite ou bloquée) et ayant déjà souffert d'un infarctus et/ou ayant subi un pontage ou une dilatation des artères coronaires.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE PERINDOPRIL EVOLUGEN 8 mg, comprimé ? </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bInfoAvantPrise">Liste des informations nécessaires avant la prise du médicament</a></p>
+<p class=AmmCorpsTexte>Si votre médecin vous a informé(e) d'une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bContreIndic">Contre-indications</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278997">Ne prenez jamais PERINDOPRIL EVOLUGEN 8 mg, comprimé :</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique (hypersensible) au perindopril ou à tout autre inhibiteur de l'enzyme de conversion, ou à l'un des autres composants contenus dans PERINDOPRIL EVOLUGEN,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes enceinte depuis plus de 3 mois (Il est également préférable d'éviter de prendre PERINDOPRIL EVOLUGEN en début de grossesse, <a href="#Ann3b_GrossAllait_10"><span class=MsoPageNumber><span style='font-family: Arial'>voir rubrique Grossesse et Allaitement</span></span></a>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez déjà eu des symptômes tels que des sifflements respiratoires, un gonflement de la face, de la langue ou de la gorge, des démangeaisons intenses ou des éruptions cutanées sévères lors d'un traitement antérieur par IEC ou si un membre de votre famille a déjà eu ces symptômes quelles qu'en soient les circonstances (état appelé angio-œdème),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez du diabète ou une insuffisance rénale et que vous êtes traité(e) par un médicament contenant de l’aliskiren pour diminuer votre pression artérielle.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bMisesEnGarde">Précautions d'emploi ; mises en garde spéciales</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278998">Mises en garde et précautions d’emploi</a></p>
+<p class=AmmCorpsTexte>Prévenez votre médecin, votre pharmacien ou votre infirmièr(e) avant de prendre PERINDOPRIL EVOLUGEN 8 mg, comprimé :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une sténose de l'aorte (rétrécissement de l'artère principale alimentant le cœur) ou une cardiomyopathie hypertrophique (maladie du muscle cardiaque) ou une sténose de l'artère rénale (rétrécissement de l'artère menant le sang au rein),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez tout autre problème cardiaque,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez des problèmes hépatiques,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez des problèmes rénaux ou si vous êtes dialysé,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous souffrez d'une maladie du collagène (maladie de la peau) comme un lupus érythémateux disséminé ou une sclérodermie,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes diabétique,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous suivez un régime pauvre en sel ou si vous utilisez un substitut de sel contenant du potassium,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous devez subir une anesthésie générale et/ou une intervention chirurgicale,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous devez subir une aphérèse des lipoprotéines de basse densité (LDL) (qui consiste à enlever du cholestérol de votre sang avec une machine),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous devez recevoir un traitement de désensibilisation pour réduire les effets d'une allergie aux piqûres d'abeilles ou de guêpes,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez souffert récemment de diarrhées et de vomissements, ou si vous êtes déshydraté,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si votre médecin vous a informé que vous présentiez une intolérance à certains sucres,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez l’un des médicaments suivants pour traiter une hypertension : </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>        </span></span>un « antagoniste des récepteurs de l’angiotensine II » (ARA II) (aussi connu sous le nom de sartans – par exemple valsartan, telmisartan, irbésartan), en particulier si vous avez des problèmes rénaux dus à un diabète, </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>        </span></span>aliskiren. </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Votre médecin pourra être amené à surveiller régulièrement le fonctionnement de vos reins, votre pression artérielle et le taux des électrolytes (par ex. du potassium) dans votre sang.</p>
+<p class=AmmCorpsTexte>Voir aussi les informations dans la rubrique « Ne prenez jamais PERINDOPRIL EVOLUGEN 8 mg, comprimé ».</p>
+<p class=AmmCorpsTexte>Vous devez informer votre médecin si vous pensez être (ou susceptible de devenir) enceinte.</p>
+<p class=AmmCorpsTexte>PERINDOPRIL EVOLUGEN est déconseillé en début de grossesse, et ne doit pas être pris si vous êtes enceinte de plus de 3 mois, car cela pourrait nuire gravement à votre enfant en cas d'utilisation à partir de ce stade de la grossesse (<a href="#Ann3b_GrossAllait_10"><span class=MsoPageNumber><span style='font-family:Arial'>voir rubrique Grossesse</span></span></a>).</p>
+<p class=AmmCorpsTexte>PERINDOPRIL EVOLUGEN ne doit pas être utilisé chez les enfants et les adolescents.</p>
+<p class=AmmCorpsTexte>L’utilisation de ce médicament est déconseillée chez les patients présentant une intolérance au galactose, un déficit en lactase de Lapp ou un syndrome de malabsorption du glucose ou du galactose (maladies héréditaires rares).</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInteractions">Interactions avec d'autres médicaments</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278999"><span class='gras'>Prise d'autres médicaments</span></a></p>
+<p class=AmmCorpsTexte>Si vous prenez ou avez pris récemment un autre médicament, y compris un médicament obtenu sans ordonnance, parlez-en à votre médecin ou à votre pharmacien.</p>
+<p class=AmmCorpsTexte>Le traitement par PERINDOPRIL EVOLUGEN peut être affecté par d'autres médicaments. Votre médecin pourrait avoir besoin de modifier la dose de vos médicaments et/ou prendre d’autres précautions, si vous prenez l’un des médicaments suivants :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>autres médicaments pour traiter l'hypertension, incluant un antagoniste des récepteurs de l’angiotensine II (ARA II) ou de l’aliskiren (voir aussi les informations dans les rubriques « Ne prenez jamais PERINDOPRIL EVOLUGEN 8 mg, comprimé » et « Mises en garde et précautions d’emploi »), ou les diurétiques (médicaments augmentant la quantité d'urine produite par les reins),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des diurétiques épargneurs de potassium (spironolactone, triamtérène, amiloride), suppléments en potassium ou substituts de sel contenant du potassium,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>du lithium pour les troubles maniaques ou dépression,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>anti-inflammatoires non-stéroïdiens (ex.: ibuprofène) pour soulager la douleur ou dose élevée d'aspirine,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments pour traiter le diabète (tels que insuline ou metformine),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments pour traiter des troubles mentaux tels que dépression, anxiété, schizophrénie… (ex.: antidépresseurs tricycliques, antipsychotiques),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>immunosuppresseurs (médicaments diminuant le mécanisme de défense de l'organisme) utilisés pour le traitement de maladies auto-immunes ou suite à une transplantation chirurgicale (ex.: ciclosporine),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>allopurinol (pour le traitement de la goutte),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>procaïnamide (pour le traitement de battements cardiaques irréguliers),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>allopurinol (pour le traitement de la goutte),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vasodilatateurs incluant les dérivés nitrés (produits permettant de dilater les vaisseaux sanguins),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>héparine (médicament utilisé pour fluidifier le sang),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>traitements de l'hypotension artérielle, de l'état de choc ou de l'asthme (éphédrine, noradrénaline ou adrénaline).</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInteractionsAliments">Interactions avec les aliments et les boissons</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Aliments et boissons</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Il est conseillé de prendre PERINDOPRIL EVOLUGEN 8 mg, comprimé avant un repas.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bIntPhyto">Interactions avec les produits de phytothérapie ou thérapies alternatives</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bGrossAllait">Utilisation pendant la grossesse et l'allaitement</a></p>
+<p class=AmmCorpsTexte><a name="Ann3b_GrossAllait_10"></a><span class='gras'>Grossesse et allaitement</span></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Grossesse</span></span></p>
+<p class=AmmCorpsTexte><span class='gras'>Vous devez informer votre médecin si vous pensez être (ou susceptible de devenir) enceinte.</span> Votre médecin vous recommandera normalement d'arrêter de prendre PERINDOPRIL EVOLUGEN 8 mg, comprimé avant d'être enceinte ou dès que vous apprenez que vous êtes enceinte. Il vous recommandera de prendre un autre médicament à la place de PERINDOPRIL EVOLUGEN 8 mg, comprimé. PERINDOPRIL EVOLUGEN 8 mg, comprimé est déconseillé en début de grossesse et ne doit pas être pris si vous êtes enceinte de plus de 3 mois, car cela pourrait nuire gravement à votre enfant.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Allaitement</span></span></p>
+<p class=AmmCorpsTexte><span class='gras'>Informez votre médecin si vous allaitez ou êtes sur le point de commencer à allaiter.</span> PERINDOPRIL EVOLUGEN 8 mg, comprimé est déconseillé aux femmes qui allaitent et votre médecin pourrait choisir un autre traitement si vous souhaitez allaiter, surtout si votre enfant est un nouveau-né ou un prématuré.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Demandez conseil à votre médecin ou à votre pharmacien avant de prendre tout médicament.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSportifs">Sportifs</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bConduite">Effets sur l'aptitude à conduire des véhicules ou à utiliser des machines</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Conduite de véhicules et utilisation de machines</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>PERINDOPRIL EVOLUGEN 8 mg, comprimé n'affecte généralement pas la vigilance mais des sensations de vertiges ou de fatigue en relation avec une baisse de la pression artérielle peuvent survenir chez certains patients. Par conséquent, l'aptitude à conduire des véhicules ou à utiliser des machines peut être diminuée.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bListeExcipientsNotoires">Liste des excipients à effet notoire</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span class='gras'>Informations importantes concernant certains composants de</span><span class='gras'> PERINDOPRIL:</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Ce médicament contient du lactose.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE PERINDOPRIL EVOLUGEN 8 mg, comprimé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucBonUsage">Instructions pour un bon usage</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bPosologie">Posologie, Mode et/ou voie(s) d'administration, Fréquence d'administration et Durée du traitement</a></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Posologie</span></span></p>
+<p class=AmmCorpsTexte>Respectez toujours la posologie indiquée par votre médecin. En cas d'incertitude consultez votre médecin ou votre pharmacien. Le comprimé doit être avalé avec un verre d'eau, de préférence au même moment de la journée, le matin et avant le repas. Votre médecin décidera de la posologie adaptée pour vous.</p>
+<p class=AmmCorpsTexte>Les posologies habituelles sont:</p>
+<p class=AmmCorpsTexte><span class='italique'>Hypertension artérielle</span>: les doses habituelles d'attaque et d'entretien sont de 4mg une fois par jour. Au bout d'un mois, la dose peut être augmentée à 8mg par jour si besoin. La dose maximale journalière est de 8mg par jour pour le traitement de l'hypertension artérielle.</p>
+<p class=AmmCorpsTexte>Si vous êtes âgé de plus de 65 ans, la dose d'attaque est habituellement de 2 mg par jour. Au bout d'un mois, la dose peut être augmentée à 4mg par jour et si nécessaire à 8 mg par jour.</p>
+<p class=AmmCorpsTexte><span class='italique'>Maladie coronaire stable</span>: la dose d'attaque est habituellement de 4 mg par jour. Au bout de deux semaines, la dose peut être augmentée à 8mg, qui est la dose maximale recommandée dans cette indication.</p>
+<p class=AmmListePuces1 align=left style='margin-left:0cm;text-align:left; text-indent:0cm'>Si vous êtes âgé de plus de 65 ans, la dose d'attaque est habituellement de 2 mg par jour. Au bout d'une semaine, la dose peut être augmentée à 4mg par jour et, après une seconde semaine de traitement, à 8mg par jour.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucSurdosage">Symptômes et instructions en cas de surdosage</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Si vous avez pris plus de PERINDOPRIL EVOLUGEN 8 mg, comprimé que vous n'auriez dû:</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Si vous avez pris trop de comprimés, contactez immédiatement votre médecin ou l'hôpital le plus proche. L'évènement le plus probable, en cas de surdosage, est l'hypotension. Si une hypotension importante se produit (associée à des vertiges ou à des étourdissements), elle peut être combattue en allongeant le patient, avec les jambes relevées.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucOmission">Instructions en cas d'omission d'une ou de plusieurs doses</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Si vous oubliez de prendre PERINDOPRIL EVOLUGEN 8 mg, comprimé:</span></p>
+<p class=AmmCorpsTexte>Il est important de prendre votre médicament chaque jour car un traitement régulier est plus efficace. Cependant, si vous avez oublié de prendre PERINDOPRIL EVOLUGEN 8 mg, comprimé, reprenez simplement votre traitement le jour suivant comme d'habitude.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Ne prenez pas une double dose pour compenser la dose que vous avez oublié de prendre.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bRisqueSevrage">Risque de syndrome de sevrage</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Si vous arrêtez de prendre PERINDOPRIL EVOLUGEN 8 mg, comprimé:</span></p>
+<p class=AmmCorpsTexte>Le traitement par PERINDOPRIL EVOLUGEN 8 mg, comprimé étant généralement un traitement de longue durée, vous devez demander conseil à votre médecin avant de l'interrompre.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Si vous avez d'autres questions sur l'utilisation de ce médicament, demandez plus d'informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bEffetsIndesirablesDesc">Description des effets indésirables</a></p>
+<p class=AmmCorpsTexte>Comme tous les médicaments, PERINDOPRIL EVOLUGEN 8 mg, comprimé est susceptible d'avoir des effets indésirables, bien que tout le monde n'y soit pas sujet.</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'>Si vous remarquez l'un des effets indésirables suivants, arrêtez tout de suite de prendre PERINDOPRIL EVOLUGEN 8 mg, comprimé et contactez immédiatement votre médecin:</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gonflement de la face, des lèvres, de la bouche, de la langue ou de la gorge, difficulté à respirer,</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vertige sévère ou évanouissement,</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>battements du cœur inhabituellement rapides ou irréguliers.</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'>Par ordre décroissant de fréquence, les effets secondaires peuvent inclure:</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquemment (&lt;1/10, &gt;1/100): maux de tête, étourdissement, vertiges, picotements, troubles de la vision, acouphènes (sifflements et bourdonnements d'oreille), étourdissement dû à une baisse de pression artérielle, toux, essoufflement, troubles gastro-intestinaux (nausées, vomissements, douleur abdominale, troubles du goût, dyspepsie ou digestion difficile, diarrhée, constipation), réactions allergiques (telles que éruptions cutanées, démangeaisons), crampes musculaires, sensation de fatigue,</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Peu fréquemment (&lt;1/100, &gt; 1/1000): changements d'humeur, troubles du sommeil, bronchospasme (poitrine oppressée, sifflements respiratoires et manque de souffle), bouche sèche, angio-œdème (symptômes tels que sifflement respiratoire, gonflement de la face, de la langue ou de la gorge, démangeaisons intenses ou éruptions cutanées sévères), troubles du rein, impuissance, transpiration,</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Très rarement (&lt;1/10 000): confusion, troubles cardiovasculaires (battements cardiaques irréguliers, angine de poitrine, attaque cardiaque et accident vasculaire cérébral), pneumonie éosinophile (une forme rare de pneumonie), rhinite (nez bouché ou qui coule), manifestations cutanées sévères telles que érythème multiforme, troubles du sang, du pancréas ou du foie,</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypoglycémie chez les patients diabétiques</p>
+<p class=AmmListePuces1 align=left style='text-align:left'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vascularite (inflammation des vaisseaux sanguins)</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Si vous remarquez des effets indésirables non mentionnés dans cette notice, ou si certains effets indésirables deviennent graves, veuillez en informer votre médecin ou votre pharmacien<span class='gras'>.</span></p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER PERINDOPRIL EVOLUGEN 8 mg, comprimé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte>Tenir hors de la portée et de la vue des enfants.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDatePeremption">Date de péremption</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Ne pas utiliser PERINDOPRIL après la date de péremption mentionnée sur la boîte.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>La date d'expiration fait référence au dernier jour du mois.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bCondConservation">Conditions de conservation</a></p>
+<p class=AmmCorpsTexte>A conserver à une température ne dépassant pas 30°C.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDeterioration">Si nécessaire, mises en garde contre certains signes visibles de détérioration</a></p>
+<p class=AmmCorpsTexte>Les médicaments ne doivent pas être jetés au tout à l'égout ou avec les ordures ménagères. Demandez à votre pharmacien ce qu'il faut faire des médicaments inutilisés. Ces mesures permettront de protéger l'environnement.</p>
+<h2><a name="Ann3bInfoSupp">6. INFORMATIONS SUPPLEMENTAIRES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bListSubs">Liste complète des substances actives et des excipients</a></p>
+<p class=AmmCorpsTexte><a name="Ann3b_ListSubs_11"></a><span class='gras'>Que contient PERINDOPRIL EVOLUGEN 8 mg, comprimé ?</span></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>La substance active est:</span></span></p>
+<p class=AmmComposition style='margin-bottom:0cm;margin-bottom:.0001pt'>Périndopril tert-butylamine............................................................................................................... 8,00 mg</p>
+<p class=AmmComposition style='margin-bottom:0cm;margin-bottom:.0001pt'>Sous forme de périndopril............................................................................................................... 6,68 mg</p>
+<p class=AmmComposition align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>Pour un comprimé.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Les autres composants sont:</span></span></p>
+<p class=AmmCorpsTexte>Silice colloïdale hydrophobe, cellulose microcristalline, lactose monohydraté et stéarate de magnésium.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bFormePharma">Forme pharmaceutique et contenu</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Qu'est-ce que PERINDOPRIL EVOLUGEN 8 mg, comprimé et contenu de l'emballage extérieur ?</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Ce médicament se présente sous forme de comprimé blanc, rond, biconvexe, gravé « PP » sur une face et « 8 » sur l’autre.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Boîte de 14, 20, 28, 30, 56, 60, 90 comprimés sous plaquettes formées à froid.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bNomAdrTitu">Nom et adresse du titulaire de l'autorisation de mise sur le marché et du titulaire de l'autorisation de fabrication responsable de la libération des lots, si différent</a></p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bTitu">Titulaire</a></p>
+<p class=AmmTitulaireAdresse><span class='gras'>EVOLUPHARM</span></p>
+<p class=AmmTitulaireAdresse>RUE IRENE CARON ZONE INDUSTRIELLE D’AUNEUIL</p>
+<p class=AmmTitulaireAdresse>60390 AUNEUIL</p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bExpl">Exploitant</a></p>
+<p class=AmmTitulaireNom>EVOLUPHARM</p>
+<p class=AmmTitulaireAdresse>RUE IRENE CARON ZONE INDUSTRIELLE D’AUNEUIL</p>
+<p class=AmmTitulaireAdresse>60390 AUNEUIL</p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bFab">Fabricant</a></p>
+<p class=AmmTitulaireNom><a name="_Toc142279023"><span lang=EN-GB style='text-transform:none'>GLENMARK PHARMACEUTICALS </span></a></p>
+<p class=AmmTitulaireAdresse><span lang=EN-GB style='text-transform:none'>FIBICHOVA 143</span></p>
+<p class=AmmTitulaireAdresse><span lang=EN-GB style='text-transform:none'>566 17 VYSOKE MYTO</span></p>
+<p class=AmmTitulaireAdresse><span lang=EN-US style='text-transform:none'>REPUBLIQUE TCHEQUE</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=EN-US>OU</span></p>
+<p class=AmmTitulaireNom><span lang=EN-US style='text-transform:none'>TILLOMED LABORATORIES LIMITED</span></p>
+<p class=AmmTitulaireAdresse><span lang=EN-GB style='text-transform:none'>3 HOWARD ROAD</span></p>
+<p class=AmmTitulaireAdresse><span lang=EN-US style='text-transform:none'>EATON SOCON CAMBRIDGESHIRE</span></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>PE19 3ET ST NEOTS</span></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>ROYAUME-UNI</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>OU</p>
+<p class=AmmTitulaireNom><span style='text-transform:none'>ACTAVIS BV</span></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>BAARNSCHE DIJK 1</span></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>3741 LN BAARN</span></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>PAYS-BAS</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>OU</p>
+<p class=AmmTitulaireNom><span lang=EN-US style='text-transform:none'>ACTAVIS GROUP PTC EHF</span></p>
+<p class=AmmTitulaireAdresse><span lang=EN-US style='text-transform:none'>REYKJAVIKURVEGUR 78</span></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>HAFNARFJOROUR, IS-220</span></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>ISLANDE</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bNomAdrMed">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDateApprob">Date d’approbation de la notice</a></p>
+<p class=AmmCorpsTexte><span class='gras'>La dernière date à laquelle cette notice a été approuvée est le {date}.</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bAMMExcep">AMM sous circonstances exceptionnelles</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInternet">Informations Internet</a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’Afssaps (France) www.afssaps.fr</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bProfSante">Informations réservées aux professionnels de santé</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bAutres">Autres</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmAnnexeTitre> </p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

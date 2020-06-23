@@ -1,0 +1,579 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - OROMONE 2 mg, comprimé pelliculé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, OROMONE 2 mg, comprimé pelliculé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-60071379">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 20/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=60071379' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=60071379&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=60071379&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">OROMONE 2 mg, comprimé pelliculé  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 16/10/2018</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">OROMONE 2 mg, comprimé pelliculé</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Estradiol</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci  s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce qu’OROMONE 2 mg, comprimé pelliculé et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre OROMONE 2 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre OROMONE 2 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver OROMONE 2 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE OROMONE 2 mg, comprimé pelliculé ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique :</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279004">OROMONE est un traitement hormonal substitutif (THS). Il contient une hormone féminine, l’estradiol. OROMONE est utilisé chez les femmes ménopausées qui n’ont plus leurs règles depuis plus de 6 mois.</a></p>
+<p class=AmmCorpsTexte>L’estradiol dans OROMONE provient de substances d’origine végétale.</p>
+<p class=AmmCorpsTexte>OROMONE est utilisé :</p>
+<p class=AmmCorpsTexteGras>Pour soulager les symptômes apparaissant après la ménopause</p>
+<p class=AmmCorpsTexte>Pendant la ménopause, la quantité d’estrogènes produits par le corps de la femme diminue et peut entraîner des symptômes tels qu’une chaleur au niveau du visage, du cou et de la poitrine (bouffées de chaleur). OROMONE soulage ces symptômes après la ménopause. Votre médecin vous prescrira OROMONE uniquement si ces symptômes affectent de façon importante votre qualité de vie.</p>
+<p class=AmmCorpsTexteGras>Dans la prévention de l’ostéoporose</p>
+<p class=AmmCorpsTexte>Après la ménopause, certaines femmes peuvent avoir des os qui deviennent fragiles (ostéoporose). Les différents choix de traitement doivent être discutés avec votre médecin. Si vous avez un risque accru de fractures dues à l'ostéoporose et si d'autres médicaments ne vous conviennent pas, votre médecin pourra vous prescrire OROMONE pour prévenir l'ostéoporose après la ménopause.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE OROMONE 2 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Antécédents médicaux et examens réguliers</a></p>
+<p class=AmmCorpsTexte>L’utilisation d’un THS entraîne des risques qui doivent être pris en compte <span class=mediumtext>au moment de décider s'il convient de prendre, ou de poursuivre votre traitement</span>.</p>
+<p class=AmmCorpsTexte>L’expérience chez la femme ayant une ménopause précoce (due à une insuffisance ovarienne ou à une opération chirurgicale) est limitée. Si vous avez une ménopause précoce, les risques liés à l’utilisation d’un THS sont différents. Veuillez en parler à votre médecin.</p>
+<p class=AmmCorpsTexte>Avant de débuter (ou de recommencer) un THS, votre médecin vous interrogera à propos de vos antécédents médicaux personnels et familiaux. Un examen clinique sera également effectué pouvant inclure un examen de vos seins et un examen pelvien.</p>
+<p class=AmmCorpsTexte>Après avoir débuté le traitement par OROMONE, vous devrez consulter régulièrement votre médecin pour faire des examens (au moins une fois par an). Lors de ces examens, votre médecin sera amené à discuter avec vous des bénéfices et des risques si vous continuez le traitement par OROMONE.</p>
+<p class=AmmCorpsTexte>Faites des examens réguliers des seins, comme recommandé par votre médecin.</p>
+<p class=AmmCorpsTexte>Si l’une des conditions suivantes s’applique à vous, si vous avez des doutes sur un des points ci-dessous, <span class='gras'>parlez-en à votre médecin</span> avant de prendre OROMONE.</p>
+<p class=AmmCorpsTexteGras>Ne prenez jamais OROMONE 2 mg, comprimé pelliculé :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez ou avez eu un <span class='gras'>cancer du sein</span> ou en cas de suspicion,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez un <span class='gras'>cancer sensible aux estrogènes</span>, tel qu’un cancer de la muqueuse utérine (endomètre) ou en cas de suspicion,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez des <span class='gras'>saignements vaginaux</span> de cause inconnue,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez un <span class='gras'>développement exagéré de la muqueuse utérine</span> (hyperplasie endométriale) non traité,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez ou avez eu des <span class='gras'>caillots de sang dans les veines</span> (thromboses), dans les jambes (thrombose veineuse profonde), ou dans les poumons (embolie pulmonaire),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez des <span class='gras'>troubles de la coagulation</span> (tels qu’un déficit en protéine C, protéine S ou en antithrombine),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez ou avez eu récemment une maladie causée par des caillots sanguins dans les artères, par exemple <span class='gras'>crise cardiaque, accident vasculaire cérébral ou angine de poitrine</span>, </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez ou avez eu une <span class='gras'>maladie du foie</span> et que les tests hépatiques ne sont pas retournés à la normale,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez un trouble rare du sang appelé « porphyrie » qui est transmis par votre famille (maladie héréditaire),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez toujours votre utérus et que vous ne prenez pas de progestatifs,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique (hypersensible) à l’estradiol ou à l'un des composants d’OROMONE (listés en rubrique 6. Informations supplémentaires).</p>
+<p class=AmmCorpsTexte>Si l’une de ces affections apparaît pour la première fois lors de l’utilisation d’OROMONE, arrêtez le traitement immédiatement et consultez votre médecin.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte>Informez votre médecin si vous avez eu l’une des affections suivantes, avant de prendre le traitement, car elles pourraient réapparaître ou s’aggraver pendant le traitement par OROMONE. Dans ce cas, vous devez consulter votre médecin pour faire des examens plus réguliers :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>fibromes dans l’utérus,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>croissance de la muqueuse utérine en dehors de l’utérus (endométriose) ou antécédent de développement exagéré de la muqueuse utérine (hyperplasie endométriale),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>risque accru de développer des caillots sanguins (voir Caillots sanguins dans une veine (thrombose)),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>risque accru de développer un cancer sensible aux estrogènes (par exemple si vous avez une mère, une sœur ou une grand-mère ayant eu un cancer du sein),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pression artérielle élevée,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles du foie, tels qu’une tumeur bénigne du foie,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diabète,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>lithiase biliaire,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>migraine ou maux de tête sévères,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maladie du système immunitaire qui affecte plusieurs organes du corps (lupus érythémateux disséminé, LED),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>épilepsie,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>asthme,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maladie affectant le tympan et l’audition (otospongiose),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>taux très élevé de graisses dans votre sang (triglycérides),</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>rétention de liquide due à des troubles du cœur ou des reins.</p>
+<p class=AmmCorpsTexteGras>Arrêtez de prendre OROMONE et consultez immédiatement votre médecin :</p>
+<p class=AmmCorpsTexte>Si vous notez l’une des affections suivantes lors du traitement par THS :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>l’une des affections mentionnées dans la rubrique « Ne prenez jamais OROMONE »,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un jaunissement de la peau ou du blanc des yeux (jaunisse), qui peut être le signe d’une maladie du foie,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>votre pression artérielle augmente considérablement (les symptômes peuvent être maux de tête, fatigue, vertiges),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des maux de tête de type migraine qui apparaissent pour la première fois,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous débutez une grossesse,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous notez des signes de caillots sanguins, tels que :</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>gonflement douloureux et rougeur des jambes,</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>douleur soudaine dans la poitrine,</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>difficulté à respirer.</p>
+<p class=AmmCorpsTexte style='margin-left:17.85pt'>Pour plus d’information, voir « Caillots sanguins dans une veine (thrombose) ».</p>
+<p class=AmmCorpsTexte><span class='gras'>Note</span> : OROMONE n’est pas contraceptif. Si vous avez eu vos dernières règles depuis moins de 12 mois ou si vous avez moins de 50 ans, vous pourriez toujours avoir besoin d’un contraceptif en plus pour prévenir une grossesse. Demandez conseil à votre médecin.</p>
+<p class=AmmAnnexeTitre3>THS et cancer</p>
+<p class=AmmCorpsTexteGras>Développement exagéré de la muqueuse utérine (hyperplasie endométriale) et cancer de la muqueuse utérine (cancer de l’endomètre)</p>
+<p class=AmmCorpsTexte>La prise d’estrogènes seuls augmentera le risque de développement exagéré de la muqueuse utérine (hyperplasie endométriale) et de cancer de la muqueuse utérine (cancer de l’endomètre).</p>
+<p class=AmmCorpsTexte>La prise d’un progestatif, en plus de l'estrogène pendant au moins 12 jours par cycle de 28 jours vous protège contre ce risque supplémentaire. Ainsi, votre médecin vous prescrira un progestatif séparément si vous avez encore votre utérus. Si votre utérus a été enlevé (hystérectomie), demandez à votre médecin si vous pouvez prendre ce médicament sans un progestatif, sans risque.</p>
+<p class=AmmCorpsTexte>Si l’on considère les femmes qui ont encore leur utérus et qui ne prennent pas de THS, en moyenne, 5 femmes sur 1000 se verront diagnostiquer un cancer de l'endomètre entre 50 et 65 ans. Pour les femmes âgées de 50 à 65 ans qui ont encore un utérus et qui prennent un estrogène seul, entre 10 et 60 femmes sur 1000 se verront diagnostiquer un cancer de l'endomètre (soit 5 à 55 cas supplémentaires), en fonction de la dose et de la durée d’utilisation.</p>
+<p class=AmmAnnexeTitre3>Saignements inattendus</p>
+<p class=AmmCorpsTexte>Vous pourrez avoir des saignements irréguliers ou des petites pertes de sang (spotting) pendant les 3 à 6 premiers mois après le début du traitement par OROMONE. Cependant, si les saignements inattendus :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>continuent après les 6 premiers mois de traitement,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>commencent après avoir pris OROMONE pendant plus de 6 mois,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>continuent après l’arrêt d’OROMONE,</p>
+<p class=AmmCorpsTexteGras>Consultez votre médecin dès que possible.</p>
+<p class=AmmAnnexeTitre3>Cancer du sein</p>
+<p class=AmmCorpsTexte>Des données suggèrent que la prise de THS combiné estroprogestatif et probablement aussi la prise d’estrogènes seuls peut augmenter le risque de cancer du sein. Ce sur-risque dépend de la durée d’utilisation du THS et apparaît après quelques années. Cependant, il retourne au niveau normal après quelques années (au plus 5 ans) après l’arrêt du traitement.</p>
+<p class=AmmCorpsTexte>Une faible augmentation ou une absence d'augmentation du risque de cancer du sein a été observée chez les femmes qui ont eu leur utérus retiré et qui utilisent un estrogène seul pendant 5 ans.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Comparaison :</span></p>
+<p class=AmmCorpsTexte>Si l’on considère les femmes âgées de 50 à 79 ans qui ne prennent pas de THS, en moyenne 9 à 14 femmes sur 1000 se verront diagnostiquer un cancer du sein au cours d’une période de 5 ans. Pour les femmes âgées de 50 à 79 ans qui prennent un THS estroprogestatif pendant une période de 5 ans, le nombre de cas sera de 13 à 20 sur 1000 utilisatrices (soit 4 à 6 cas supplémentaires).</p>
+<p class=AmmCorpsTexteGras>Contrôlez régulièrement vos seins et informez votre médecin si vous notez des changements, tels que :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>capitons de la peau,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>modifications du mamelon,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>tout gonflement que vous pouvez voir ou sentir.</p>
+<p class=AmmAnnexeTitre3>Cancer ovarien</p>
+<p class=AmmCorpsTexte>Le cancer de l’ovaire est rare (beaucoup plus rare que le cancer du sein). L’utilisation d’un THS par estrogènes seuls ou par une combinaison d’estrogènes et de progestatifs a été associée à une légère augmentation du risque de cancer ovarien.</p>
+<p class=AmmCorpsTexte>Le risque de cancer ovarien varie en fonction de l’âge. Par exemple, chez les femmes âgées entre 50 à 54 ans qui ne prennent pas de THS, un diagnostic de cancer ovarien sera posé chez 2 femmes sur 2000 en moyenne sur une période de 5 ans. Chez les femmes ayant pris un THS pendant 5 ans, il y aura environ 3 cas sur 2000 utilisatrices (soit environ un cas supplémentaire).</p>
+<p class=AmmAnnexeTitre3>Effets du THS sur votre cœur ou votre circulation</p>
+<p class=AmmCorpsTexteGras>Caillots sanguins dans une veine (thrombose)</p>
+<p class=AmmCorpsTexte>Le risque de caillots sanguins dans les veines est environ 1,3 à 3 fois plus élevé chez les utilisatrices de THS que chez les non utilisatrices, en particulier pendant la première année d’utilisation.</p>
+<p class=AmmCorpsTexte>Les caillots sanguins peuvent être graves, et si un caillot va jusqu’aux poumons, il peut causer une douleur dans la poitrine, un essoufflement, un évanouissement ou même la mort.</p>
+<p class=AmmCorpsTexte>Vous avez plus de risques d’avoir un caillot sanguin dans vos veines si vous vieillissez et que l’une de ces conditions s’applique à vous. Informez votre médecin si l’une de ces situations s’applique à vous :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous ne pouvez pas marcher pendant une longue période suite à une intervention chirurgicale importante, une blessure ou une maladie (voir aussi rubrique 3, Si vous devez subir une intervention chirurgicale),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous êtes obèse (IMC &gt; 30 kg/m²),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez des problèmes de coagulation qui nécessitent un traitement au long terme avec un médicament utilisé pour prévenir les caillots sanguins,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez un parent proche qui a eu des caillots sanguins dans la jambe, les poumons ou un autre organe,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez un lupus érythémateux disséminé (LED),</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez un cancer.</p>
+<p class=AmmCorpsTexte>Pour les signes de caillots sanguins, voir « Arrêtez de prendre OROMONE et consultez immédiatement votre médecin ».</p>
+<p class=AmmCorpsTexte><span class='souligne'>Comparaison :</span></p>
+<p class=AmmCorpsTexte>Si l’on considère les femmes d’une cinquantaine d’années qui ne prennent pas de THS, en moyenne 4 à 7 femmes sur 1000 ont un risque d’avoir un caillot sanguin, au cours d’une période de 5 ans. Pour les femmes d’une cinquantaine d’années qui prennent un THS estroprogestatif pendant une période de 5 ans, le nombre de cas sera de 9 à 12 sur 1000 utilisatrices (soit 5 cas supplémentaires). Pour les femmes d’une cinquantaine d’années qui n’ont plus d’utérus et qui prennent un estrogène seul pendant une période de 5 ans, le nombre de cas sera de 5 à 8 sur 1000 utilisatrices (soit 1 cas supplémentaire).</p>
+<p class=AmmCorpsTexteGras>Maladie cardiaque (crise cardiaque)</p>
+<p class=AmmCorpsTexte>Il n’y a pas de preuves que le THS participe à la prévention d’une crise cardiaque.</p>
+<p class=AmmCorpsTexte>Les femmes de plus de 60 ans, prenant un THS estroprogestatif, ont légèrement plus de risques d’avoir une maladie cardiaque que celles qui n’en prennent pas. Pour les femmes qui n’ont plus d’utérus et qui prennent un estrogène seul, il n’y a pas de sur-risque d’avoir une maladie cardiaque.</p>
+<p class=AmmCorpsTexteGras>Accident vasculaire cérébral</p>
+<p class=AmmCorpsTexte>Le risque d’accident vasculaire cérébral est multiplié par environ 1,5 chez les utilisatrices de THS par rapport aux non utilisatrices. Le nombre de cas supplémentaires d’accident vasculaire cérébral dû à l’utilisation de THS augmente avec l'âge.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Comparaison :</span></p>
+<p class=AmmCorpsTexte>Si l’on considère les femmes d’une cinquantaine d’années qui ne prennent pas de THS, en moyenne 8 femmes sur 1000 ont un risque d’avoir un accident vasculaire cérébral, au cours d’une période de 5 ans. Pour les femmes d’une cinquantaine d’années qui prennent un THS pendant une période de 5 ans, le nombre de cas sera de 11 sur 1000 utilisatrices (soit 3 cas supplémentaires).</p>
+<p class=AmmAnnexeTitre3>Autres pathologies</p>
+<p class=AmmCorpsTexte>Le THS ne prévient pas la perte de mémoire. Il y a des signes de risque accru de perte de mémoire chez les femmes qui commencent à utiliser un THS après 65 ans. Demandez conseil à votre médecin.</p>
+<p class=AmmCorpsTexteGras>Enfants</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et OROMONE 2 mg, comprimé pelliculé</p>
+<p class=AmmCorpsTexte>Certains médicaments peuvent empêcher OROMONE d’agir correctement, ce qui peut entraîner des saignements irréguliers. Cela concerne les médicaments suivants :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments pour l’épilepsie (tels que phénobarbital, phénytoïne et carbamazépine),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments pour la tuberculose (tels que rifampicine, rifabutine),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>traitements des infections par VIH (tels que névirapine, éfavirenz, ritonavir et nelfinavir),</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>préparations à base de plantes contenant du millepertuis (<span class='italique'>Hypericum perforatum</span>).</p>
+<p class=AmmCorpsTexte>Des taux élevés et dangereux des médicaments suivants peuvent se produire lors du traitement par OROMONE :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le tacrolimus, la cyclosporine (utilisés par exemple lors de transplantation d’organes),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le fentanyl, un antalgique,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>la théophylline (utilisée pour l’asthme et dans d’autres troubles de la respiration).</p>
+<p class=AmmCorpsTexte>Par conséquent, une surveillance attentive de ces médicaments pendant un certain temps et une diminution du dosage peuvent être nécessaires.</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexteGras>Tests de laboratoire</p>
+<p class=AmmCorpsTexte>Si vous avez besoin d’un bilan sanguin, informez votre médecin ou les employés du laboratoire que vous prenez OROMONE car ce médicament peut affecter les résultats de certains tests.</p>
+<p class=AmmCorpsTexteGras>OROMONE 2 mg, comprimé pelliculé avec des aliments et boissons</p>
+<p class=AmmCorpsTexte><a name="_Toc142279012">OROMONE peut être pris pendant ou en dehors des repas.</a></p>
+<p class=AmmCorpsTexteGras>Grossesse et allaitement</p>
+<p class=AmmCorpsTexte>OROMONE ne doit être utilisé que chez la femme ménopausée. Si vous devenez enceinte, interrompez le traitement et contactez votre médecin.</p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>L’effet d’OROMONE sur l’aptitude à conduire des véhicules ou à utiliser des machines n’a pas été étudié.</p>
+<p class=AmmCorpsTexteGras>OROMONE 2 mg, comprimé pelliculé contient un sucre du lait (lactose).</p>
+<p class=AmmCorpsTexte>Si vous avez été informée par votre médecin que vous êtes intolérante ou que vous ne pouvez pas digérer certains sucres :</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>parlez-en à votre médecin avant de prendre ce médicament.</span></p>
+<p class=AmmCorpsTexte>Cela inclut certains troubles héréditaires rares qui affectent la façon dont votre corps utilise le lactose (tels qu’une insuffisance en lactase de Lapp, une malabsorption du glucose-galactose).</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE OROMONE 2 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmCorpsTexteGras>Début du traitement par OROMONE</p>
+<p class=AmmCorpsTexte>Vous pouvez prendre OROMONE n’importe quel jour :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous ne prenez pas de THS actuellement,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>s’il s’agit d’un relais d’un traitement combiné continu, ce qui signifie que vous prenez un comprimé ou utilisez un patch contenant un estrogène et un progestatif tous les jours.</p>
+<p class=AmmCorpsTexte>Commencez par prendre OROMONE le jour suivant la fin du cycle de 28 jours :</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>s’il s’agit d’un relais d’un traitement THS « cyclique » ou « séquentiel », ce qui signifie que vous prenez un comprimé ou utilisez un patch d’estrogène durant la première partie de votre cycle et après que vous prenez un comprimé ou utilisez un patch contenant un estrogène et un progestatif pendant 14 jours.</p>
+<p class=AmmCorpsTexte>Votre médecin veillera à vous prescrire la dose la plus faible pendant une durée la plus courte possible pour traiter vos symptômes. Si vous avez l'impression que la dose est trop forte ou trop faible, parlez-en à votre médecin.</p>
+<p class=AmmCorpsTexte>La posologie usuelle est de 1 comprimé par jour, sans interruption entre les boîtes. Les jours de la semaine sont indiqués sur la plaquette pour vous aider à vous rappeler à quel moment prendre les comprimés.</p>
+<p class=AmmAnnexeTitre3>Mode d'administration</p>
+<p class=AmmCorpsTexte>Avalez le comprimé avec de l’eau.</p>
+<p class=AmmCorpsTexte>Vous pouvez prendre le comprimé pendant ou en dehors des repas.</p>
+<p class=AmmCorpsTexte>Essayez de prendre le comprimé au même moment chaque jour afin d’être sûre d’avoir une quantité de produit constante dans votre corps. Cela vous aidera aussi à ne pas oublier de prendre vos comprimés.</p>
+<p class=AmmCorpsTexte>Prenez un comprimé par jour.</p>
+<p class=AmmCorpsTexte>Des saignements évoquant les règles peuvent survenir pendant la période d'interruption.</p>
+<p class=AmmCorpsTexte>Ces saignements sont normaux et peu abondants.</p>
+<p class=AmmCorpsTexte>Si des saignements abondants ou irréguliers surviennent, consultez votre médecin.</p>
+<p class=AmmCorpsTexteGras>Si vous devez subir une intervention chirurgicale</p>
+<p class=AmmCorpsTexte>Si vous devez subir une intervention chirurgicale, informez votre chirurgien que vous prenez OROMONE. Il sera peut-être nécessaire d’arrêter le traitement environ 4 à 6 semaines avant l’opération afin de réduire le risque de caillots sanguins (voir rubrique 2. Caillots sanguins dans une veine). Demandez à votre médecin quand vous pourrez reprendre OROMONE.</p>
+<p class=AmmCorpsTexte>Si vous avez l'impression que l'effet d'OROMONE 2 mg, comprimé pelliculé est trop fort ou trop faible, consultez votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus d’OROMONE 2 mg, comprimé pelliculé que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>Les signes de surdosage sont habituellement une sensation de douleur au niveau des seins, un gonflement du ventre, des flatulences, des nausées, des vomissements, une irritabilité, des saignements, une anxiété. Aucun traitement spécifique n'est nécessaire.</p>
+<p class=AmmCorpsTexte>En cas de persistance des signes, demandez l'avis de votre médecin.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre OROMONE 2 mg, comprimé pelliculé</p>
+<p class=AmmCorpsTexte>Prenez le comprimé oublié dès que vous vous en apercevez. Si cela fait plus de 12 heures depuis la dernière prise, prenez la dose suivante à l’heure habituelle sans prendre le comprimé oublié. Ne prenez pas la dose oubliée. Ne prenez pas de dose double pour compenser la dose simple que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexte>Si vous n'avez pas pris de comprimé plusieurs jours de suite, des saignements irréguliers ou des spottings peuvent apparaître.</p>
+<p class=AmmCorpsTexte>En cas de doute, consultez votre médecin.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre OROMONE 2 mg, comprimé pelliculé </p>
+<p class=AmmCorpsTexte>A l'arrêt du traitement, les signes de déficit en estrogènes liés à la ménopause peuvent réapparaître.</p>
+<p class=AmmCorpsTexte>N’arrêtez pas de prendre OROMONE sans en parler auparavant à votre médecin.</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;page-break-after:avoid'>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexteGras>Les effets indésirables suivants sont rapportés plus fréquemment chez les femmes prenant un THS que chez les femmes qui n’en prennent pas :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cancer du sein,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>grosseur anormale ou cancer de la muqueuse utérine (hyperplasie endométriale ou cancer de l’endomètre),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cancer des ovaires,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>caillots sanguins dans les veines des jambes ou des poumons (thrombo-embolisme veineux),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maladie cardiaque,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>accident vasculaire cérébral,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>probable perte de mémoire si le THS est débuté après 65 ans.</p>
+<p class=AmmCorpsTexte>Pour plus d’informations concernant ces effets indésirables, voir rubrique 2.</p>
+<p class=AmmCorpsTexteGras>Les effets indésirables suivants peuvent survenir avec ce médicament :</p>
+<p class=AmmAnnexeTitre4>Fréquents (susceptibles de survenir chez 1 à 10 patientes sur 100) :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maux de tête. Si vous avez des maux de tête de type migraine qui apparaissent pour la première fois, arrêtez de prendre OROMONE et consultez votre médecin immédiatement,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>saignements vaginaux entre les règles (<span class='italique'>métrorragie</span>),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>augmentation ou diminution du poids,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruptions cutanées, démangeaisons,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleurs abdominales, nausées.</p>
+<p class=AmmAnnexeTitre4>Peu fréquents (susceptibles de survenir chez 1 à 10 patientes sur 1000) :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>mycose vaginale (infection du vagin due à un champignon appelé <span class='italique'>Candida albicans</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactions d’hypersensibilité (allergies),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>tension des seins, douleur des seins,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensations de vertiges,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles visuels,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>palpitations,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>digestion difficile,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles de la vésicule biliaire,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles cutanées tels que nodules rouges et douloureux situés sous la peau (érythème noueux), urticaire,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>humeur dépressive,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>œdème.</p>
+<p class=AmmAnnexeTitre4>Rares (susceptibles de survenir chez moins de 1 patiente sur 1000) :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gonflement des seins, règles douloureuses (<span class='italique'>dysménorrhée</span>), syndrome prémenstruel, écoulement provenant du vagin (pertes vaginales),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>migraine,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>intolérance aux lentilles de contact,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>fatigue,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>anxiété, diminution ou augmentation de la libido,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vomissements, ballonnement,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>crampes musculaires,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles cutanés (acné, développement exagéré du système pileux).</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;text-align:justify;text-indent:0cm;page-break-after:avoid'><span class='gras'>Autres effets indésirables rapportés lors de l’utilisation d’un THS (fréquence inconnue) :</span></p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dépression,</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>probable perte de la capacité mentale à penser, se souvenir et raisonner (<span class='italique'>démence</span>), mouvements musculaires que vous ne pouvez pas contrôler (chorée) ; aggravation d’une épilepsie,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>modification de la surface des yeux (accentuation de la courbure de la cornée) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>crise cardiaque (infarctus du myocarde),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>caillots sanguins dans les artères (<span class='italique'>maladie thromboembolique artérielle</span>) incluant crise cardiaque (infarctus du myocarde), angine de poitrine (angor), </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inflammation du pancréas (<span class='italique'>pancréatite</span>) chez les femmes ayant des taux élevés de certaines graisses du sang (<span class='italique'>hypertriglycéridémie</span>) ; maladie pour laquelle les sucs gastriques acides remontent de l’estomac dans l’œsophage (<span class='italique'>reflux gastro-intestina</span>l) provoquant des brûlures d’estomac et des régurgitations,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles du foie parfois accompagnés d’un jaunissement de la peau (jaunisse),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gonflement de la peau autour du visage et de la gorge pouvant entraîner une difficulté à respirer (angioedème), plaques marrons sur la peau (érythème cutané /polymorphe) ; tâches ou points violacés sur la peau (purpura vasculaire), décoloration de la peau, en particulier sur le visage ou le cou (appelée masque de grossesse) qui peut persister à l’arrêt du médicament (chloasma); réactions allergiques cutanées,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>incontinence urinaire, symptômes de type cystite,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maladie fibrokystique du sein.</p>
+<p class=AmmCorpsTexteGras>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="http://www.ansm.sante.fr">www.ansm.sante.fr</a><span class='souligne'><span style='color: blue'>.</span></span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER OROMONE 2 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur la boîte après EXP. La date de péremption fait référence au dernier jour de ce mois</span>.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament si vous remarquez des signes visibles de détérioration.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient OROMONE 2 mg, comprimé pelliculé</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition>&#946;-estradiol hémihydraté........................................................................................................ 2,06 mg</p>
+<p class=AmmComposition>Quantité correspondant à &#946;-estradiol.................................................................................... 2,00 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un comprimé pelliculé.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont :</p>
+<p class=AmmCorpsTexte>Le lactose monohydraté, l'hypromellose, l'amidon de maïs, la silice colloïdale anhydre, le stéarate de magnésium.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Pelliculage</span> : OPADRY OY-6957 rose (hypromellose, talc, dioxyde de titane (E171), macrogol 400, oxyde de fer rouge (E172), oxyde de fer noir (E172), oxyde de fer jaune (E172)).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que OROMONE 2 mg, comprimé pelliculé et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279030">Ce médicament se présente sous forme de comprimés pelliculés, rouge-brique, ronds, biconvexes, gravés &quot;379&quot; sur une face. Boîte de 28.</a></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279031">MYLAN MEDICAL SAS</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>40-44 RUE WASHINGTON</p>
+<p class=AmmCorpsTexte>75008 PARIS</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279032"><span lang=EN-US>MYLAN MEDICAL SAS</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>40-44 RUE WASHINGTON</span></p>
+<p class=AmmCorpsTexte><span lang=EN-US>75008 PARIS</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033"><span lang=EN-US>ABBOTT BIOLOGICALS B.V.</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>VEERWEG 12</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>8121 AA OLST</span></p>
+<p class=AmmCorpsTexte>PAYS-BAS</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

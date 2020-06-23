@@ -1,0 +1,455 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - NOLVADEX 20 mg, comprimé enrobé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, NOLVADEX 20 mg, comprimé enrobé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-60328432">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 01/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=60328432' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=60328432&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=60328432&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">NOLVADEX 20 mg, comprimé enrobé  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 19/03/2019</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmDenomination align=center style='text-align:center'><a name="_Toc142278999">NOLVADEX 20 mg, comprimé enrobé</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Tamoxifène</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que NOLVADEX 20 mg, comprimé enrobé et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre NOLVADEX 20 mg, comprimé enrobé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre NOLVADEX 20 mg, comprimé enrobé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver NOLVADEX 20 mg, comprimé enrobé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE NOLVADEX 20 mg, comprimé enrobé ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique : ANTIESTROGENE - code ATC : L02BA01 (L : Antinéoplasique et Immunomodulateur).</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279004">Ce médicament est indiqué dans certaines maladies de la glande mammaire.</a></p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE NOLVADEX 20 mg, comprimé enrobé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais NOLVADEX 20 mg, comprimé enrobé :</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique à la substance active ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes enceinte.</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous allaitez.</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>EN CAS DE DOUTE, IL EST INDISPENSABLE DE DEMANDER L'AVIS DE VOTRE MEDECIN OU DE VOTRE PHARMACIEN.</span></p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin ou pharmacien avant de prendre NOLVADEX 20 mg, comprimé enrobé. </span></p>
+<p class=AmmCorpsTexte>En raison de la présence de lactose, ce médicament ne doit pas être utilisé en cas de galactosémie, de syndrome de malabsorption du glucose et du galactose ou de déficit en lactase (maladies métaboliques rares).</p>
+<p class=AmmCorpsTexte>Le traitement nécessite une surveillance clinique et biologique régulière.</p>
+<p class=AmmCorpsTexte>Prévenir votre médecin si vous avez une hypertriglycéridémie (augmentation des triglycérides).</p>
+<p class=AmmCorpsTexte>En cas de saignement vaginal anormal, il importe de consulter au plus vite votre médecin.</p>
+<p class=AmmCorpsTexte>En cas de doute ne pas hésiter à demander l'avis de votre médecin ou de votre pharmacien.</p>
+<p class=AmmCorpsTexte>En cas de microchirurgie reconstructive retardée (prélèvement de votre propre tissu pour modeler un nouveau sein des semaines à des années après la première opération mammaire), des complications au niveau du lambeau de reconstruction ont été décrites.</p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>La sécurité et l’efficacité de Nolvadex n’ayant pas été établies chez les enfants et les adolescents de moins de 18 ans, son utilisation n’est pas recommandée dans ce groupe de patients.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et NOLVADEX 20 mg, comprimé enrobé</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexte>En particulier vous devez informer votre médecin si vous prenez :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>paroxétine, fluoxétine (antidépresseurs),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>bupropion (antidépresseur ou aide à l’arrêt du tabac),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>quinidine (par ex utilisé dans le traitement des arythmies cardiaques),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cinacalcet (pour le traitement des troubles de la glande parathyroïdienne),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>terbinafine (pour le traitement de certaines infections provoquées par des champignons).</p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexteGras>NOLVADEX 20 mg, comprimé enrobé avec des aliments, boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse, allaitement et fertilité</a></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE style='font-weight:normal'>L'utilisation de ce médicament est contre-indiquée pendant la grossesse.</span></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE style='font-weight:normal'>Si vous découvrez que vous êtes enceinte pendant le traitement, consultez rapidement votre médecin : lui seul pourra adapter le traitement à votre état.</span></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE style='font-weight:normal'>L'allaitement est contre-indiqué.</span></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE style='font-weight:normal'>Demandez conseil à votre médecin ou à votre pharmacien avant de prendre tout médicament.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Les risques de troubles visuels et de fatigue peuvent rendre dangereuse la conduite automobile ou l'utilisation de certaines machines.</p>
+<p class=AmmCorpsTexteGras>NOLVADEX 20 mg, comprimé enrobé contient du lactose.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE NOLVADEX 20 mg, comprimé enrobé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmAnnexeTitre3><a name="_Toc142279021">Posologie</a></p>
+<p class=AmmCorpsTexte>Il importe de se conformer strictement à celle que vous a prescrite votre médecin.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale</p>
+<p class=AmmAnnexeTitre3>Fréquence d'administration</p>
+<p class=AmmCorpsTexte>Le traitement est administré, selon les cas, en une ou deux fois par jour.</p>
+<p class=AmmAnnexeTitre3>Durée du traitement</p>
+<p class=AmmCorpsTexte>Elle est variable d'une patiente à l'autre et est déterminée par votre médecin traitant.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre NOLVADEX 20 mg, comprimé enrobé :</p>
+<p class=AmmCorpsTexte>Prévenez votre médecin et, de toutes façons, continuez le traitement comme précédemment.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexte>Chez toutes les femmes, quel que soit leur âge, peuvent survenir :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des anomalies de l'utérus (cancer de l'utérus dont cancer de l'endomètre) pouvant se manifester par des saignements qui doivent amener à consulter rapidement,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des accidents thrombo-emboliques (formation de caillots au niveau des vaisseaux sanguins),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des troubles visuels,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>des affections et des lésions inflammatoires du nerf optique, et dans de très rares cas une cécité,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des troubles du goût, des engourdissements ou des fourmillements de la peau,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des bouffées de chaleur, des démangeaisons au niveau de la vulve,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des nausées qui cèdent en fractionnant les prises,<span style='letter-spacing:-.15pt'> de la diarrhée et de la constipation</span>,<span class='gras'><span class='italique'><span style='letter-spacing:-.15pt'> </span></span></span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des pertes gynécologiques peu importantes,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des éruptions cutanées parfois sévères, des réactions allergiques, une chute des cheveux,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des maux de tête,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des modifications biologiques portant sur <span style='letter-spacing: -.15pt'>les enzymes du foie,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>e</span>n cas de microchirurgie reconstructive retardée, des complications au niveau du lambeau de reconstruction ont été décrites,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>une diminution du nombre de plaquettes (thrombocytopénie),</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>une diminution du nombre de globules blancs (leucopénie) ou une diminution spécifique d’un type de globules blancs (neutropénie et agranulocytose),</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>une diminution du nombre des globules rouges (anémie),<span class='gras'> </span></span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>une inflammation des petits vaisseaux sanguins au niveau de la peau conduisant à des éruptions cutanées</span>,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des douleurs au niveau du sein et très rarement des œdèmes,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des cas d'hypertriglycéridémie (augmentation des triglycérides) ou de pancréatite (inflammation du pancréas),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>des modifications des tests de la fonction hépatique. Occasionnellement des troubles hépatiques plus sévères ont conduit au décès. Ces troubles hépatiques incluent inflammation du foie, cirrhose, lésions hépatocellulaires, gonflement du foie, diminution de la formation de la bile et insuffisance hépatique. Ces symptômes peuvent inclure une sensation générale de malaise, avec ou sans jaunisse (coloration jaune de la peau et de l’œil),</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>une maladie du poumon,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des douleurs articulaires et/ou musculaires,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des masses non cancéreuses au niveau de la muqueuse vaginale (appelées polypes vaginaux),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>une inflammation de la peau caractérisée par une éruption cutanée ou un érythème très souvent au niveau des zones exposées au soleil (affection appelée lupus cutané érythémateux),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>une affection de la peau caractérisée par des cloques au niveau des zones exposées au soleil et liée à une augmentation de la production par le foie d’un groupe spécial de pigments cellulaires (appelés porphyrines),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>des crampes dans les jambes,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>faiblesse ou paralysie soudaines dans les bras ou les jambes, difficulté soudaine à parler, marcher, réfléchir ou saisir les objets en raison de la diminution de l’irrigation en sang des vaisseaux cérébraux. Ces symptômes peuvent être les signes d’une attaque,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>des kystes de l’ovaire,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.15pt'>fatigue,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;letter-spacing:-.15pt'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactivation de réactions radiques – éruption cutanée incluant rougeur, gonflement et/ou ampoule au niveau de la peau après avoir reçu une radiothérapie.</p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt;text-indent:0cm'>Si vous n'êtes pas ménopausée :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des troubles des règles peuvent se produire dans certains cas, on peut même observer l'arrêt des règles,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des kystes de l'ovaire et/ou des saignements utérins qui doivent amener à consulter rapidement.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Ces troubles doivent toujours être signalés au médecin qui a en charge le traitement.</p>
+<p class=AmmCorpsTexteGras>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou à votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet:<span style='color:red'> </span><a href="http://www.signalement-sante.gouv.fr">www.signalement-sante.gouv.fr</a></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER NOLVADEX 20 mg, comprimé enrobé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur l’emballage après EXP. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>A conserver à une température inférieure à 25°C et à l'abri de la lumière.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient NOLVADEX 20 mg, comprimé enrobé</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition>Citrate de tamoxifène .......................................................................................................... 30,4 mg</p>
+<p class=AmmComposition>Quantité correspondante en tamoxifène base........................................................................ 20,0 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un comprime enrobé.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </p>
+<p class=AmmCorpsTexte>Lactose monohydraté, amidon de maïs, gélatine, carboxyméthylcellulose sodique réticulée, stéarate de magnésium, méthylhydroxypropylcellulose, polyethylèneglycol 300, dioxyde de titane (E 171).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que NOLVADEX 20 mg, comprimé enrobé et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de comprimé enrobé. Boîte de 30, 90 ou 100 comprimés.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031"><span class='gras'>ASTRAZENECA</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>TOUR CARPE DIEM</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>31 PLACE DES COROLLES</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92400 COURBEVOIE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279032"><span class='gras'>ASTRAZENECA</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>TOUR CARPE DIEM</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>31 PLACE DES COROLLES</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92400 COURBEVOIE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033">AVARA REIMS PHARMACEUTICAL SERVICES</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>PARC INDUSTRIEL DE LA POMPELLE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>CHEMIN DE VRILLY</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>51 110 REIMS </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>OU</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>ASTRAZENECA AB</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>GÄRTUNAVÄGEN</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>SE-151 85 SÖDERTÄLJE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>SUEDE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

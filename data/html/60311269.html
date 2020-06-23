@@ -1,0 +1,509 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - VALACICLOVIR MYLAN 500 mg, comprimé pelliculé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, VALACICLOVIR MYLAN 500 mg, comprimé pelliculé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-60311269">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 01/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=60311269' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=60311269&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=60311269&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">VALACICLOVIR MYLAN 500 mg, comprimé pelliculé  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 26/06/2018</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">VALACICLOVIR MYLAN 500 mg, comprimé pelliculé</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Chlorhydrate de valaciclovir</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin, votre pharmacien ou votre infirmier/ère.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><a name="_Toc142279001">1. Qu'est-ce que VALACICLOVIR MYLAN 500 mg, comprimé pelliculé et dans quels cas est-il utilisé ?</a><span style='font-size:11.0pt; font-family:"Times New Roman",serif'> </span></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre VALACICLOVIR MYLAN 500 mg, comprimé pelliculé ?<span style='font-size:11.0pt;font-family:"Times New Roman",serif'> </span></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre VALACICLOVIR MYLAN 500 mg, comprimé pelliculé ?<span style='font-size: 11.0pt;font-family:"Times New Roman",serif'> </span></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?<span style='font-size:11.0pt; font-family:"Times New Roman",serif'> </span></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver VALACICLOVIR MYLAN 500 mg, comprimé pelliculé ?<span style='font-size:11.0pt;font-family:"Times New Roman",serif'> </span></p>
+<p class=AmmCorpsTexte style='margin-left:14.2pt;text-indent:-14.2pt'>6. Contenu de l’emballage et autres informations.</p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE VALACICLOVIR MYLAN 500 mg, comprimé pelliculé ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique - code ATC : Nucléosides et nucléotides, inhibiteurs de la transcriptase inverse exclus - J05AB11.</a></p>
+<p class=AmmCorpsTexte>ANTIVIRAL A USAGE SYSTEMIQUE</p>
+<p class=AmmCorpsTexte><a name="_Toc142279004">VALACICLOVIR MYLAN appartient à la famille des médicaments appelés antiviraux. Son mécanisme d'action consiste à détruire ou arrêter la croissance des virus appelés <span class='italique'>Herpes simplex</span> (HSV), Varicelle-Zona (VZV) et Cytomégalovirus (CMV).</a></p>
+<p class=AmmCorpsTexte>VALACICLOVIR MYLAN peut être utilisé pour :</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>traiter le zona (chez l'adulte),</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>traiter les infections cutanées à HSV et l'herpès génital (chez l'adulte et l'adolescent de plus de 12 ans). Il est également utilisé pour aider à prévenir toute récurrence de ces infections,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>traiter les boutons de fièvre (chez l'adulte et l'adolescent de plus de 12 ans),</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>prévenir toute infection à CMV après une greffe d'organe (chez l'adulte et l'adolescent de plus de 12 ans),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>traiter et prévenir les infections de l'œil à HSV qui continuent à récidiver (chez l’adulte et l’adolescent de plus de 12 ans). </p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE VALACICLOVIR MYLAN 500 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais </a><a name=Ann3bQuestceque>VALACICLOVIR MYLAN 500 mg, comprimé pelliculé</a> :</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><a name="_Toc142279007"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique au valaciclovir, ou à l'aciclovir ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6.</a></p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexte>Ne prenez pas VALACICLOVIR MYLAN si vous êtes dans ce cas. Si vous avez un doute, parlez-en à votre médecin ou à votre pharmacien avant de commencer votre traitement avec VALACICLOVIR MYLAN.</p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>Avertissements et précautions</span></p>
+<p class=AmmCorpsTexte><a name="_Toc142279008">Adressez-vous à votre médecin, pharmacien ou votre infirmier/ère avant de prendre VALACICLOVIR MYLAN si :</a></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous souffrez de problèmes rénaux,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous souffrez de problèmes hépatiques,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez plus de 65 ans,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous êtes immunodéprimé(e).</p>
+<p class=AmmCorpsTexte>En cas de doute, parlez-en à votre médecin ou à votre pharmacien avant de commencer votre traitement avec VALACICLOVIR MYLAN.</p>
+<p class=AmmAnnexeTitre3>Prévenir la transmission de l'herpès génital à d'autres personnes</p>
+<p class=AmmCorpsTexte>Si VALACICLOVIR MYLAN vous a été prescrit pour traiter ou prévenir l'herpès génital, ou si vous avez des antécédents d'herpès génital, il convient d'avoir des rapports sexuels protégés, notamment par l'utilisation de préservatifs. Ces mesures sont importantes pour éviter la transmission d'infections à d'autres personnes. Vous devez vous abstenir de tout rapport sexuel en cas d'apparition de boutons ou de vésicules sur vos organes génitaux.</p>
+<p class=AmmCorpsTexteGras>Enfants</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Autres médicaments et VALACICLOVIR MYLAN 500 mg, comprimé pelliculé</p>
+<p class=AmmCorpsTexte><a name="_Toc142279009">Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament, y compris un médicament obtenu sans ordonnance ou à base de plantes.</a></p>
+<p class=AmmCorpsTexte>Veuillez informer votre médecin ou votre pharmacien de la prise de tout autre médicament agissant sur les reins, comme par exemple les aminosides, les organoplatines, les produits de contraste iodés, le méthotrexate, la pentamidine, le foscarnet, la ciclosporine, le tacrolimus, la cimétidine et le probénécide.</p>
+<p class=AmmCorpsTexte>Si vous prenez VALACICLOVIR MYLAN pour traiter un zona ou après une greffe d'organe, signalez toujours à votre médecin ou à votre pharmacien les autres médicaments que vous prenez.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>VALACICLOVIR MYLAN 500 mg, comprimé pelliculé avec des aliments, boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012"><span lang=FR-BE>Grossesse et allaitement</span></a></p>
+<p class=AmmCorpsTexte>VALACICLOVIR MYLAN est habituellement déconseillé pendant la grossesse. Si vous êtes enceinte ou si vous pensez l'être, ou si vous envisagez une grossesse, n'utilisez pas VALACICLOVIR MYLAN sans en parler à votre médecin. Votre médecin évaluera le bénéfice pour vous par rapport au risque pour votre enfant si vous prenez VALACICLOVIR MYLAN pendant votre grossesse ou si vous allaitez<span lang=FR-BE>.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte><a name="_Toc142279014">VALACICLOVIR MYLAN peut entraîner des effets indésirables pouvant affecter votre aptitude à conduire.</a></p>
+<p class=AmmCorpsTexte>Ne conduisez pas ou n'utilisez pas de machines à moins que vous ne soyez sûr de ne pas être concerné.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>VALACICLOVIR MYLAN 500 mg, comprimé pelliculé contient :</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE VALACICLOVIR MYLAN 500 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021"></a><a name="_Toc142279017">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin ou pharmacien. Respectez toujours la posologie indiquée par votre médecin. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmCorpsTexte>La dose que vous devrez prendre dépendra de la pathologie pour laquelle le médecin vous a prescrit VALACICLOVIR MYLAN. Vous pourrez en parler à votre médecin.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142279018">Posologie</a></p>
+<p class=AmmCorpsTexte><span class='souligne'>Traitement du zona</span></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose habituelle est de 1000 mg (2 comprimés de 500 mg) 3 fois par jour.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devrez prendre VALACICLOVIR MYLAN pendant 7 jours.</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;page-break-after:avoid'><span class='souligne'>Traitement des boutons de fièvre</span></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose habituelle est de 2000 mg (4 comprimés de 500 mg) 2 fois par jour.</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La seconde dose devra être prise 12 heures (pas plus tôt que 6 heures) après la première dose.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous ne devrez prendre VALACICLOVIR MYLAN qu'une journée (deux doses).</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;page-break-after:avoid'><span class='souligne'>Traitement des infections cutanées à HSV et de l'herpès génital</span></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose habituelle est de 500 mg (1 comprimé de 500 mg) 2 fois par jour.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En cas de primo-infection, vous devrez prendre VALACICLOVIR MYLAN pendant 5 jours ou jusqu'à 10 jours si votre médecin vous le prescrit. En cas d'infections récurrentes, la durée du traitement est normalement de 3 à 5 jours.</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;page-break-after:avoid'><span class='souligne'>Aide à la prévention des récurrences des infections à HSV</span></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose habituelle est d'un comprimé de 500 mg 1 fois par jour.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devrez prendre VALACICLOVIR MYLAN jusqu'à ce que votre médecin vous dise d'arrêter le traitement.</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;page-break-after:avoid'><span class='souligne'>Arrêter l'infection à CMV (Cytomégalovirus)</span></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose habituelle est de 2000 mg (4 comprimés de 500 mg) 4 fois par jour.</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devrez respecter un intervalle d'environ 6 heures entre chaque prise.</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En général, vous commencerez votre traitement avec VALACICLOVIR MYLAN dès que possible après la transplantation.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devrez prendre VALACICLOVIR MYLAN pendant 90 jours environ après la transplantation et ce, jusqu'à ce que votre médecin vous dise d'arrêter le traitement.</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;page-break-after:avoid'><span class='souligne'>Votre médecin peut ajuster votre dose de VALACICLOVIR MYLAN si :</span></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez plus de 65 ans,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous êtes immunodéprimé(e),</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous présentez des problèmes rénaux.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous êtes dans l'un de ces 3 cas, parlez-en à votre médecin avant de prendre VALACICLOVIR MYLAN.</p>
+<p class=AmmCorpsTexteGras>Comment prendre VALACICLOVIR MYLAN</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ce médicament se prend par voie orale.</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Avalez les comprimés entiers avec un verre d'eau.</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prenez VALACICLOVIR MYLAN chaque jour à la même heure.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prenez VALACICLOVIR MYLAN en respectant bien les instructions de votre médecin ou de votre pharmacien.</p>
+<p class=AmmCorpsTexteGras style='margin-top:12.0pt;page-break-after:avoid'>Patients de plus de 65 ans ou présentant des troubles rénaux</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Pendant toute la durée de votre traitement avec VALACICLOVIR MYLAN, il est très important de vous hydrater régulièrement</span> tout au long de la journée. Cela permettra de réduire les effets indésirables du médicament qui peuvent affecter la fonction rénale ou le système nerveux. Votre médecin vous suivra attentivement afin de détecter d'éventuels signes de ces effets. Les effets indésirables affectant le système nerveux peuvent inclure une sensation de confusion, ou d'agitation, de somnolence inhabituelle.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Si vous avez pris plus de VALACICLOVIR MYLAN 500 mg, comprimé pelliculé que vous n’auriez dû :</p>
+<p class=AmmCorpsTexte><a name="_Toc142279019">Habituellement, VALACICLOVIR MYLAN n'est pas nocif, sauf en cas de surdosages répétés sur plusieurs jours. Si vous avez pris plus de comprimés que vous n'auriez dû, vous pouvez avoir des nausées, des vomissements, des problèmes au niveau des reins, une confusion, une agitation, vous pouvez ressentir une baisse de la vigilance, voir des choses inexistantes ou perdre connaissance. Consultez immédiatement votre médecin ou votre pharmacien et amenez-lui la boîte de médicaments</a></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Si vous oubliez de prendre VALACICLOVIR MYLAN 500 mg, comprimé pelliculé :</p>
+<p class=AmmCorpsTexte><a name="_Toc142279020">En cas d'oubli, prenez VALACICLOVIR MYLAN dès que vous vous en apercevez. Cependant, si vous constatez votre oubli alors qu'il est presque l'heure de prendre votre dose suivante, ne prenez pas la dose oubliée.</a></p>
+<p class=AmmCorpsTexte>Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Si vous arrêtez de prendre VALACICLOVIR MYLAN 500 mg, comprimé pelliculé :</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin, à votre pharmacien ou à votre infirmier/ère.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexte>Les effets indésirables suivants peuvent survenir avec ce médicament :</p>
+<p class=AmmCorpsTexteGras>Effets nécessitant votre vigilance</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réactions allergiques graves (<span class='italique'>anaphylaxie</span>). Celles-ci sont rares chez les personnes prenant VALACICLOVIR MYLAN.</p>
+<p class=AmmCorpsTexte>Evolution rapide des symptômes parmi lesquels :</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>rougeurs, éruption cutanée s'accompagnant de démangeaisons,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gonflement des lèvres, du visage, du cou et de la gorge entraînant des difficultés respiratoires (<span class='italique'>angiœdème</span>),</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>chute de la pression sanguine conduisant à un collapsus.</p>
+<p class=AmmCorpsTexte>En cas de réaction allergique, arrêtez de prendre VALACICLOVIR MYLAN et consultez immédiatement un médecin.</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;page-break-after:avoid'><span class=AmmCorpsTexteGrasCar>Très fréquents</span> <span class=AmmCorpsTexteGrasCar>(concernant plus de 1 personne sur 10)</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maux de tête.</p>
+<p class=AmmCorpsTexteGras>Fréquents (concernant jusqu'à 1 personne sur 10)</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>nausées,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensation de vertige,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vomissements,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diarrhée,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réaction cutanée après exposition au soleil (<span class='italique'>photosensibilité</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruption cutanée, démangeaisons (<span class='italique'>prurit</span>). </p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Peu fréquents (concernant jusqu'à 1 personne sur 100)</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensation de confusion,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>voir ou entendre des choses inexistantes (<span class='italique'>hallucinations</span>),</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles de la conscience,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>tremblements,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensation d'agitation.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Ces effets indésirables affectant le système nerveux surviennent habituellement chez les patients présentant des troubles rénaux, les patients âgés ou les patients ayant subi une greffe d'organe et prenant de fortes doses de VALACICLOVIR MYLAN de 8 g ou plus par jour. Généralement, leur état s'améliore dès l'arrêt du traitement ou après diminution de la dose.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Autres effets indésirables peu fréquents</span></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt; page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>essoufflement (<span class='italique'>dyspnée</span>),</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt; page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inconfort abdominal,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruption cutanée, parfois accompagnée de démangeaisons, éruption de type urticaire,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleur dans le bas du dos (<span class='italique'>douleur rénale</span>),</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sang dans les urines (<span class='italique'>hématurie</span>).</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;page-break-after:avoid'><span class='souligne'>Effets indésirables peu fréquents pouvant être révélés par des analyses sanguines :</span></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réduction du nombre de globules blancs (<span class='italique'>leucopénie</span>),</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réduction du nombre de <span class='italique'>plaquettes dans le sang</span>, cellules permettant au sang de coaguler (<span class='italique'>thrombopénie</span>),</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>augmentation des substances produites par le foie.</p>
+<p class=AmmCorpsTexteGras>Rares (concernant jusqu'à 1 personne sur 1000)</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles de la marche et manque de coordination (<span class='italique'>ataxie</span>),</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>lenteur de la parole et troubles de l’élocution (<span class='italique'>dysarthrie</span>),</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>convulsions,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diminution de la fonction cérébrale (<span class='italique'>encéphalopathie</span>),</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>perte de conscience (<span class='italique'>coma</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pensée confuse ou incohérente (délire). </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Ces effets indésirables affectant le système nerveux surviennent habituellement chez les patients présentant des troubles rénaux, les patients âgés ou les patients ayant subi une greffe d'organe et prenant de fortes doses de VALACICLOVIR MYLAN de 8 g ou plus par jour. Généralement, leur état s'améliore dès l'arrêt du traitement ou après diminution de la dose.</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;page-break-after:avoid'><span class='souligne'>Autres effets indésirables rares :</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles rénaux au cours desquels vous n'urinez pas ou peu.</p>
+<p class=AmmCorpsTexteGras style='margin-top:12.0pt'>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou à votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet : <a href="http://www.ansm.sante.fr"><span style='color:windowtext;text-decoration:none'>www.ansm.sante.fr</span></a></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER VALACICLOVIR MYLAN 500 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur la boîte</span><span lang=FR-BE> </span><span lang=FR-BE>après EXP. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte><a name="_Toc142279025">Pas de précautions particulières de conservation.</a></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout ou avec les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient VALACICLOVIR MYLAN 500 mg, comprimé pelliculé</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><a name="_Toc142279028"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</a></p>
+<p class=AmmComposition style='margin-left:18.0pt;page-break-after:avoid'>Valaciclovir .................................................................................................................. 500 mg</p>
+<p class=AmmComposition style='margin-left:18.0pt;page-break-after:avoid'>Sous forme de chlorhydrate de valaciclovir</p>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'>Pour un comprimé pelliculé.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont :</p>
+<p class=AmmAnnexeTitre3 style='margin-left:18.0pt'><span style='font-weight: normal'>Noyau du comprimé :</span></p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt'>Povidone K 90, cellulose microcristalline, crospovidone, stéarate de magnésium, Opadry blanc YS-1R-7003.</p>
+<p class=AmmAnnexeTitre3 style='margin-left:18.0pt'><span style='font-weight: normal'>Pelliculage : </span></p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt'>Opadry blanc YS-1R-7003 (HPMC 2910/ Hypromellose 3cP, HPMC 2910/ Hypromellose 5cP Macrogol 400, dioxyde de titane (E171), polysorbate 80).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que VALACICLOVIR MYLAN 500 mg, comprimé pelliculé et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279029">Ce médicament se présente sous forme de comprimés pelliculés. Boîte de 10, 30, 42, 112 ou 126.</a></p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées. </p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031">MYLAN S.A.S</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>117, ALLEE DES PARCS</p>
+<p class=AmmCorpsTexte>69800 SAINT-PRIEST</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279032">MYLAN S.A.S</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>117, ALLEE DES PARCS</p>
+<p class=AmmCorpsTexte>69800 SAINT-PRIEST</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033">MYLAN S.A.S.</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ZAC DES GAULNES</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>360 AVENUE HENRI SCHNEIDER</p>
+<p class=AmmCorpsTexte>69330 MEYZIEU</p>
+<p class=AmmCorpsTexte>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>MYLAN S.A.S.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>117 ALLEE DES PARCS</p>
+<p class=AmmCorpsTexte>69800 SAINT PRIEST</p>
+<p class=AmmCorpsTexte>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>MCDERMOTT LABORATORIES LTD - T/A GERARD LABORATORIES</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>35/36 BALDOYLE INDUSTRIAL ESTATE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>GRANGE ROAD</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>DUBLIN 13</p>
+<p class=AmmCorpsTexte>IRLANDE</p>
+<p class=AmmCorpsTexte>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>MYLAN HUNGARY LTD</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>MYLAN UTCA 1 </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>2900 KOMAROM </p>
+<p class=AmmCorpsTexte>HONGRIE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279034">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279038">[à compléter ultérieurement par le titulaire]Autres</a></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

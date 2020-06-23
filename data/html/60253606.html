@@ -1,0 +1,444 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - CALYPTOL INHALANT, émulsion pour inhalation par fumigation  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, CALYPTOL INHALANT, émulsion pour inhalation par fumigation "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-60253606">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 01/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bInfoSupp");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=60253606' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=60253606&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=60253606&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">CALYPTOL INHALANT, émulsion pour inhalation par fumigation  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 13/10/2016</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmDenomination align=center style='text-align:center'>CALYPTOL INHALANT, émulsion pour inhalation par fumigation</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Veuillez lire attentivement cette notice avant d'utiliser ce médicament. Elle contient des informations importantes pour votre traitement.</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ce médicament peut être utilisé en automédication c'est à dire utilisé sans consultation ni prescription d'un médecin.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si les symptômes persistent, s'ils s'aggravent ou si de nouveaux symptômes apparaissent, demandez l'avis de votre pharmacien ou de votre médecin.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Cette notice est faite pour vous aider à bien utiliser ce médicament. Gardez là, vous pourriez avoir besoin de la relire.</p>
+<p class=AmmCorpsTexte>NE LAISSEZ PAS CE MEDICAMENT A LA PORTEE DES ENFANTS.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Sommaire notice</a></p>
+<p class=AmmAnnexeTitre3>Dans cette notice :</p>
+<p class=AmmCorpsTexte>1. QU'EST-CE QUE CALYPTOL INHALANT, émulsion pour inhalation par fumigation ET DANS QUELS CAS EST-IL UTILISE ?</p>
+<p class=AmmCorpsTexte>2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT D'UTILISER CALYPTOL INHALANT, émulsion pour inhalation par fumigation ?</p>
+<p class=AmmCorpsTexte>3. COMMENT UTILISER CALYPTOL INHALANT, émulsion pour inhalation par fumigation ?</p>
+<p class=AmmCorpsTexte>4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</p>
+<p class=AmmCorpsTexte>5. COMMENT CONSERVER CALYPTOL INHALANT, émulsion pour inhalation par fumigation ?</p>
+<p class=AmmCorpsTexte>6. INFORMATIONS SUPPLEMENTAIRES</p>
+<h2><a name="Ann3bQuestceque">1. QU'EST-CE QUE CALYPTOL INHALANT, émulsion pour inhalation par fumigation ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bClassPharma">Classe pharmacothérapeutique</a></p>
+<p class=AmmCorpsTexte>A VISEE ANTISEPTIQUE ET DECONGESTIONNANT.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bIndicTherap">Indications thérapeutiques</a></p>
+<p class=AmmCorpsTexte>Ce médicament est utilisé en fumigation comme décongestionnant, au cours des affections respiratoires banales (rhumes, rhinites, rhinopharyngites), chez l'adulte et l'enfant de plus de 12 ans.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT D'UTILISER CALYPTOL INHALANT, émulsion pour inhalation par fumigation ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bInfoAvantPrise">Liste des informations nécessaires avant la prise du médicament</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bContreIndic">Contre-indications</a></p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='gras'>N'utilisez jamais CALYPTOL INHALANT, émulsion pour inhalation par fumigation:</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hypersensibilité à l'eucalyptol (cinéole) ou à l'un des composants.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>chez l'enfant ayant des antécédents de convulsions (fébriles ou non),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>chez l'enfant de moins de 12 ans.</p>
+<p class=AmmCorpsTexte><span class='italique'>EN CAS DE DOUTE, IL EST INDISPENSABLE DE DEMANDER L'AVIS DE VOTRE MEDECIN OU DE VOTRE PHARMACIEN.</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bMisesEnGarde">Précautions d'emploi ; mises en garde spéciales</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Faites attention avec CALYPTOL INHALANT, émulsion pour inhalation par fumigation:</span></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Mises en garde spéciales</span></span></p>
+<p class=AmmCorpsTexte>Respecter les conseils d'utilisation et les posologies, en particulier: ne jamais dépasser les doses recommandées.</p>
+<p class=AmmCorpsTexte>En cas de survenue de fièvre, d'expectorations (crachats) purulentes, comme en cas d'aggravation ou d'absence d'amélioration au bout de 5 jours: <span class='gras'><span class='italique'>CONSULTEZ VOTRE MEDECIN.</span></span></p>
+<p class=AmmCorpsTexte><span class='italique'>EN CAS DE DOUTE, IL EST INDISPENSABLE DE DEMANDER L'AVIS DE VOTRE MEDECIN OU DE VOTRE PHARMACIEN.</span></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Précautions d'emploi</span></span></p>
+<p class=AmmCorpsTexte>En cas d'épilepsie ancienne ou récente, DEMANDEZ CONSEIL A VOTRE MEDECIN. Ne pas avaler.</p>
+<p class=AmmCorpsTexte><span class='italique'>EN CAS DE DOUTE NE PAS HESITER A DEMANDER L'AVIS DE VOTRE MEDECIN OU DE VOTRE PHARMACIEN.</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInteractions">Interactions avec d'autres médicaments</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Prise ou utilisation d'autres médicaments</span></p>
+<p class=AmmCorpsTexte>Si vous prenez ou avez pris récemment un autre médicament, y compris un médicament obtenu sans ordonnance, parlez-en à votre médecin ou à votre pharmacien.</p>
+<p class=AmmCorpsTexte><span class='italique'>AFIN D'EVITER D'EVENTUELLES INTERACTIONS ENTRE PLUSIEURS MEDICAMENTS, IL FAUT SIGNALER SYSTEMATIQUEMENT TOUT AUTRE TRAITEMENT EN COURS A VOTRE MEDECIN OU A VOTRE PHARMACIEN.</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInteractionsAliments">Interactions avec les aliments et les boissons</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bIntPhyto">Interactions avec les produits de phytothérapie ou thérapies alternatives</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bGrossAllait">Utilisation pendant la grossesse et l'allaitement</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Grossesse et allaitement</span></p>
+<p class=AmmCorpsTexte>Il est préférable de ne pas utiliser ce médicament pendant l'allaitement.</p>
+<p class=AmmCorpsTexte>D'une façon générale, il convient, au cours de la grossesse et de l'allaitement de toujours demander l'avis de votre médecin ou de votre pharmacien avant d'utiliser un médicament.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSportifs">Sportifs</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bConduite">Effets sur l'aptitude à conduire des véhicules ou à utiliser des machines</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bListeExcipientsNotoires">Liste des excipients à effet notoire</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT UTILISER CALYPTOL INHALANT, émulsion pour inhalation par fumigation ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucBonUsage">Instructions pour un bon usage</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bPosologie">Posologie, Mode et/ou voie(s) d'administration, Fréquence d'administration et Durée du traitement</a></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Posologie</span></span></p>
+<p class=AmmCorpsTexte><span class='gras'>Réservé à l'adulte et à l'enfant de plus de 12 ans.</span></p>
+<p class=AmmCorpsTexte><span class='souligne'>1 à 3 inhalations par jour:</span> verser le contenu d'une ampoule dans un bol d'eau très chaude, mais non bouillante, et inhaler les vapeurs.</p>
+<p class=AmmCorpsTexte>NE JAMAIS CHAUFFER OU RECHAUFFER APRES MELANGE.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Mode et voie d'administration</span></span></p>
+<p class=AmmCorpsTexte>Voie inhalée stricte par fumigation.</p>
+<p class=AmmCorpsTexte>Ne pas avaler.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Durée du traitement</span></span></p>
+<p class=AmmCorpsTexte>Le traitement ne dépassera pas 5 jours sans avis médical.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucSurdosage">Symptômes et instructions en cas de surdosage</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucOmission">Instructions en cas d'omission d'une ou de plusieurs doses</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Si vous oubliez d'utiliser CALYPTOL INHALANT, émulsion pour inhalation par fumigation:</span></p>
+<p class=AmmCorpsTexte>Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bRisqueSevrage">Risque de syndrome de sevrage</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bEffetsIndesirablesDesc">Description des effets indésirables</a></p>
+<p class=AmmCorpsTexte>Comme tous les médicaments, CALYPTOL INHALANT, émulsion pour inhalation par fumigation est susceptible d'avoir des effets indésirables, bien que tout le monde n'y soit pas sujet.</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='souligne'>En cas de non respect des doses préconisées:</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>risque de convulsions chez l'enfant,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>possibilité d'agitation, de confusion chez les sujets âgés.</p>
+<p class=AmmCorpsTexte>Si vous remarquez des effets indésirables non mentionnés dans cette notice, ou si certains effets indésirables deviennent graves, veuillez en informer votre médecin ou votre pharmacien.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER CALYPTOL INHALANT, émulsion pour inhalation par fumigation ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte>Tenir hors de la portée et de la vue des enfants.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDatePeremption">Date de péremption</a></p>
+<p class=AmmCorpsTexte>Ne pas utiliser CALYPTOL INHALANT, émulsion pour inhalation par fumigation après la date de péremption mentionnée sur le conditionnement extérieur. La date d'expiration fait référence au dernier jour du mois.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bCondConservation">Conditions de conservation</a></p>
+<p class=AmmCorpsTexte>Pas de précautions particulières de conservation.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDeterioration">Si nécessaire, mises en garde contre certains signes visibles de détérioration</a></p>
+<p class=AmmCorpsTexte>Les médicaments ne doivent pas être jetés au tout-à-l'égout ou avec les ordures ménagères. Demandez à votre pharmacien ce qu'il faut faire des médicaments inutilisés. Ces mesures permettront de protéger l'environnement.</p>
+<h2><a name="Ann3bInfoSupp">6. INFORMATIONS SUPPLEMENTAIRES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bListSubs">Liste complète des substances actives et des excipients</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279016">Que contient CALYPTOL INHALANT, émulsion pour inhalation par fumigation ?</a></p>
+<p class=AmmAnnexeTitre3>Les substances actives sont :</p>
+<p class=AmmComposition>Eucalyptol (cinéole).......................................................................................................................... 250 mg</p>
+<p class=AmmComposition>Alpha-terpinéol................................................................................................................................... 25 mg</p>
+<p class=AmmComposition>Huile essentielle de pin sylvestre......................................................................................................... 50 mg</p>
+<p class=AmmComposition>Huile essentielle de thym ................................................................................................................... 50 mg</p>
+<p class=AmmComposition>Huile essentielle de romarin................................................................................................................ 50 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour une ampoule de 5 ml</p>
+<p class=AmmAnnexeTitre3>Les autres composants sont :</p>
+<p class=AmmCorpsTexte>Hydroxystéarate de Macrogolglycérol, Polyoxyéthylène (4) monolaurate sorbitane, eau purifiée.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bFormePharma">Forme pharmaceutique et contenu</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Qu'est-ce que CALYPTOL INHALANT, émulsion pour inhalation par fumigation et contenu de l'emballage extérieur ?</span></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme d'émulsion pour inhalation par fumigation en ampoule, boîte de 10 ou de 100.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bNomAdrTitu">Nom et adresse du titulaire de l'autorisation de mise sur le marché et du titulaire de l'autorisation de fabrication responsable de la libération des lots, si différent</a></p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bTitu">Titulaire</a></p>
+<p class=AmmTitulaireNom>LABORATOIRES TECHNI-PHARMA</p>
+<p class=AmmTitulaireAdresse>7, RUE DE L'INDUSTRIE</p>
+<p class=AmmTitulaireAdresse>BP 717</p>
+<p class=AmmTitulaireAdresse>98014 MONACO CEDEX</p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bExpl">Exploitant</a></p>
+<p class=AmmTitulaireNom>LABORATOIRES TECHNI-PHARMA</p>
+<p class=AmmTitulaireAdresse>7 RUE DE L'INDUSTRIE</p>
+<p class=AmmTitulaireAdresse>98000 MONACO</p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bFab">Fabricant</a></p>
+<p class=AmmTitulaireNom>LABORATOIRES TECHNI-PHARMA</p>
+<p class=AmmTitulaireAdresse>7 RUE DE L'INDUSTRIE</p>
+<p class=AmmTitulaireAdresse>98000 MONACO</p>
+<p class=AmmCorpsTexte> </p>
+<p class="AmmNoticeTitre1"><a name="Ann3bNomAdrMed">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDateApprob">Date d’approbation de la notice</a></p>
+<p class=AmmCorpsTexte><span class='gras'>La dernière date à laquelle cette notice a été approuvée est le {date}.</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bAMMExcep">AMM sous circonstances exceptionnelles</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInternet">Informations Internet</a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’Afssaps (France).</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bProfSante">Informations réservées aux professionnels de santé</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bAutres">Autres</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

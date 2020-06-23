@@ -1,0 +1,476 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - RANITIDINE BIOGARAN 150 mg, comprimé effervescent  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, RANITIDINE BIOGARAN 150 mg, comprimé effervescent "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-60002504">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 01/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=60002504' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=60002504&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=60002504&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">RANITIDINE BIOGARAN 150 mg, comprimé effervescent  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 14/08/2019</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">RANITIDINE BIOGARAN 150 mg, comprimé effervescent</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Ranitidine</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien. </span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><a name="_Toc142279001">1. Qu'est-ce que </a><span style='background:white'>RANITIDINE BIOGARAN 150 mg, comprimé effervescent </span>et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre RANITIDINE BIOGARAN 150 mg, comprimé effervescent ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre RANITIDINE BIOGARAN 150 mg, comprimé effervescent ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver RANITIDINE BIOGARAN 150 mg, comprimé effervescent ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE RANITIDINE BIOAGRAN 150 mg, comprimé effervescent ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279004">Classe pharmacothérapeutique : ANTAGONISTE DES RECEPTEURS H2 - code ATC : A02BA02</a></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Adultes</span></span></p>
+<p class=AmmCorpsTexte>Ce médicament est indiqué pour le traitement d'un ulcère de l'estomac (duodénal ou gastrique), d'une oesophagite (inflammation de l’œsophage) liée à un reflux gastro-oesophagien ou d'un syndrome de Zollinger-Ellison (hypersécrétion acide de l'estomac).</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Enfants de 3 à 18 ans</span></span></p>
+<p class=AmmCorpsTexte>RANITIDINE BIOGARAN est utilisé pour :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cicatriser les ulcères de l’estomac ou du duodénum (partie de l’intestin dans laquelle se déverse le contenu de l’estomac),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>soulager et calmer les symptômes liés à la présence d’acidité dans l’œsophage ou à un excès d’acidité dans l’estomac. Ceci peut provoquer des douleurs et de l’inconfort qualifiés parfois d’indigestion, de dyspepsie ou de pyrosis.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE RANITIDINE BIOAGRAN 150 mg, comprimé effervescent ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279015"><span style='background:white'>Si votre médecin vous a informé(e) d’une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</span></a></p>
+<p class=AmmCorpsTexteGras>Ne prenez jamais RANITIDINE BIOGARAN 150 mg, comprimé effervescent :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique à la substance active ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6.</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas de phénylcétonurie (maladie héréditaire dépistée à la naissance), en raison de la présence d'aspartam.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:-7.1pt;text-indent:0cm'>En cas de doute, il est indispensable de demander l’avis de votre médecin ou de votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte>Adressez-vous à votre médecin ou pharmacien avant de prendre RANITIDINE BIOGARAN 150 mg, comprimé effervescent. </p>
+<p class=AmmCorpsTexte><span class=CSIchar><span style='border:none'><span style='border:none'>Avant</span></span></span> de prendre RANITIDINE BIOGARAN 150 mg, comprimé effervescent, votre médecin doit savoir :</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez un cancer de l’estomac.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez une maladie des reins, dans ce cas il est possible que votre médecin diminue votre dose de RANITIDINE BIOGARAN.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez une maladie rare appelée porphyrie aiguë.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez plus de 65 ans.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez une maladie des poumons.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes diabétique.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez des problèmes liés à votre système immunitaire.</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez déjà eu un ulcère de l’estomac et si vous prenez des médicaments de la famille des anti-inflammatoires non stéroïdiens (AINS).</p>
+<p class=AmmCorpsTexteGras>Enfants <a name="_Hlk518463100">et adolescents</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et RANITIDINE BIOGARAN 150 mg, comprimé effervescent </p>
+<p class=AmmCorpsTexte>Les antiacides peuvent diminuer l'effet de la ranitidine, il convient d'espacer les prises de 2 heures entre les deux médicaments.</p>
+<p class=AmmCorpsTexte>Si vous prenez de l’erlotinib, un médicament indiqué dans le traitement de certains types de cancer, consultez votre médecin avant de prendre Ranitidine Biogaran. La ranitidine contenue dans Ranitidine Biogaran peut diminuer le taux d’erlotinib dans votre sang et votre médecin devra peut-être ajuster votre traitement pendant la période où vous recevez de l’erlotinib. </p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament notamment du posaconazole.</p>
+<p class=AmmCorpsTexteGras>RANITIDINE BIOGARAN 150 mg, comprimé effervescent avec des aliments, boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse, allaitement et fertilité</a></p>
+<p class=AmmCorpsTexte>Ce médicament ne sera utilisé pendant la grossesse et l’allaitement que sur les conseils de votre médecin.</p>
+<p class=AmmCorpsTexte>Si vous découvrez que vous êtes enceinte pendant le traitement, consultez votre médecin car lui seul peut juger de la nécessité de le poursuivre.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament</span><span class='italique'>.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras>RANITIDINE BIOGARAN 150 mg, comprimé effervescent contient de l’aspartam (30 mg par comprimé)</p>
+<p class=AmmCorpsTexte>Ce médicament contient 30 mg d’aspartam par comprimé. L’aspartam contient une source de phénylalanine. Peut être dangereux pour les personnes atteintes de phénylcétonurie (PCU), une maladie génétique rare caractérisée par l’accumulation de phénylalanine ne pouvant être éliminée correctement.</p>
+<p class=AmmCorpsTexteGras>RANITIDINE BIOGARAN 150 mg, comprimé effervescent du sodium (327 mg par comprimé) </p>
+<p class=AmmCorpsTexte>Ce médicament contient 327 mg de sodium (composant principal du sel de cuisine/table) par comprimé. Cela équivaut à 16% de l’apport alimentaire quotidien maximal recommandé de sodium pour un adulte. A prendre en compte chez les patients contrôlant leur apport alimentaire en sodium. Parlez-en à votre médecin ou votre pharmacien si vous avez besoin de deux comprimés quotidiennement pendant une période prolongée, surtout si vous devez suivre un régime à faible teneur en sel (sodium).</p>
+<p class=AmmCorpsTexteGras>RANITIDINE BIOGARAN 150 mg, comprimé effervescent du sorbitol (1,14 mg par comprimé)</p>
+<p class=AmmCorpsTexte>Ce médicament contient 1,14 mg de sorbitol par comprimé.</p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexteGras>RANITIDINE BIOGARAN 150 mg, comprimé effervescent contient du benzoate de sodium (100 mg par comprimé)</p>
+<p class=AmmCorpsTexte>Ce médicament contient 100 mg de benzoate de sodium par comprimé.</p>
+<p class=AmmCorpsTexte>Veuillez consulter votre médecin si vous pensez être concerné par l’une de ces situations</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE RANITIDINE BIOAGRAN 150 mg, comprimé effervescent ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021"></a><a name="_Hlk518479661">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin ou pharmacien. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Posologie</span></span></p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Adultes</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Traitement d'entretien de l'ulcère duodénal</span></p>
+<p class=AmmCorpsTexte>1 comprimé par jour, le soir.</p>
+<p class=AmmCorpsTexte><span class='italique'>Syndrome de Zollinger-Ellison</span></p>
+<p class=AmmCorpsTexte>La dose initiale recommandée est de 600 mg par jour. La dose doit être ajustée individuellement, si nécessaire jusqu'à 1200 mg par jour, et le traitement poursuivi aussi longtemps que nécessaire cliniquement.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Adultes et enfants (12 à 18 ans)</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Ulcère de l'estomac</span></p>
+<p class=AmmCorpsTexte>Un comprimé le matin et un comprimé le soir ou 2 comprimés le soir pendant 4 à 6 semaines.</p>
+<p class=AmmCorpsTexte><span class='italique'>Œsophagite liée à un reflux gastro-œsophagien</span></p>
+<p class=AmmCorpsTexte>Un comprimé le matin et un comprimé le soir ou 2 comprimés le soir pendant 4 à 8 semaines.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Enfants de 3 à 11 ans et de plus de 30 kg </span></p>
+<p class=AmmCorpsTexte>Votre médecin définira la dose appropriée en fonction du poids de l’enfant.</p>
+<p class=AmmCorpsTexte>T<span class='italique'>raitement de l’ulcère gastrique ou duodénal (intestin grêle) </span></p>
+<p class=AmmCorpsTexte>La dose recommandée est de 2 mg par kg de poids corporel, deux fois par jour pendant 4 semaines. Cette dose peut être augmentée jusqu’à 4 mg par kg de poids corporel, deux fois par jour en respectant bien un intervalle de 12 heures entre les deux prises. Le traitement peut durer jusqu’à 8 semaines au maximum.</p>
+<p class=AmmCorpsTexte><span class='italique'>Traitement du pyrosis dû à un excès d’acidité</span></p>
+<p class=AmmCorpsTexte>La dose recommandée est de 2,5 mg par kg de poids corporel, deux fois par jour pendant deux semaines. Cette dose peut être augmentée jusqu’à 5 mg par kg de poids corporel, deux fois par jour en respectant bien un intervalle de 12 heures entre les deux prises. </p>
+<p class=AmmCorpsTexte>Si vous avez une insuffisance rénale, votre médecin pourrait diminuer la dose de ranitidine que vous prenez. </p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Mode d’administration </span></span></p>
+<p class=AmmCorpsTexte><span style='color:black'>Voie orale.</span></p>
+<p class=AmmCorpsTexte><span style='color:black'>Dissoudre les comprimés dans un verre d’eau.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Ce médicament peut être pris au cours ou en dehors des repas.</span></p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de RANITIDINE BIOGARAN 150 mg, comprimé effervescent que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>Consultez immédiatement votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre RANITIDINE BIOGARAN 150 mg, comprimé effervescent </p>
+<p class=AmmCorpsTexte><a name="_Toc142279020">Prenez la dose oubliée dès que possible, à moins que la prise suivante soit proche. Dans ce cas, ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</a></p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre RANITIDINE BIOGARAN 150 mg, comprimé effervescent </p>
+<p class=AmmCorpsTexte>Prenez RANITIDINE BIOGARAN aussi longtemps que votre médecin le recommande. N’arrêtez pas précocement le traitement, même si vous vous sentez mieux. Si vous ne prenez pas la totalité du traitement prévu, il est possible que celui-ci ne soit pas efficace et que vos symptômes reviennent.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Contactez votre médecin d’urgence si vous ou votre enfant présentez l’un des symptômes suivant après la prise de RANITIDINE BIOGARAN 150 mg, comprimé effervescent :</span></span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruption cutanée (boutons ou bulles), démangeaisons, </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>œdème (un gonflement des yeux et du visage),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>difficulté à respirer ou à avaler,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>fièvre,</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hypotension (chute de la tension artérielle), un évanouissement.</p>
+<p class=AmmCorpsTexte>Ces symptômes peuvent être la manifestation d’une réaction allergique pouvant mettre la vie en danger.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Peu fréquents (ils affectent jusqu’à 1 personne sur 100 utilisant ce médicament) :</span></span></p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Douleurs au ventre, constipation, nausées.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Rares (ils affectent jusqu’à 1 personne sur 1 000 utilisant ce médicament) :</span></span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réaction allergique (éruptions cutanées avec ou sans démangeaison, œdèmes, fièvre, difficulté à respirer ou à avaler, hypotension, douleurs dans la poitrine) voir aussi le paragraphe « Contactez votre médecin d’urgence » en début de section</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Modifications de la fonction du foie, qui peuvent s’exprimer dans des tests sanguins, réversibles à l’arrêt du traitement,</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Augmentation de la créatinine dans le sang (examen du fonctionnement des reins).</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Très rares (ils affectent jusqu’à 1 personne sur 10 000 utilisant ce médicament) :</span></span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Modifications qui peuvent s’exprimer dans des tests sanguins - incluant une diminution du nombre de globules blancs (leucopénie, agranulocytose), une diminution du nombre de plaquettes (thrombocytopénie), une diminution du nombre de tous ces types de cellules ainsi que des globules rouges (pancytopénie), et affections de la moelle osseuse appelée aplasie ou hypoplasie médullaire,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Choc anaphylactique (réaction allergique grave pouvant mettre la vie en danger voir paragraphe « Contactez votre médecin d’urgence » en début de section),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Confusion mentale réversible, dépression, hallucinations (‘voir’ ou ‘entendre’ des choses qui ne sont pas réellement là), surtout chez les sujets âgés, les sujets très malades et les sujets présentant une atteinte des reins,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Maux de tête parfois sévères, sensations de vertiges, mouvements involontaires réversibles,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vision floue réversible,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles cardiaques (battements du cœur ralentis, accélérés ou irréguliers), </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vascularite (inflammation de la paroi des vaisseaux sanguins),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pancréatite aiguë (inflammation du pancréas),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Diarrhées,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hépatite (inflammation du foie) avec ou sans jaunisse (coloration jaune de la peau ou des yeux),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Erythème polymorphe (éruption cutanée étendue parfois accompagnée de bulles) voir paragraphe « Contactez votre médecin d’urgence » en début de section, chute des cheveux,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Douleurs musculaires et articulaires,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Néphrite interstitielle aiguë (inflammation du rein),</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Trouble de l'érection réversible, tension ou gonflement des seins, écoulement de lait au niveau du mamelon.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Fréquence indéterminée :</span></span></p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Dyspnée (difficulté respiratoire). </p>
+<p class=AmmCorpsTexteGras>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou à votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet : www.signalement-sante.gouv</p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER RANITIDINE BIOAGRAN 150 mg, comprimé effervescent ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span style='background:white'>N’utilisez pas ce médicament a</span>près la date de péremption indiquée sur la boîte après EXP. La date de péremption fait référence au dernier jour de ce mois.</p>
+<p class=AmmCorpsTexte>A conserver à une température ne dépassant pas 25°C. </p>
+<p class=AmmCorpsTexte>Conserver le tube soigneusement fermé, à l’abri de l’humidité.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient RANITIDINE BIOAGRAN 150 mg, comprimé effervescent </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est : la ranitidine. </p>
+<p class=AmmComposition style='margin-left:18.0pt'><span style='background: white'>Ranitidine (sous forme de chlorhydrate de ranitidine)</span>........................................................ 150 mg</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </p>
+<p class=AmmListePuces1 style='text-indent:0cm'><span style='background:white'>citrate monosodique anhydre, bicarbonate de sodium, aspartam, povidone K30, benzoate de sodium, arôme orange (contenant notamment du sorbitol), arôme pamplemousse (contenant notamment du sorbitol).</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que RANITIDINE BIOAGRAN 150 mg, comprimé effervescent  et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span style='background:white'>Ce médicament se présente sous forme de comprimé effervescent. Boîte de 15, 20, 28, 30 ou 42.</span></p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireAdresse><a name="_Toc142279031"><span class='gras'>LABORATOIRES SAINT GERMAIN</span></a></p>
+<p class=AmmTitulaireAdresse><span class='gras'>SOCIETE CIVILE DE RECHERCHE</span></p>
+<p class=AmmTitulaireAdresse>23 RUE FRANCOIS JACOB</p>
+<p class=AmmTitulaireAdresse>92500 RUEIL-MALMAISON</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireAdresse><a name="_Toc142279032"><span class='gras'>BIOGARAN</span></a></p>
+<p class=AmmTitulaireAdresse>15, BOULEVARD CHARLES DE GAULLE</p>
+<p class=AmmTitulaireAdresse>92700 COLOMBES</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireAdresse><a name="_Toc142279033"><span class='gras'><span lang=EN-US>Losan Pharma GmbH</span></span></a></p>
+<p class=AmmTitulaireAdresse><span lang=EN-US>Otto Hahn Strasse 13</span></p>
+<p class=AmmTitulaireAdresse><span lang=EN-US>79395 Neuenburg am Rhein</span></p>
+<p class=AmmTitulaireAdresse>ALLEMAGNE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Hlk518401619"><span style='color:#385623'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

@@ -1,0 +1,571 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - CAPTOPRIL HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, CAPTOPRIL HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-60214350">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 20/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=60214350' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=60214350&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=60214350&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">CAPTOPRIL HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 08/12/2019</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Captopril/Hydrochlorothiazide</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique : captopril et diurétiques - code ATC : C09BA01.</a></p>
+<p class=AmmCorpsTexte>CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable est une association de deux substances actives, le captopril et l’hydrochlorothiazide. Le captopril appartient à la classe des inhibiteurs de l’enzyme de conversion de l’angiotensine (IEC). Il agit en dilatant les vaisseaux sanguins, ce qui contribue à faire baisser la pression artérielle et facilite le travail du cœur. </p>
+<p class=AmmCorpsTexte>L’hydrochlorothiazide fait partie du groupe des diurétiques thiazidiques. Il augmente l’excrétion urinaire réduisant ainsi la pression artérielle. </p>
+<p class=AmmCorpsTexte>Les deux substances actives de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable agissent de façon synergique en diminuant plus efficacement la pression artérielle que prises individuellement.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique au captopril, à l’hydrochlorothiazide, à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6, à un autre IEC ou à un sulfamide ou dérivés ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez du diabète ou une insuffisance rénale et que vous êtes traité par un médicament contenant de l’aliskiren pour diminuer votre pression artérielle ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez déjà été préalablement traité par CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ou un autre médicament du même groupe (IEC) et si vous avez eu une réaction allergique ayant provoqué des gonflements des bras, des jambes, des chevilles, des lèvres, de la langue et/ou de la gorge avec des difficultés pour avaler (angio-oedème) ou si un membre de votre famille a déjà éprouvé des réactions similaires ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez pris ou prenez actuellement l’association sacubitril/valsartan, un médicament utilisé pour traiter un type d’insuffisance cardiaque au long cours (chronique) chez l’adulte, car le risque d’angio-oedème (gonflement rapide sous la peau dans une région telle que la gorge) est accru ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez des problèmes hépatiques ou rénaux graves (demandez à votre médecin si vous avez des doutes) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes enceinte de plus de 3 mois (il est également préférable d’éviter de prendre CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable en début de grossesse – voir rubrique « Grossesse ») ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ne doit pas être administré aux enfants ou adolescents de moins de 18 ans.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin ou votre pharmacien avant de prendre </span>CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable <span lang=FR-BE>:</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez eu un cancer de la peau ou si vous développez une lésion cutanée inattendue pendant le traitement. Le traitement par l'hydrochlorothiazide, en particulier l'utilisation à long terme à fortes doses, peut augmenter le risque de certains types de cancer de la peau et des lèvres (cancer de la peau non mélanome). Protégez votre peau des rayonnements solaires et UV lorsque vous prenez CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>si vous souffrez de vomissements ou de diarrhées importantes ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>si vous suivez un régime hyposodé ou que vous utilisez des substituts du sel ou des compléments contenant du potassium ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>si vous avez des problèmes hépatiques ou rénaux graves (demandez à votre médecin si vous avez des doutes) ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>si vous avez une diminution de la circulation sanguine dans le cœur ou un rétrécissement de l’aorte (sténose aortique) ou de l’artère rénale (sténose de l’artère rénale) ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>si vous avez eu un choc après une insuffisance cardiaque (choc cardiogénique) ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>si vous avez du diabète. CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable peut influencer l’effet de l’insuline ou de tout autre médicament antidiabétique. Veuillez demander conseil à votre médecin ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>si vous êtes dialysé. Des cas de réactions type allergique ont été rapportés chez des personnes sous traitement similaire à CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable, et sous dialyse par certaines membranes (hémodialyse à haut flux ou LDL-aphérèse avec absorption de sulfate de dextran). Demandez conseil à votre médecin avant votre prochaine dialyse ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>si vous suivez un traitement de désensibilisation aux piqûres d’insectes. Des cas de réactions de type allergique ont été rapportés chez des personnes prenant un traitement similaire à CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable et recevant ce type de traitement désensibilisant. Demandez conseil à votre médecin avant de prendre le traitement ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>si vous souffrez d’un lupus érythémateux (connu aussi sous le nom de lupus ou LED) ou de syndrome lupique ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous constatez des changements dans votre vision ou vous ressentez des douleurs oculaires dans l’un ou les deux yeux durant votre traitement par CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable. Ces manifestations peuvent être des signes de développement d’un glaucome, d’une augmentation de la pression intraoculaire. Vous devez arrêter votre traitement et en parler à votre médecin ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez l’un des médicaments qui suivent, le risque d’angio-œdème peut être accru :</p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>le racécadotril, un médicament utilisé pour traiter la diarrhée ;</p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>des médicaments utilisés pour prévenir le rejet d’un organe transplanté et pour traiter le cancer (par exemple : temsirolimus, sirolimus, évérolimus) ;</p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>la vildagliptine, un médicament utilisé pour traiter le diabète ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>s<span lang=FR-BE>i vous prenez l’un des médicaments suivants pour traiter une hypertension :</span></p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>un « antagoniste des récepteurs de l’angiotensine II » (ARA-II) (aussi connu sous le nom de sartans – par exemple valsartan, telmisartan, irbésartan), en particulier si vous avez des problèmes rénaux dus à un diabète ;</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>aliskiren.</p>
+<p class=AmmListePuces2 style='margin-left:17.85pt;text-align:justify; text-indent:0cm;page-break-after:auto'><span lang=FR-BE style='color:black'>Votre médecin pourra être amené à surveiller régulièrement le fonctionnement de vos reins, votre pression artérielle et le taux des électrolytes (par exemple </span><span lang=FR-BE style='color:black'>du potassium) dans votre sang. </span><span lang=FR-BE style='color:black'>Voir aussi les informations dans la rubrique « Ne prenez jamais CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ».</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=FR-BE>Vous devez informer votre médecin si vous pensez que vous êtes enceinte (ou que vous pourriez l’être prochainement).</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable, est déconseillé en début de grossesse, et ne doit pas être administré si vous êtes enceinte de plus de 3 mois, car cela pourrait nuire gravement à votre enfant en cas d’utilisation à partir de ce stade de la grossesse (voir rubrique grossesse).</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Les médicaments contenant du lithium ne devraient pas être pris avec CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable, sans un avis de votre médecin.</span></p>
+<p class=AmmCorpsTexte><span class='gras'><span lang=FR-BE>Si vous souffrez d'un des effets suivants, contactez votre médecin immédiatement :</span></span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>gonflement des bras, des jambes, des chevilles, des lèvres, de la langue et/ou de la gorge avec difficulté pour avaler ou pour respirer ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>signes d'infection (tels que mal de gorge ou fièvre) ne répondant pas aux traitements usuels ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>vertiges importants, évanouissement ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>douleurs abdominales importantes ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>pouls anormalement rapide ou irrégulier ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>ictère (coloration jaune des yeux et de la peau) ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>réactions soudaines et inexpliquées telles qu’éruptions, brûlure, rougeur ou desquamation de la peau.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='gras'><span lang=FR-BE>Veuillez informer les personnes suivantes que vous prenez CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable :</span></span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>le personnel médical, en particulier les médecins anesthésistes (si vous devez subir une intervention chirurgicale) si vous êtes hospitalisé(e) ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>votre dentiste avant une anesthésie pour chirurgie dentaire.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=FR-BE>Si vous prenez CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable pour la première fois, vous pouvez ressentir une sensation ébrieuse ou d'étourdissement pendant une courte durée et il est conseillé de vous asseoir ou de vous allonger. Il est peu probable que cela se produise si vous prenez les comprimés régulièrement. En cas de doute, demandez conseil à votre médecin.</span></p>
+<p class=AmmAnnexeTitre3><span style='text-decoration:none'>Enfants et adolescents</span></p>
+<p class=AmmCorpsTexte>CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ne doit pas être donné aux enfants et aux adolescents (&lt; 18 ans).</p>
+<p class=AmmAnnexeTitre3><span style='text-decoration:none'>Autres médicaments et CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable</span></p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament, y compris un médicament obtenu sans ordonnance. Sont également inclus dans ces médicaments les médicaments contre la fièvre, la toux, rhume et problèmes sinusaux car ils peuvent augmenter votre pression artérielle. </p>
+<p class=AmmCorpsTexte>Votre médecin pourrait avoir besoin de modifier la dose de vos médicaments et/ou prendre d’autres précautions.</p>
+<p class=AmmCorpsTexte>Si vous prenez un antagoniste des récepteurs de l’angiotensine II (ARA-II) ou de l’aliskiren voir aussi les informations dans les rubriques « Ne prenez jamais CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable » et « Avertissements et précautions ».</p>
+<p class=AmmCorpsTexte>Cela est également le cas si vous prenez : </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des médicaments anti-inflammatoires diminuant ou supprimant la douleur (indométacine, ibuprofène) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>du lithium (pour le traitement des troubles psychiatriques) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>carbenoxolone (pour le traitement des ulcères gastro-intestinaux) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>corticostéroïdes, corticotrophine (ACTH) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certains laxatifs ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certains antifongiques injectables (amphotéricine) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>relaxants musculaires (administrés au moment d’une chirurgie) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cholestyramine, colestipol (pour diminuer le cholestérol) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>allopurinol (pour le traitement de la goutte) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>procaïnamide et glycosides cardiotoniques utilisés dans le traitement du pouls irrégulier ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cytostatiques et agents immunosuppresseurs (par exemple azathioprine et cyclophosphamide) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sels de calcium ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des suppléments potassiques (y compris des substituts de sel), des diurétiques épargneurs de potassium et d’autres médicaments qui peuvent augmenter la quantité de potassium dans le sang (par exemple le triméthoprime et le cotrimoxazole pour traiter des infections causées par des bactéries ; la ciclosporine, un médicament immunosuppresseur utilisé pour prévenir le rejet d’un organe transplanté ; et l’héparine, un médicament utilisé pour fluidifier le sang afin d’éviter la formation de caillots) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicament diminuant la pression sanguine en provoquant une dilatation des vaisseaux sanguins (par exemple minoxidil) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>carbamazépine (pour le traitement de l’épilepsie) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments utilisés pour traiter le diabète (insuline et antidiabétiques oraux tels que les sulphonylurées) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments utilisés pour le traitement des troubles psychotiques et certains anciens traitements antidépresseurs ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>tout autre médicament pour le traitement de l’hypertension artérielle ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments qui sont le plus souvent utilisés pour prévenir le rejet des organes transplantés (sirolimus, évérolimus et les autres médicaments appartenant à la famille des inhibiteurs de la protéine mTOR comme le temsirolimus (pour le cancer)). Voir rubrique « <a href="http://agence-prd.ansm.sante.fr/php/ecodex/notice/N0311505.htm#AvertissementsEtPr%C3%A9cautions"><span style='color:windowtext;text-decoration:none'>Avertissements et précautions</span></a> ».</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable avec des aliments et boissons</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse, allaitement et fertilité</a></p>
+<p class=AmmCorpsTexteGras>Grossesse</p>
+<p class=AmmCorpsTexte>Vous devez informer votre médecin si vous pensez être (ou susceptible de devenir) enceinte. Votre médecin vous recommandera normalement d’arrêter de prendre CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable avant d’être enceinte ou dès que vous apprenez que vous êtes enceinte. Il vous recommandera de prendre un autre médicament à la place de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable. CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable est déconseillé en début de grossesse et ne doit pas être pris si vous êtes enceinte de plus de 3 mois, car cela pourrait nuire gravement à votre enfant.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Allaitement</p>
+<p class=AmmCorpsTexte>Informez votre médecin si vous allaitez ou êtes sur le point de commencer à allaiter. </p>
+<p class=AmmCorpsTexte>L’allaitement de nouveaux nés (1<sup>ères </sup>semaines après la naissance) et en particulier l’allaitement de prématurés est déconseillé lors d’un traitement par CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable.</p>
+<p class=AmmCorpsTexte>En cas d’allaitement d’un bébé plus âgé, votre médecin devra vous informer sur les bénéfices et les risques de poursuite de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable pendant l’allaitement en comparaison avec d’autres traitements.</p>
+<p class=AmmCorpsTexte>Demandez conseil à votre médecin ou à votre pharmacien avant de prendre tout médicament.</p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Vous devez être attentif si vous êtes amené à conduire ou à utiliser des machines si des effets indésirables apparaissent tels que sensation ébrieuse, étourdissement, fatigue. </p>
+<p class=AmmCorpsTexte>Cela est particulièrement le cas en début de traitement, lorsque le dosage est modifié, ou lors d’association avec de l’alcool. </p>
+<p class=AmmCorpsTexteGras>CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable contient du lactose.</p>
+<p class=AmmCorpsTexte>Si votre médecin vous a informé(e) d’une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmCorpsTexte>Votre médecin vous a prescrit CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable compte tenu que le précédent traitement pour votre hypertension artérielle s’est avéré inefficace. Votre médecin vous dira comment passer de votre ancien traitement à CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable. </p>
+<p class=AmmAnnexeTitre3><span style='text-decoration:none'>Posologie</span></p>
+<p class=AmmCorpsTexte>La dose habituelle est de 1 comprimé par jour (correspondant à 50 mg de captopril et 25 mg d’hydrochlorothiazide). La dose maximum est de 1 comprimé par jour et ne doit pas être dépassée. </p>
+<p class=AmmAnnexeTitre3><span style='text-decoration:none'>Mode d’administration</span></p>
+<p class=AmmCorpsTexte>CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable doit être administré par voie orale seulement. </p>
+<p class=AmmCorpsTexte>Les comprimés doivent être avalés avec une quantité d’eau suffisante (par exemple un verre d’eau). Vous pouvez prendre CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable avec ou sans nourriture. Vous devriez essayer de prendre CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable chaque jour à la même heure, préférentiellement le matin. </p>
+<p class=AmmCorpsTexte>Il est important que vous preniez CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable tant que votre médecin ne vous a pas dit de l’arrêter. </p>
+<p class=AmmAnnexeTitre3><span style='text-decoration:none'>Populations spéciales </span></p>
+<p class=AmmCorpsTexte>Si vous souffrez modérément d’une maladie rénale, de diabète ou si vous avez un régime appauvri en sel, votre médecin peut être amené à vous prescrire une dose plus faible de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable comme par exemple ½ comprimé de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable (correspondant à 25 mg de captopril et à 12,5 mg d’hydrochlorothiazide). </p>
+<p class=AmmAnnexeTitre3><span style='text-decoration:none'>Patients âgés </span></p>
+<p class=AmmCorpsTexte>Votre médecin peut être amené à vous prescrire une dose plus faible de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable comme par exemple ½ comprimé de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable (correspondant à 25 mg de captopril et à 12,5 mg d’hydrochlorothiazide). </p>
+<p class=AmmCorpsTexte>Si vous avez la sensation que les effets de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable sont trop forts ou trop faibles, parlez-en à votre médecin ou à votre pharmacien.</p>
+<p class=AmmAnnexeTitre3><span style='text-decoration:none'>Si vous avez pris plus de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable que vous n’auriez dû </span></p>
+<p class=AmmCorpsTexte>Si vous avez accidentellement pris trop de comprimés, ou si un enfant en a avalé, veuillez contacter votre médecin ou votre pharmacien sans délai. Emportez la boite vide et les comprimés restants. </p>
+<p class=AmmCorpsTexte>Si vous avez pris plus de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable que vous n’auriez dû, les effets suivants peuvent survenir : élimination d’urine plus fréquente, modification dans le taux de certains composants du sang, chute importante de votre pression artérielle, diminution de la conscience de vous-même et de votre entourage (incluant le coma), convulsions, faiblesse musculaire, irrégularité ou ralentissement du pouls ou une diminution de la fonction rénale. </p>
+<p class=AmmCorpsTexte>Si une autre personne a pris trop de comprimés et s’est évanouie, allongez-la en lui surélevant les pieds. </p>
+<p class=AmmAnnexeTitre3><span style='text-decoration:none'>Si vous oubliez de prendre CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable</span></p>
+<p class=AmmCorpsTexte>Si vous oubliez accidentellement de prendre votre dose journalière, prenez simplement la prochaine dose comme prescrit par votre médecin. Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre. </p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='font-weight: normal'>Sans objet.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexteGras>Arrêtez de prendre CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable et prévenez immédiatement votre médecin si vous ressentez l’un des effets suivants :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gonflement des jambes, des bras, des chevilles, de la face, des lèvres, de la langue et/ou du larynx avec difficulté pour avaler ou respirer, mal de gorge ou fièvre ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensation de vertige ou évanouissement ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleurs abdominales importantes ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pouls anormalement rapide ou irrégulier ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ictère (coloration jaune des yeux et de la peau) ; </p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt;text-align:justify'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réaction cutanée soudaine et inexpliquée telle qu’éruptions, brûlure, rougeur ou desquamation de la peau.</p>
+<p class=AmmCorpsTexteGras>Vous trouverez une liste d’effets indésirables dans l’ordre décroissant de gravité qui ont été observés avec captopril et avec les médicaments de la classe des IEC ainsi que des effets indésirables observés avec l’hydrochlorothiazide. </p>
+<p class=AmmCorpsTexte>Les effets suivants ont fréquemment été observés (apparaissant chez plus de 1 patient sur 100 et moins de 1 patient sur 10) avec le captopril et les autres médicaments de la classe des IEC : </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles du sommeil,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles du goût, vertige, </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sécheresse, toux d’irritation (non productive), difficulté respiratoire, </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>nausée, vomissement, irritation gastrique, douleur abdominale, diarrhée, constipation, sécheresse de la bouche, ulcère gastrique,</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt;text-align:justify'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>problèmes cutanés tels que démangeaison, éruption, perte de cheveux.</p>
+<p class=AmmCorpsTexte>Les effets indésirables suivants ont peu fréquemment été observés (apparaissant chez plus de 1 patient sur 1000 et chez moins de 1 patient sur 100) avec le captopril et les IEC : </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>perte d’appétit (anorexie),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maux de tête, sensations anormales sur la peau (brûlure ou picotement),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>problèmes cardiaques tels que pouls anormalement rapide ou irrégulier, douleur dans la poitrine, palpitations dans la poitrine, </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pression artérielle basse, mauvaise circulation dans les doigts (syndrome de Raynaud), rougeur et pâleur de la peau, </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gonflement des mains, de la face, des lèvres et de la langue,</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt;text-align:justify'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleur thoracique, fatigue, malaise. </p>
+<p class=AmmCorpsTexte>Les effets indésirables suivants ont rarement été observés (apparaissant chez moins de 1 patient sur 1000 mais chez plus de 1 patient sur 10 000) avec le captopril et chez les autres IEC : </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>somnolence, </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>problèmes buccaux tels qu’inflammation ou ulcération de la bouche, </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactions allergiques au niveau de l’intestin provoquant des douleurs abdominales importantes (angio-œdème intestinal), </p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt;text-align:justify'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>problèmes rénaux, augmentation ou diminution des urines.</p>
+<p class=AmmCorpsTexte>Les effets indésirables suivants ont très rarement été observés (apparaissant chez moins de 1 patient sur 10 000 incluant les cas isolés) avec le captopril et les IEC : </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>effets indésirables liés au sang ainsi que les éléments du sang tels que: </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>anémie (diminution du nombre de globules rouges qui peut provoquer une baisse de l’activité et de la fatigue) ; </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>déficit de certains types de globules blancs pouvant provoquer des infections, maux de gorge, fièvre ou saignement (neutropénie, agranulocytose, pancytopénie) ; </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>une diminution de la capacité du sang à coaguler (thrombocytopénie) qui peut provoquer des saignements ou des bleus ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>confusion, dépression ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>incidents cérébrovasculaires y compris insuffisance cérébrovasculaire, perte de connaissance ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vision trouble ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'></span>arrêt cardiaque ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>désordres pulmonaires incluant: </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>difficulté à respirer ou respiration asthmatiforme ;</p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>nez bouché ou goutte au nez, type de pneumonie causée par des modifications du sang ou une affection associant toux, fièvre, essoufflement et respiration asthmatiforme ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>œdème de la langue, pancréatite (inflammation du pancréas qui peut provoquer une douleur à l’estomac) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>trouble de la fonction hépatique, incluant les ictères qui peuvent provoquer une coloration jaune des yeux et de la peau, et une inflammation du foie (hépatites) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactions cutanées sévères telles que: </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>réactions allergiques provoquant des démangeaisons et des rougeurs (urticaire) ; </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>éruption grave sur tout le corps (syndrome de Stevens-Johnson) ; </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>éruption allergique provoquant l’apparition d’éléments rose-rouge dont le centre peut être clair (érythème polymorphe) ; </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>sensibilité de la peau à lumière ; </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>rougeurs de la peau (érythrodermie) ; </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>une série de réactions cutanées provoquant la formation d’éléments remplis de sérosité (réactions pemphigoïdes) ; </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>celles provoquant une desquamation et une exfoliation de la peau (dermatite exfoliante) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleurs dans les muscles et les articulations ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>problèmes rénaux ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>impuissance, œdème des seins chez les hommes ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>fièvre ;</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt;text-align:justify'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>modifications des tests de laboratoires.</p>
+<p class=AmmCorpsTexte><span class='gras'>Les effets indésirables suivants ont été rapportés avec l’hydrochlorothiazide, la seconde substance active de CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable: </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cancer de la peau et des lèvres (cancer de la peau non mélanome) (fréquence indéterminée) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>œdème des glandes salivaires ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>effets affectant le sang, les éléments du sang et ses composants qui peuvent provoquer: </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>une baisse de l’activité ; </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>fatigue ; </p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>infection ; </p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>maux de gorge et fièvre dus à un déficit en globules blancs ; </p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>une diminution de la capacité du sang à coaguler qui peut provoquer des saignements et des bleus ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>perte d’appétit (anorexie), sucre dans les urines, modifications anormales de certains éléments du sang tels que le sucre, l’acide urique (goutte), sodium, potassium, niveau important de cholestérol et autres lipides dans le sang ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>instabilité psychomotrice, dépression, troubles du sommeil ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensations anormales de la peau (fourmillements), étourdissement ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>affections oculaires et de la vision tels que «vision jaune» et vision trouble, diminution de l’acuité visuelle et douleurs oculaires (signes possibles d’un glaucome aigu à angle fermé) ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vertiges ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>faible pression artérielle, problèmes cardiaques tels que pouls irrégulier ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>problèmes circulatoires tels qu’inflammation des vaisseaux sanguins comprenant ceux de la peau et des autres organes (angéite nécrosante) ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>problèmes pulmonaires et respiratoires tels que détresses respiratoires ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>irritation gastrique, diarrhée, constipation, pancréatite ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ictère pouvant provoquer la coloration des yeux et de la peau ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>graves éruptions cutanées comme : </p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>sensibilité de la peau à la lumière ; </p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>éruption ; </p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>celles provoquant sur les joues et le nez une réaction caractéristique rouge, tachetée en forme de papillon (lupus ou réaction de type lupus) ; </p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>réactions allergiques provoquant des démangeaisons et des rougeurs (urticaire) ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réaction exagérée liée au système de défense naturelle de l’organisme (réaction d’hypersensibilité) ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>spasme musculaire ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>problèmes rénaux ;</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>fièvre, faiblesse. </p>
+<p class=AmmCorpsTexteGras>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet:<a href="http://www.">www.</a><span class='souligne'><span style='color:blue'>signalement-sante.gouv.fr</span></span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur l’emballage après EXP. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte>A conserver à une température ne dépassant pas +25°C, dans l’emballage extérieur ou dans le pilulier soigneusement fermé, à l’abri de l’humidité.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les substances actives sont :</p>
+<p class=AmmComposition style='margin-left:18.0pt'>Captopril......................................................................................................................... 50 mg</p>
+<p class=AmmComposition style='margin-left:18.0pt'>Hydrochlorothiazide......................................................................................................... 25 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un comprimé sécable.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : lactose monohydraté, stéarate de magnésium, amidon de maïs prégélatinisé, cellulose microcristalline, acide stéarique.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que CAPTOPRIL/HYDROCHLOROTHIAZIDE ARROW 50 mg/25 mg, comprimé sécable et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de comprimés sécables. Boîtes de 28, 30, 84, 90 ou 100 comprimés.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031">ARROW GENERIQUES</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>26 AVENUE TONY GARNIER</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>69007 LYON</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279032">ARROW GENERIQUES</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>26 AVENUE TONY GARNIER</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>69007 LYON</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033"><span style='text-transform:uppercase'>DELTA LIMITED</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>REYKJAVIKURVEGUR 78</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>IS-220 HAFNARFJORDUR</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>ISLANDE</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span style='text-transform: uppercase'>ou</span></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>LABORATOIRE ELAIAPHARM</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>ROUTE DES CRÊTES</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>ZI LES BOUILLIDES – SOPHIA ANTIPOLIS</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>06560 VALBONNE</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span style='text-transform: uppercase'>ou</span></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>ACTAVIS LTD</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>B16</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>BULEBEL INDUSTRIAL ESTATE</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>ZETJUN ZTN 08</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>MALTE</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmAnnexeTitre2>La dernière date à laquelle cette notice a été révisée est </p>
+<p class=AmmCorpsTexte>A compléter ultérieurement par le titulaire</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

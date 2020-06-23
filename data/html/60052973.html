@@ -1,0 +1,601 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-60052973">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 20/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bInfoSupp");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=60052973' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=60052973&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=60052973&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 17/09/2010</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination"> Dénomination du médicament</a></p>
+<p class=AmmDenomination align=center style='text-align:center'>GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'>Gemcitabine</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre"> Encadré</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Veuillez lire attentivement l'intégralité de cette notice avant d'utiliser ce médicament.</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gardez cette notice, vous pourriez avoir besoin de la relire.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez toute autre question, si vous avez un doute, demandez plus d'informations à votre médecin ou à votre pharmacien.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ce médicament vous a été personnellement prescrit. Ne le donnez jamais à quelqu'un d'autre, même en cas de symptômes identiques, cela pourrait lui être nocif.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si l'un des effets indésirables devient grave ou si vous remarquez un effet indésirable non mentionné dans cette notice, parlez-en à votre médecin ou à votre pharmacien.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm"> Sommaire notice</a></p>
+<p class=AmmAnnexeTitre3>Dans cette notice :</p>
+<p class=AmmCorpsTexte>1. QU'EST-CE QUE GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion ET DANS QUELS CAS EST-IL UTILISE ?</p>
+<p class=AmmCorpsTexte>2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT D'UTILISER GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion ?</p>
+<p class=AmmCorpsTexte>3. COMMENT UTILISER GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion ?</p>
+<p class=AmmCorpsTexte>4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</p>
+<p class=AmmCorpsTexte>5. COMMENT CONSERVER GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion ?</p>
+<p class=AmmCorpsTexte>6. INFORMATIONS SUPPLEMENTAIRES</p>
+<h2><a name="Ann3bQuestceque">1. QU'EST-CE QUE GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bClassPharma"> Classe pharmacothérapeutique</a></p>
+<p class=AmmCorpsTexte>GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion, appartient à un groupe de médicaments appelés «cytotoxiques». Ces médicaments tuent les cellules en division, dont les cellules cancéreuses.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bIndicTherap"> Indications thérapeutiques</a></p>
+<p class=AmmCorpsTexte>La gemcitabine peut être donnée seule ou en association avec d'autres médicaments anticancéreux en fonction de votre type de cancer.</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'>GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion est utlisé pour le traitement de plusieurs types de cancer comprenant:</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le cancer bronchique non à petites cellules (CBNPC), seul ou en association avec le cisplatine,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le cancer du pancréas,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le cancer du sein, en association avec le paclitaxel,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le cancer de l'ovaire, en association avec le carboplatine,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le cancer de la vessie, en association avec le cisplatine.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT D'UTILISER GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bInfoAvantPrise"> Liste des informations nécessaires avant la prise du médicament</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bContreIndic"> Contre-indications</a></p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='gras'>GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion, ne doit pas vous être administré:</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique (hypersensible) à la gemcitabine ou à l'un des autres composants contenus dans GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous allaitez.</p>
+<p class=AmmCorpsTexte>Si vous pensez vous trouver dans l'un des cas qui précèdent, dites-le à votre médecin.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bMisesEnGarde"> Précautions d'emploi ; mises en garde spéciales</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Faites attention avec GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion:</span></p>
+<p class=AmmCorpsTexte>Avant la première perfusion, des prélèvements de sang seront réalisés afin d'évaluer si vos fonctions hépatique et rénale sont correctes. Avant chaque perfusion, des prélèvements de sang seront réalisés afin de vérifier que vous avez suffisamment de cellules sanguines pour recevoir de la gemcitabine. Votre médecin peut décider de modifier la dose ou de repousser le traitement en fonction de votre état général et si votre nombre de cellules sanguines est trop bas.</p>
+<p class=AmmCorpsTexte>Périodiquement, des prélèvements de sang seront réalisés afin d'évaluer vos fonctions hépatique et rénale.</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'>Informez votre médecin si:</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez ou avez eu une maladie du foie, une maladie cardiaque ou une maladie vasculaire,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez eu récemment, ou allez avoir une radiothérapie,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez été vacciné récemment,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous éprouvez des difficultés à respirer ou si vous vous sentez très faible et êtes très pâle (ceci pourrait être un signe de problèmes aux poumons ou d'insuffisance rénale).</p>
+<p class=AmmCorpsTexte>Il est déconseillé aux hommes d'avoir un enfant pendant le traitement et dans les 6 mois qui suivent le traitement avec la gemcitabine. Si vous envisagez d'avoir un enfant pendant le traitement ou dans les 6 mois qui suivent le traitement, demandez l'avis de votre médecin ou de votre pharmacien. Vous pouvez obtenir des conseils concernant la conservation de sperme avant de débuter votre traitement.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInteractions"> Interactions avec d'autres médicaments</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Prise et utilisation d'autres médicaments</span></p>
+<p class=AmmCorpsTexte>Si vous prenez ou avez pris récemment un autre médicament, y compris les vaccins et les médicaments obtenus sans ordonnance, parlez-en à votre médecin ou à votre pharmacien.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInteractionsAliments"> Interactions avec les aliments et les boissons</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bIntPhyto"> Interactions avec les produits de phytothérapie ou thérapies alternatives</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bGrossAllait"> Utilisation pendant la grossesse et l'allaitement</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Grossesse et allaitement</span></p>
+<p class=AmmCorpsTexte>Si vous êtes enceinte ou si vous envisagez de l'être, informez votre médecin. L'utilisation de GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion doit être évitée pendant la grossesse. Votre médecin discutera avec vous des risques potentiels de prendre GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion pendant la grossesse.</p>
+<p class=AmmCorpsTexte>Si vous allaitez, informez votre médecin. Vous devez interrompre l'allaitement pendant le traitement par GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion.</p>
+<p class=AmmCorpsTexte>Demandez conseil à votre médecin ou à votre pharmacien avant de prendre tout médicament.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSportifs"> Sportifs</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bConduite"> Effets sur l'aptitude à conduire des véhicules ou à utiliser des machines</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Conduite de véhicules et utilisation de machines</span></p>
+<p class=AmmCorpsTexte>Le traitement par la gemcitabine peut entraîner une sensation de somnolence. L'alcool est susceptible de l'aggraver. Ne conduisez pas ou n'utilisez pas de machines jusqu'à ce que vous soyez sûr que GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion n'entraîne aucune sensation de somnolence.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bListeExcipientsNotoires"> Liste des excipients à effet notoire</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Informations importantes concernant certains composants de GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion:</span></p>
+<p class=AmmCorpsTexte>Ce médicament contient du sodium. Ce médicament contient 3,5 mg (0,15 mmol) de sodium par dose de 200 mg. A prendre en compte chez les patients contrôlant leur apport alimentaire en sodium.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT UTILISER GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucBonUsage"> Instructions pour un bon usage</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bPosologie"> Posologie, Mode et/ou voie(s) d'administration, Fréquence d'administration et Durée du traitement</a></p>
+<p class=AmmCorpsTexte>La dose usuelle de GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion est de 1 000-1 250 mg par mètre carré de votre surface corporelle. Votre taille et votre poids corporel sont mesurés pour déterminer la surface de votre corps. Votre médecin utilisera cette surface corporelle afin de déterminer la dose qui vous convient. Cette dose peut être ajustée ou le traitement repoussé en fonction du résultat de vos analyses sanguines et de votre état général.</p>
+<p class=AmmCorpsTexte>La fréquence à laquelle vous recevez votre perfusion dépend du type de cancer pour lequel vous êtes traité.</p>
+<p class=AmmCorpsTexte>Un pharmacien hospitalier ou un médecin aura dissout la poudre de GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion avant qu'elle ne vous soit administrée.</p>
+<p class=AmmCorpsTexte>Vous recevrez toujours GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion par perfusion dans l'une de vos veines. La perfusion durera approximativement 30 minutes.</p>
+<p class=AmmCorpsTexte>Si vous avez d'autres questions sur l'utilisation de ce médicament, demandez plus d'informations à votre médecin ou à votre pharmacien.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucSurdosage"> Symptômes et instructions en cas de surdosage</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucOmission"> Instructions en cas d'omission d'une ou de plusieurs doses</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bRisqueSevrage"> Risque de syndrome de sevrage</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bEffetsIndesirablesDesc"> Description des effets indésirables</a></p>
+<p class=AmmCorpsTexte>Comme tous les médicaments, GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion est susceptible d'avoir des effets indésirables, bien que tout le monde n'y soit pas sujet.</p>
+<p class=AmmCorpsTexte>Les fréquences des effets indésirables observés sont définies comme suit:</p>
+<p class=AmmCorpsTexte>Très fréquent: qui affectent plus d'1 patient sur 10</p>
+<p class=AmmCorpsTexte>Fréquent: qui affectent de 1 à 10 patients sur 100</p>
+<p class=AmmCorpsTexte>Peu fréquent: qui affectent de 1 à 10 patients sur 1 000</p>
+<p class=AmmCorpsTexte>Rare: qui affectent de 1 à 10 patients sur 10 000</p>
+<p class=AmmCorpsTexte>Très rare: qui affectent moins d'1 patient sur 10 000</p>
+<p class=AmmCorpsTexte>Non connue: fréquence ne pouvant être estimée à partir des données disponibles.</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='gras'>Si l'un des effets suivants se produit, parlez-en immédiatement à votre médecin:</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Une fièvre ou une infection (fréquent): si vous avez une température de 38ºC ou plus, si vous transpirez ou si vous avez d'autres signes d'infection (parce que vous pouvez avoir des globules blancs en nombre inférieur à la normale, ce qui est très fréquent).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Un rythme cardiaque irrégulier (arythmie) (fréquence non connue).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Une douleur, une rougeur, un gonflement ou des plaies au niveau de la bouche (fréquent).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des réactions allergiques: si vous présentez une éruption cutanée (très fréquent)/des démangeaisons (fréquent), ou de la fièvre (très fréquent).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Une fatigue, si vous vous sentez faible, si vous vous essoufflez facilement ou si vous êtes pâle (parce que vous pouvez avoir un taux d'hémoglobine inférieur à la normale, ce qui est très fréquent).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Un saignement des gencives, du nez ou de la bouche ou si un saignement ne s'arrête pas, si vos urines sont rosées ou rouges, si vous présentez des bleus inattendus (parce que vous pouvez avoir des plaquettes en nombre inférieur à la normale, ce qui est très fréquent).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des difficultés à respirer (il est très fréquent d'avoir de légères difficultés à respirer peu après avoir reçu une perfusion de gemcitabine, qui disparaissent rapidement; cependant il peut apparaître peu fréquemment ou rarement des problèmes pulmonaires plus graves).</p>
+<p class=AmmCorpsTexte><span class='gras'>Les effets indésirables possibles de GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion sont:</span></p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='gras'>Effets indésirables très fréquents (qui affectent plus d'1 patient sur 10):</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Taux d'hémoglobine faible (anémie).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nombre de globules blancs faible.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nombre de plaquettes faible.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Difficultés à respirer.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vomissements.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nausées.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Eruption cutanée (éruption cutanée allergique, avec fréquemment des démangeaisons).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Perte de cheveux.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Problèmes hépatiques: découverts à partir de résultats anormaux d'analyses sanguines.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Sang dans les urines.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Analyses urinaires anormales: protéines dans les urines.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Symptômes grippaux (dont fièvre).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Œdèmes (gonflement des chevilles, des doigts, des pieds, du visage).</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='gras'>Effets indésirables fréquents (qui affectent de 1 à 10 patients sur 100):</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fièvre, accompagnée d'un faible nombre de globules blancs (neutropénie fébrile).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Anorexie (faible appétit).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Maux de tête.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Somnolence.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Difficulté à dormir (insomnie).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Toux.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nez qui coule ou bouché.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Diarrhée.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Constipation.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Douleur, rougeur, gonflement ou plaies dans la bouche.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Démangeaisons.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Transpiration.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Douleurs musculaires.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Mal de dos.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Sensation de faiblesse.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Frissons.</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='gras'>Effets indésirables peu fréquents (qui affectent de 1 à 10 patients sur 1 000):</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pneumopathie interstitielle (lésions au niveau des alvéoles du poumon).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Spasmes au niveau des voies respiratoires (sifflement).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Anomalie dans la radiographie thoracique (montrant des lésions du poumon).</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='gras'>Effets indésirables rares (qui affectent de 1 à 10 patients sur 10 000):</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Crise cardiaque (infarctus du myocarde).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pression artérielle basse.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Desquamation de la peau.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Formation de bulles sur la peau.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Plaies cutanées (ulcères).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Douleur au site d'injection après l'injection.</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='gras'>Effets indésirables très rares (qui affectent de 1 à 10 patients sur 10 000):</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nombre de plaquettes sanguines augmenté.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réaction anaphylactique (hypersensibilité sévère/ réaction allergique).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Escarres et formation importante de bulles sur la peau.</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='gras'>Effets indésirables dont la fréquence ne peut être estimée à partir des données disponibles:</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Battements cardiaques irréguliers (arythmie).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Syndrome de Détresse Respiratoire de l'Adulte (inflammation pulmonaire grave entraînant une insuffisance respiratoire).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réactivation radique (une éruption cutanée comme un coup de soleil grave) pouvant survenir sur la peau ayant été auparavant exposée à la radiothérapie.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Liquide dans les poumons.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Toxicité liée aux rayons (atteinte au niveau des alvéoles du poumon associée à une radiothérapie).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Colique ischémique (inflammation de la paroi du gros intestin, due à un apport sanguin réduit).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Insuffisance cardiaque.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Insuffisance rénale.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gangrène des doigts ou des orteils.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Atteinte hépatique grave, dont insuffisance hépatique.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Accident vasculaire cérébral.</p>
+<p class=AmmCorpsTexte>Vous pouvez avoir l'un de ces symptômes ou l'une de ces affections. Vous devez informer votre médecin dès que vous commencez à présenter un de ces effets indésirables. Si vous ressentez l'un de ces effets indésirables, informez votre médecin.</p>
+<p class=AmmCorpsTexte>Si vous remarquez des effets indésirables non mentionnés dans cette notice, ou si certains effets indésirables deviennent graves, veuillez en informer votre médecin ou votre pharmacien.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte>Tenir hors de la portée et de la vue des enfants.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDatePeremption"> Date de péremption</a></p>
+<p class=AmmCorpsTexte>Ne pas utiliser GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion après la date de péremption mentionnée sur le flacon et la boîte. La date de péremption fait référence au dernier jour du mois.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bCondConservation"> Conditions de conservation</a></p>
+<p class=AmmCorpsTexte>Ce médicament ne nécessite pas de condition particulière de conservation.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Apres reconstitution:</span></p>
+<p class=AmmCorpsTexte>Ce médicament peut être conservé pendant 35 jours à 25°C. Toutefois d'un point de vue microbiologique, le produit doit être utilisé immédiatement.</p>
+<p class=AmmCorpsTexte>La solution reconstituée ne doit pas être conservée au réfrigérateur.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDeterioration"> Si nécessaire, mises en garde contre certains signes visibles de détérioration</a></p>
+<p class=AmmCorpsTexte>Ne pas utiliser si vous remarquez que la solution pour perfusion préparée contient des particules ou si elle présente une coloration foncée.</p>
+<p class=AmmCorpsTexte>Ce médicament sera préparé et vous sera administré par le personnel soignant. Tout médicament non utilisé sera éliminé par le personnel soignant selon les procédures locales.</p>
+<h2><a name="Ann3bInfoSupp">6. INFORMATIONS SUPPLEMENTAIRES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bListSubs"> Liste complète des substances actives et des excipients</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Que contient GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion ?</span></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>La substance active est</span>:</span></p>
+<p class=AmmComposition>Gemcitabine .................................................................................................................................... 200 mg</p>
+<p class=AmmComposition>Sous forme de chlorhydrate de gemcitabine</p>
+<p class=AmmComposition align=center style='text-align:center'>Pour 1 flacon.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Les autres composants sont</span>:</span></p>
+<p class=AmmCorpsTexte>Le mannitol, l'acétate de sodium trihydraté, l'acide chlorhydrique (pour l'ajustement du pH) et l'hydroxyde de sodium (pour l'ajustement du pH).</p>
+<p class=AmmCorpsTexte>1 ml de solution pour perfusion reconstituée contient 38 mg de Gemcitabine (sous forme de chlorhydrate).</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bFormePharma"> Forme pharmaceutique et contenu</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Qu'est-ce que GEMCITABINE HOSPIRA 200 mg, poudre pour solution pour perfusion et contenu de l'emballage extérieur ?</span></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de poudre pour solution pour perfusion (poudre que l'on dissout avant de l'injecter lentement au moyen d'un goutte-à-goutte dans une veine). On peut également l'appeler « poudre pour perfusion ».</p>
+<p class=AmmCorpsTexte>La poudre est de couleur blanche à blanc cassé et, une fois dissoute et prête à l'emploi en perfusion, elle donne une solution incolore ou légèrement jaune.</p>
+<p class=AmmCorpsTexte>Boîtes de 1 ou 5 flacons. Toutes les présentations peuvent ne pas être commercialisées. Les flacons peuvent être recouverts par un film protecteur ONCO-TAIN.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bNomAdrTitu"> Nom et adresse du titulaire de l'autorisation de mise sur le marché et du titulaire de l'autorisation de fabrication responsable de la libération des lots, si différent</a></p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bTitu"> Titulaire</a></p>
+<p class=AmmTitulaireNom>HOSPIRA FRANCE</p>
+<p class=AmmTitulaireAdresse>17-19, RUE JEANNE BRACONNIER</p>
+<p class=AmmTitulaireAdresse>IMMEUBLE VOLTA</p>
+<p class=AmmTitulaireAdresse>92360 MEUDON-LA-FORET</p>
+<p class=AmmTitulaireAdresse>FRANCE</p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bExpl"> Exploitant</a></p>
+<p class=AmmTitulaireNom>HOSPIRA FRANCE</p>
+<p class=AmmTitulaireAdresse>17-19, RUE JEANNE BRACONNIER</p>
+<p class=AmmTitulaireAdresse>IMMEUBLE VOLTA</p>
+<p class=AmmTitulaireAdresse>92360 MEUDON-LA-FORET</p>
+<p class=AmmTitulaireAdresse>FRANCE</p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bFab"> Fabricant</a></p>
+<p class=AmmTitulaireNom>HOSPIRA UK LIMITED</p>
+<p class=AmmTitulaireAdresse>QUEENSWAY</p>
+<p class=AmmTitulaireAdresse>ROYAL LEAMINGTON SPA</p>
+<p class=AmmTitulaireAdresse>WARWICKSHIRE</p>
+<p class=AmmTitulaireAdresse>CV31 3RW</p>
+<p class=AmmTitulaireAdresse>ROYAUME-UNI</p>
+<p class=AmmCorpsTexte> </p>
+<p class="AmmNoticeTitre1"><a name="Ann3bNomAdrMed"> Noms du médicament dans les Etats membres de l'Espace Economique Européen</a></p>
+<p class=AmmCorpsTexte>Conformément à la règlementation en vigueur.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDateApprob"> Date d’approbation de la notice</a></p>
+<p class=AmmCorpsTexte><span class='gras'>La dernière date à laquelle cette notice a été approuvée est le {date}.</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bAMMExcep"> AMM sous circonstances exceptionnelles</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInternet"> Informations Internet</a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’Afssaps (France).</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bProfSante"> Informations réservées aux professionnels de santé</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Les informations suivantes sont destinées exclusivement aux professionnels de santé:</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Reconstitution:</span></p>
+<p class=AmmCorpsTexte>A usage unique seulement.</p>
+<p class=AmmCorpsTexte>Il a été démontré que ce médicament n'était compatible qu'avec une solution injectable de chlorure de sodium à 9 mg/ml (0,9%). En conséquence, seul ce diluant doit être utilisé pour la reconstitution. La compatibilité avec d'autres substances actives n'a pas été étudiée, aussi n'est-il pas recommandé de mélanger ce médicament avec d'autres substances actives une fois reconstitué.</p>
+<p class=AmmCorpsTexte>La reconstitution à des concentrations supérieures à 38 mg/ml risque d'entraîner une dissolution incomplète. Il faut donc l'éviter.</p>
+<p class=AmmCorpsTexte>Pour effectuer la reconstitution, ajouter lentement le volume approprié (comme indiqué dans le tableau ci-dessous) de solution injectable de chlorure de sodium à 9 mg/ml (0,9%) et agiter pour dissoudre.</p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<thead>
+<tr style='height:12.0pt'>
+<td width=167 valign=top style='width:125.05pt;border:solid windowtext 1.0pt;
+border-bottom:none black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.0pt'>
+<p class=AmmTableauTitre1 align=left style='margin:0cm;margin-bottom:.0001pt; text-align:left'>Présentation</p>
+</td>
+<td width=167 valign=top style='width:125.05pt;border-top:solid windowtext 1.0pt;
+border-left:none;border-bottom:none black 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:12.0pt'>
+<p class=AmmTableauTitre1 align=left style='margin:0cm;margin-bottom:.0001pt; text-align:left'>Volume de solution injectable de chlorure de sodium à 9 mg/ml (0,9%) à ajouter</p>
+</td>
+<td width=167 valign=top style='width:125.05pt;border-top:solid windowtext 1.0pt;
+border-left:none;border-bottom:none black 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:12.0pt'>
+<p class=AmmTableauTitre1 align=left style='margin:0cm;margin-bottom:.0001pt; text-align:left'>Volume de déplacement</p>
+</td>
+<td width=167 valign=top style='width:125.05pt;border-top:solid windowtext 1.0pt;
+border-left:none;border-bottom:none black 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:12.0pt'>
+<p class=AmmTableauTitre1 align=left style='margin:0cm;margin-bottom:.0001pt; text-align:left'>Concentration finale</p>
+</td>
+<td style='height:12.0pt;border:none' width=0 height=16></td>
+</tr>
+<tr style='height:12.0pt'>
+<td width=167 valign=top style='width:125.05pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt;height:12.0pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>200 mg</p>
+</td>
+<td width=167 valign=top style='width:125.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:12.0pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>5 ml</p>
+</td>
+<td width=167 valign=top style='width:125.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:12.0pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>0,26 ml</p>
+</td>
+<td width=167 valign=top style='width:125.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:12.0pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>38 mg/ml</p>
+</td>
+<td style='height:12.0pt;border:none' width=0 height=16></td>
+</tr>
+</thead>
+</table>
+<p class=AmmCorpsTexte>On peut faire subir à la quantité voulue de médicament une dilution plus poussée avec une solution injectable de chlorure de sodium à 9 mg/ml (0,9%).</p>
+<p class=AmmCorpsTexte>La stabilité physico-chimique en cours d'utilisation a été démontrée pendant 35 jours à 25°C.</p>
+<p class=AmmCorpsTexte>D'un point de vue microbiologique, il convient d'utiliser le produit immédiatement.</p>
+<p class=AmmCorpsTexte>Les solutions ne doivent pas être réfrigérées, compte tenu d'une possibilité de cristallisation.</p>
+<p class=AmmCorpsTexte>Chaque fois que la solution et le récipient le permettent, les médicaments à usage parentéral doivent être soumis avant l'administration à une inspection visuelle pour déterminer la présence de particules en suspension et l'apparition d'un changement de couleur.</p>
+<p class=AmmCorpsTexte>Le cas échéant, la solution non utilisée devra être éliminée selon les modalités précisées ci-dessous.</p>
+<p class=AmmCorpsTexte><span class='italique'>Directives concernant la Manipulation Sans Danger des Médicaments Cytotoxiques</span></p>
+<p class=AmmCorpsTexte>Les directives locales concernant la préparation et la manipulation sans danger de médicaments cytotoxiques doivent être suivies.</p>
+<p class=AmmCorpsTexte>Les préparations cytotoxiques ne doivent pas être manipulées par les femmes enceintes. La préparation des solutions injectables d'agents cytotoxiques doit être confiée à un personnel spécialisé et entraîné, ayant une bonne connaissance des médicaments utilisés. Elle doit se dérouler dans une zone spécifiée. Le plan de travail doit être recouvert de papier absorbant jetable plastifié.</p>
+<p class=AmmCorpsTexte>Le port d'une protection oculaire appropriée, de gants jetables, d'un masque facial et d'un tablier jetable est requis. Des précautions doivent être prises afin d'éviter tout contact accidentel du médicament avec les yeux. En cas de contamination accidentelle, se laver immédiatement l'œil à grande eau.</p>
+<p class=AmmCorpsTexte>Les seringues et les tubulures de perfusion doivent être assemblées avec soin, de façon à éviter les fuites (l'utilisation de raccords Luer Lock est préconisée). Les aiguilles de gros calibre sont recommandées en vue de minimiser la pression et la formation possible d'aérosols. Ces derniers peuvent également être réduits par l'usage d'une aiguille de pompage.</p>
+<p class=AmmCorpsTexte>Si la solution a fui ou s'est répandue, il faudra l'éponger en prenant soin de porter des gants de protection. Les excrétas et vomissures doivent être manipulés avec précaution.</p>
+<p class=AmmCorpsTexte><span class='italique'>Elimination:</span></p>
+<p class=AmmCorpsTexte>Les éléments ayant servi à reconstituer ce médicament doivent être éliminés avec le soin et les précautions qui s'imposent. Tout produit sec non utilisé ou tout matériel contaminé doit être placé dans un sac pour déchets à haut risque. Les objets piquants ou coupants (aiguilles, seringues, flacons, etc.) doivent être placés dans un récipient rigide adéquat. Le personnel chargé de la collecte et de l'évacuation de tels déchets doit avoir conscience du risque que ces opérations impliquent. Les déchets sont à détruire par incinération. L'élimination de tout produit non utilisé ou de n'importe quel déchet doit se faire dans le respect des exigences locales.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bAutres"> Autres</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+</div>
+</div>
+</HTML>
+					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

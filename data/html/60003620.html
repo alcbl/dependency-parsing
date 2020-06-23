@@ -1,0 +1,490 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-60003620">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 01/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=60003620' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=60003620&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=60003620&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 25/03/2019</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">BECLOSPIN 800 microgrammes/2 ml, suspension pour inhalation par nébuliseur</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Dipropionate de béclométasone</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant d’utiliser ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant d'utiliser BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment utiliser BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279004">BECLOSPIN contient la substance active appelée dipropionate de béclométasone. Il appartient à un groupe de médicaments, les corticoïdes qui exercent une action anti-inflammatoire qui permet de diminuer le gonflement et l’irritation des muqueuses des voies aériennes (nez, poumons) soulageant ainsi les problèmes respiratoires.</a></p>
+<p class=AmmCorpsTexte>BECLOSPIN est indiqué dans le traitement de l'asthme lorsque les inhalateurs pressurisés ou à poudre sèche ne peuvent être utilisés ou sont inadaptés.</p>
+<p class=AmmCorpsTexte>BECLOSPIN est aussi indiqué pour le traitement chez les enfants jusqu’à 5 ans qui présentent des épisodes récurrents de respiration sifflante.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT D’UTILISER BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">N’utilisez jamais BECLOSPIN 800 microgrammes /2ml suspension pour inhalation par nébuliseur :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique aux corticoïdes ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6.</p>
+<p class=AmmListePuces1 style='text-indent:0cm'> </p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin ou pharmacien avant d’utiliser BECLOSPIN si vous êtes concernés par l’une ou l’autre des situations suivantes :</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Vous êtes, ou avez déjà été, traité(e) pour une tuberculose.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Votre asthme semble s’aggraver, votre respiration devient de plus en plus sifflante, et/ou vous vous sentez plus essoufflé(e) que d’habitude, et/ou les nébulisations semblent être moins efficaces. Votre médecin pourrait alors augmenter la dose de BECLOSPIN ou vous prescrire des comprimés de corticostéroïdes, voire de totalement modifier votre traitement.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Vous présentez une infection pulmonaire. Votre médecin peut vous prescrire un traitement par antibiotiques.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez une infection des fosses nasales et des sinus, vous devez être traité(e) par des traitements adaptés, bien que cela ne représente pas une contre-indication spécifique à l’utilisation de BECLOSPIN.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En cas de vision floue ou d’autres troubles visuels.</p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez une augmentation des sifflements bronchiques, de votre essoufflement ou de votre toux immédiatement après la prise de BECLOSPIN, vous devez interrompre le traitement, ne pas renouveler la prise de BECLOSPIN et contacter votre médecin.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=FR-BE>Immédiatement après l’inhalation, il est nécessaire de se rincer la bouche avec de l’eau pour réduire le risque d'apparition de mycose dans la bouche.</span></p>
+<p class=AmmAnnexeTitre4><span lang=FR-BE>Relais d’un traitement par comprimés de corticostéroïdes par BECLOSPIN </span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Lors du remplacement d’un traitement par comprimés de corticostéroïdes par un traitement par corticostéroïdes inhalés (BECLOSPIN), vous pouvez ressentir une sensation de malaise général, ou peuvent apparaitre une éruption cutanée, un eczéma ou des symptômes de rhinite se manifestant par un écoulement nasal et des éternuements.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Vous devez consulter votre médecin dès que possible si vous présentez ces symptômes. N’arrêtez pas le traitement par BECLOSPIN tant que votre médecin ne vous l'a pas dit.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous avez reçu un traitement à fortes doses ou pendant une période prolongée par des comprimés de corticostéroïdes, celui-ci pourra être diminué progressivement environ une semaine après le début du traitement par BECLOSPIN. Au cours de cette période de diminution de la dose, votre médecin peut être amené à faire des contrôles sanguins.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous avez été traité(e) pendant une période prolongée avec de fortes doses de corticostéroïdes inhalés, il est possible que, dans les situations de stress, vous ayez besoin d’un traitement par corticostéroïdes supplémentaires.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ainsi par exemple :</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>au cours d’une hospitalisation suite à un grave accident,</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>avant une opération chirurgicale,</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>ou si survient une infection pulmonaire ou une autre maladie grave.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=FR-BE>Votre médecin peut juger nécessaire de vous prescrire un traitement de courte durée par corticostéroïdes en comprimés ou, le cas échéant, une injection de corticostéroïdes et vous indiquera également pendant combien de temps vous devrez prendre les comprimés de corticostéroïdes et de quelle façon vous devrez diminuer les doses lorsque </span>vous serez rétabli.</p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>Si votre enfant a moins de 5 ans et qu’il reçoit un traitement prolongé par BECLOSPIN en raison d'épisodes récurrents de respiration sifflante, votre médecin devra mesurer régulièrement sa taille afin de détecter un possible retard de croissance et décider si le traitement doit être arrêté. </p>
+<p class=AmmCorpsTexteGras>Autres médicaments et BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Veuillez avertir votre médecin si vous prenez ou avez pris récemment tout autre médicament, y compris des médicaments obtenus sans prescription. </span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Certains médicaments peuvent augmenter les effets de BECLOSPIN et il est possible que votre médecin souhaite vous surveiller attentivement si vous prenez ces médicaments (y compris certains médicaments pour traiter l’infection à VIH : ritonavir, cobicistat). </span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Informez vote médecin si vous prenez d’autres corticostéroides car il pourrait y avoir des interactions avec BECLOSPIN qui pourraient provoquer une aggravation des effets indésirables.</span></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur avec des aliments, boissons</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexte><span class='gras'>Grossesse, allaitement et fertilité</span></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE style='font-weight:normal'>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou que vous envisagez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</span></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE style='font-weight:normal'>Le risque de de retard de croissance et d'effets néfastes pour l'enfant à naître ne peut être exclus lors d'un traitement prolongé par des corticostéroïdes (tels que le dipropionate de béclométasone contenu dans le BECLOSPIN) pendant la grossesse. Votre médecin jugera de la nécessité d'un traitement par BECLOSPIN pour votre asthme.</span></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE style='font-weight:normal'>De faibles quantités de corticostéroïdes passent dans le lait maternel. Aucun effet néfaste n'a été rapporté chez les nourrissons à ce jour. Par mesure de précaution, vous devez néanmoins éviter d'allaiter dans les 4 h suivant la nébulisation, en cas de traitement par dipropionate de béclométasone à fortes doses.</span></p>
+<p class=AmmCorpsTexteGras>Sportifs </p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>L’attention des sportifs sera attirée sur le fait que cette spécialité contient un principe actif pouvant induire une réaction positive des tests pratiqués lors de contrôles antidopage.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>BECLOSPIN est peu susceptible d’influer sur votre aptitude à conduire des véhicules et à utiliser des machines. Cependant, si vous ressentez des effets indésirables tels qu’un étourdissement et/ou des tremblements, votre aptitude à conduire des véhicules ou à faire fonctionner des machines pourra être modifiée.</span></p>
+<p class=AmmCorpsTexteGras>BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur contient :</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT UTILISER BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279021"><span style='font-weight: normal'>Veillez à toujours utiliser ce médicament en suivant les indications de votre médecin. En cas de doute, demandez conseil à votre médecin ou pharmacien.</span></a></p>
+<p class=AmmCorpsTexte>La dose initiale doit vous être prescrite par votre médecin en fonction de la fréquence et de la sévérité de votre maladie. La dose pourra ensuite être ajustée par votre médecin afin d'obtenir un contrôle efficace des symptômes. </p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Les doses initiales recommandées sont</span></span> :</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Adultes et adolescents (à partir de 12 ans) :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>800 à 1 600 microgrammes 2 fois par jour soit 1 à 2 récipients unidoses à nébuliser 2 fois par jour (ce qui correspond à une quantité journalière totale de 1600 à 3200 microgrammes soit 2 à 4 récipients unidoses).</p>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'> </p>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'>Enfants (jusqu’à 11 ans) :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>400 à 800 microgrammes 2 fois par jour soit 1/2 à 1 récipient unidose à nébuliser 2 fois par jour (ce qui correspond à une dose journalière totale de 800 à 1 600 microgrammes soit 1 à 2 récipients unidoses).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>La dose quotidienne de 3 200 microgrammes chez l’adulte et l’adolescent et de 1 600 microgrammes chez l’enfant jusqu’à 11 ans, ne devrait pas être dépassée dans la majorité des cas.</p>
+<p class=AmmCorpsTexte>Lors du traitement de l’asthme, BECLOSPIN doit être utilisé régulièrement chaque jour. Votre médecin décidera de la durée de votre traitement.</p>
+<p class=AmmCorpsTexte>La durée du traitement de devrait pas dépasser 3 mois chez les enfants traités par BECLOSPIN en raison d'épisodes fréquents de respiration sifflante sauf si votre pédiatre juge qu'il est nécessaire de prolonger le traitement.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>BECLOSPIN est destiné à être administré par voie inhalée exclusivement.</p>
+<p class=AmmCorpsTexte>Ne pas l’injecter dans une veine ou le prendre par voie orale.</p>
+<p class=AmmCorpsTexte>BECLOSPIN doit être administré par inhalation à l’aide d’un appareil de nébulisation à air comprimé en suivant les indications de votre médecin.</p>
+<p class=AmmCorpsTexte>BECLOSPIN ne doit pas être administré avec des appareils de nébulisation ultrasoniques.</p>
+<p class=AmmAnnexeTitre3>Indications d’utilisation :</p>
+<p class=AmmCorpsTexte>Utiliser le récipient conformément aux instructions suivantes :</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=614 valign=top style='width:460.5pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;line-height:12.0pt'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><img alt='' border=0 width=518 height=123 src="http://prod-bdm.ansm.integra.fr/Rcp_Notices/images//N0333750/image003.jpg" alt="Clenil sterile"></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexte>1. Plier le récipient vers l’arrière et vers l’avant (Figure A).</p>
+<p class=AmmCorpsTexte>2. Détacher soigneusement un nouveau récipient de la plaquette, en commençant par le haut, puis le milieu (Figure B), en laissant les récipients restant dans le sachet.</p>
+<p class=AmmCorpsTexte>3. Agiter vigoureusement et retourner de haut en bas le récipient afin d’homogénéiser la suspension. Renouveler cette opération jusqu’à ce que la totalité du contenu soit complètement dispersée et mélangée (Figure C).</p>
+<p class=AmmCorpsTexte>4. Ouvrir le récipient en tournant la partie supérieure, comme indiqué par la flèche ci-dessus (Figure D).</p>
+<p class=AmmCorpsTexte>5. Appuyer doucement sur le récipient pour en verser le contenu dans le réservoir du nébuliseur (Figure E).</p>
+<p class=AmmCorpsTexte>Le récipient doit être ouvert immédiatement avant l’administration.</p>
+<p class=AmmCorpsTexte>Si seule la moitié de la dose de BECLOSPIN 800 microgrammes est nécessaire, retourner le récipient en s’assurant que le repère de graduation est clairement visible puis appuyer modérément sur le récipient. Verser prudemment le contenu jusqu’à atteindre le repère de graduation sans le dépasser. Une fois la moitié du contenu versé, remettre le bouchon en poussant sur le récipient. Le récipient ainsi fermé doit être conservé entre 2 et 8°C (au réfrigérateur) et la quantité de suspension restante doit être utilisée dans les 12 heures suivant la première ouverture. </p>
+<p class=AmmAnnexeTitre3>Dilution :</p>
+<p class=AmmCorpsTexte>Votre médecin pourra juger nécessaire de diluer le contenu du récipient. Dans ce cas, le contenu du récipient doit être vidé dans le réservoir du nébuliseur. La quantité de solution de chlorure de sodium à 9 mg/ml (0,9 %) prescrite par votre médecin sera ensuite ajoutée pour diluer le produit. Refermer le réservoir du nébuliseur, puis agiter délicatement le nébuliseur pour mélanger le contenu.</p>
+<p class=AmmCorpsTexte>La dose de suspension à nébuliser peut être diluée afin d’obtenir un volume final qui correspond au nébuliseur utilisé, pour faciliter l’administration de faibles volumes ou si l’on souhaite prolonger la durée de nébulisation.</p>
+<p class=AmmAnnexeTitre3>Pendant la nébulisation :</p>
+<p class=AmmCorpsTexte>Mettre le masque ou l’embout buccal en place.</p>
+<p class=AmmCorpsTexte>Activer l’appareil de nébulisation.</p>
+<p class=AmmCorpsTexte>Respirer normalement. La séance de nébulisation dure au maximum 10 à 15 minutes.</p>
+<p class=AmmAnnexeTitre3>Après la nébulisation :</p>
+<p class=AmmCorpsTexte>Ne pas oublier de rincer à l’eau la bouche, les lèvres et la région du visage couverte par le masque.</p>
+<p class=AmmCorpsTexte>Après l’inhalation, toute suspension non utilisée restant dans la cuve du nébuliseur doit être jetée.</p>
+<p class=AmmAnnexeTitre3>Nettoyage :</p>
+<p class=AmmCorpsTexte>Suivre les instructions du fabricant pour le nettoyage du nébuliseur. Il est important que votre nébuliseur reste propre.</p>
+<p class=AmmCorpsTexteGras>Si vous avez utilisé plus de BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>Informez-en votre médecin dès que possible. Votre médecin souhaitera peut-être vérifier les taux de corticostéroïdes dans votre sang et, par conséquent, pourra demander un prélèvement sanguin.</p>
+<p class=AmmCorpsTexte>Il est important de respecter la dose prescrite par le médecin. Vous ne devez ni augmenter ni diminuer la dose sans demander conseil à un professionnel de santé. </p>
+<p class=AmmCorpsTexteGras>Si vous oubliez d’utiliser BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur</p>
+<p class=AmmCorpsTexte>Si vous oubliez d’utiliser une dose, prenez-la dès que vous vous rendez compte de votre oubli. Si l’heure de votre dose suivante est proche, ne prenez pas la dose oubliée mais uniquement la dose suivante au moment prévu. Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien. </p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez d’utiliser BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexte>Les effets indésirables suivants ont été signalés. Informez votre médecin dès que possible si vous présentez l’un de ces effets indésirables mais n’arrêtez pas le traitement sans l’avis de votre médecin. Afin de réduire ces effets indésirables, votre médecin déterminera avec vous la dose minimale efficace de BECLOSPIN qui est adaptée à votre cas.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span class=AmmCorpsTexteCar>Effets indésirables très fréquents (pouvant toucher plus de 1 personne sur 10) :</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>mal de gorge (pharyngite, laryngite). Cet effet peut être prévenu par des gargarismes avec de l’eau immédiatement après l’inhalation.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span lang=FR-BE>Effets indésirables fréquents (pouvant toucher jusqu’à 1 personne sur 10) :</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>toux</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>nausées et douleurs à l’estomac</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>mycose (communément appelé « muguet ») dans la bouche, sur la langue et dans la gorge. Ces effets peuvent être prévenus en se rinçant la bouche ou en faisant des gargarismes avec de l’eau immédiatement après l’inhalation.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span lang=FR-BE>Effets indésirables peu fréquents (pouvant toucher jusqu’à 1 personne sur 100) :</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>mal de tête</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>irritation de la gorge, voix enrouée</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>aggravation de l’essoufflement, de la toux et de la respiration sifflante (connue sous le nom de bronchospasme paradoxal). Si cela se produit, arrêtez le traitement et ne renouvelez pas la prise de BECLOSPIN. Ensuite, contactez immédiatement votre médecin. Celui-ci réévaluera avec vous votre traitement, et, si nécessaire, vous prescrira un autre traitement. Il est possible que vous ne puissiez plus utiliser BECLOSPIN.vision floue</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Effets indésirables rares (peuvent toucher jusqu’à 1 personne sur 1 000) :</p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>boutons de fièvre (herpès simplex), vésicules douloureuses semblables à des cloques sur vos lèvres et/ou dans votre bouche</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>tremblements (involontaires)</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>sensation de fatigue</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>réaction allergique (gonflement des yeux, du visage, des lèvres et de la gorge entraînant une gêne respiratoire importante, des éruptions cutanées, de l’urticaire, des démangeaisons ou des rougeurs)</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span lang=FR-BE>Les effets indésirables suivants peuvent également survenir, principalement chez les enfants :</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>troubles du sommeil, dépression ou anxiété, agitation, nervosité, surexcitation ou comportement irritable</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>S'il est utilisé à fortes doses pendant une période prolongée, BECLOSPIN peut modifier la production normale de corticostéroïdes dans l’organisme. Les enfants et adolescents traités par BECLOSPIN, peuvent avoir un retard de croissance, il est donc important que le médecin vérifie leur taille régulièrement. De plus, un amincissement des os et des problèmes oculaires, comprenant une opacification du cristallin (cataracte) et une augmentation de la pression dans l’oeil (glaucome) ont été signalés.</span></p>
+<p class=AmmCorpsTexteGras>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="http://www.signalement-sante.gouv.fr">www.signalement-sante.gouv.fr</a></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte>Ne pas utiliser BECLOSPIN après la date de péremption indiquée sur la boîte, le sachet et le récipient.</p>
+<p class=AmmCorpsTexte>Conserver les récipients en position verticale dans l’emballage d’origine (étui en carton) afin de les protéger de la lumière.</p>
+<p class=AmmCorpsTexte>Après la première ouverture du sachet en aluminium, écrivez la date d’ouverture sur le sachet. N’utilisez pas les récipients après un délai de 3 mois suivant la date de la première ouverture du sachet.</p>
+<p class=AmmCorpsTexte>N’utilisez pas BECLOSPIN si l’emballage est endommagé.</p>
+<p class=AmmCorpsTexte>Ne jetez aucun médicament au tout-à-l’égout. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement. </p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition>Dipropionate de béclométasone ......................................................................... 800 microgrammes</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour 2 ml.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : le polysorbate 20, le laurate de sorbitan, le chlorure de sodium et l’eau purifiée.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>BECLOSPIN est une suspension blanchâtre pour nébuliseur.</p>
+<p class=AmmCorpsTexte>BECLOSPIN 800 microgrammes/2ml suspension pour inhalation par nébuliseur existe en récipient de 2 ml.</p>
+<p class=AmmCorpsTexte>Les récipients sont conditionnés par 5 dans un sachet scellé, en boîtes de 20 récipients (4 sachets), </p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031">CHIESI SAS</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>17 AVENUE DE L’EUROPE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92270 BOIS-COLOMBES</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>CHIESI SAS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>17 AVENUE DE L’EUROPE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92270 BOIS-COLOMBES</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279033"><span class='gras'>CHIESI FARMACEUTICI S.p.A. </span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>26/A VIA PALERMO </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>43122 PARMA</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ITALIA</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Ce médicament est autorisé dans les Etats membres de l'Espace Economique Européen sous les noms suivants : Conformément à la réglementation en vigueur.</p>
+<p class=AmmCorpsTexte><span style='color:#385623'>[à compléter ultérieurement par le titulaire]</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279038"><span style='color:#385623'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

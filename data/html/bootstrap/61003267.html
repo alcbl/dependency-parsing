@@ -1,0 +1,477 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV)  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-61003267">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 20/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bInfoSupp");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=61003267' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=61003267&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=61003267&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV)  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 07/01/2016</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmDenomination align=center style='text-align:center'>FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV)</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Veuillez lire attentivement l'intégralité de cette notice avant d'utiliser ce médicament.</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gardez cette notice, vous pourriez avoir besoin de la relire.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez toute autre question, si vous avez un doute, demandez plus d'informations à votre médecin ou à votre pharmacien.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ce médicament vous a été personnellement prescrit. Ne le donnez jamais à quelqu'un d'autre, même en cas de symptômes identiques, cela pourrait lui être nocif.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si l'un des effets indésirables devient grave ou si vous remarquez un effet indésirable non mentionné dans cette notice, parlez-en à votre médecin ou à votre pharmacien.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Sommaire notice</a></p>
+<p class=AmmAnnexeTitre3>Dans cette notice : </p>
+<p class=AmmCorpsTexte>1. QU'EST-CE QUE FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) ET DANS QUELS CAS EST-IL UTILISE ?</p>
+<p class=AmmCorpsTexte>2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT D'UTILISER FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) ?</p>
+<p class=AmmCorpsTexte>3. COMMENT UTILISER FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) ?</p>
+<p class=AmmCorpsTexte>4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</p>
+<p class=AmmCorpsTexte>5. COMMENT CONSERVER FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) ?</p>
+<p class=AmmCorpsTexte>6. INFORMATIONS SUPPLEMENTAIRES</p>
+<h2><a name="Ann3bQuestceque">1. QU'EST-CE QUE FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bClassPharma">Classe pharmacothérapeutique</a></p>
+<p class=AmmCorpsTexte>DIURETIQUE DE L'ANSE.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bIndicTherap">Indications thérapeutiques</a></p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'>Ce médicament est indiqué dans les cas suivants:</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>urgences cardiologiques: œdème aigu du poumon, arrêt cardiaque,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>poussées hypertensives sévères (<span class='italique'>élévation importante de la tension artérielle</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>rétentions sodées sévères d'origine cardiaque, rénale, cirrhotique (<span class='italique'>rétention de sel</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>radiologie du bas appareil urinaire et test de lavage «wash out» au furosémide, solution injectable,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>peut être utilisé en réanimation pédiatrique.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT D'UTILISER FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bInfoAvantPrise">Liste des informations nécessaires avant la prise du médicament</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bContreIndic">Contre-indications</a></p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'><span class='gras'>N'utilisez jamais FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV)</span> dans les cas suivants:</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>insuffisance rénale aiguë,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>allergie connue aux médicaments appartenant à la classe des sulfamides,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>encéphalopathie hépatique (<span class='italique'>troubles cérébraux observés au cours de maladies graves du foie</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hypovolémie (<span class='italique'>diminution du volume total du sang contenu dans le corps</span>), déshydratation,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>obstacle sur les voies urinaires en cas d'oligurie (<span class='italique'>diminution de la quantité des urines</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>allaitement,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hépatite en évolution ou insuffisance hépatique sévère, surtout chez l'hémodialysé et l'insuffisant rénal sévère.</p>
+<p class=AmmCorpsTexte>Ce médicament EST GENERALEMENT DECONSEILLE pendant la grossesse ainsi qu'en association avec le lithium ou le sultopride.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bMisesEnGarde">Précautions d'emploi ; mises en garde spéciales</a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142279003">Mises en garde et précautions d’emploi</a></p>
+<p class=AmmCorpsTexteGras>Mises en garde</p>
+<p class=AmmCorpsTexte>La prise accidentelle de furosémide peut entraîner une diminution du volume total de sang avec déshydratation.</p>
+<p class=AmmCorpsTexteGras>Précautions d'emploi</p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:0cm;margin-bottom:.0001pt; text-align:left;page-break-after:avoid'>Utiliser ce médicament AVEC PRECAUTION en cas de:</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diabète,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>goutte,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maladie grave du foie.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Une surveillance particulière (bilans sanguins - contrôle médical) est nécessaire pendant la durée du traitement.</p>
+<p class=AmmCorpsTexte>Chez les nouveaux-nés et les prématurés, l'utilisation prolongée de ce médicament à forte posologie peut nécessiter une surveillance échographique rénale.</p>
+<p class=AmmCorpsTexte>Ce médicament contient 7,35 mg de sodium par ampoule (soit 3,68 mg de sodium par ml): en tenir compte chez les personnes suivant un régime pauvre en sel strict.</p>
+<p class=AmmCorpsTexte>Si vous êtes une personne âgée, si vous prenez d’autres traitements médicamenteux susceptibles de causer une chute de la pression artérielle ou si vous présentez d’autres problèmes médicaux impliquant un risque de diminution soudaine de la pression artérielle.</p>
+<p class=AmmCorpsTexte>Lors de la mise en solution, il existe un risque de précipitation si FUROSEMIDE LAVOISIER est introduit dans une solution de pH inférieur à 7.</p>
+<p class=AmmCorpsTexte>Adressez-vous à votre médecin, pharmacien ou votre infirmier/ère avant de prendre FUROSEMIDE LAVOISIER.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInteractions">Interactions avec d'autres médicaments</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Prise ou utilisation d'autres médicaments</span></p>
+<p class=AmmCorpsTexte>AFIN D'EVITER D'EVENTUELLES INTERACTIONS ENTRE PLUSIEURS MEDICAMENTS, notamment si vous prenez du lithium ou du sultopride, IL FAUT SIGNALER SYSTEMATIQUEMENT TOUT AUTRE TRAITEMENT EN COURS A VOTRE MEDECIN OU A VOTRE PHARMACIEN</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInteractionsAliments">Interactions avec les aliments et les boissons</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bIntPhyto">Interactions avec les produits de phytothérapie ou thérapies alternatives</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bGrossAllait">Utilisation pendant la grossesse et l'allaitement</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Grossesse et allaitement</span></p>
+<p class=AmmCorpsTexte>Le plus souvent, ce médicament n'a pas lieu d'être prescrit pendant la grossesse.</p>
+<p class=AmmCorpsTexte>Il ne sera utilisé pendant la grossesse que de façon exceptionnelle et sur les conseils de votre médecin.</p>
+<p class=AmmCorpsTexte>Ce médicament ne doit pas être utilisé pendant l'allaitement.</p>
+<p class=AmmCorpsTexte>Demandez conseil à votre médecin ou à votre pharmacien avant de prendre tout médicament.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSportifs">Sportifs</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Sportifs</span></p>
+<p class=AmmCorpsTexte>L'attention des sportifs est attirée sur le fait que cette spécialité contient un principe actif pouvant induire une réaction positive des tests pratiqués lors des contrôles antidopage.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bConduite">Effets sur l'aptitude à conduire des véhicules ou à utiliser des machines</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bListeExcipientsNotoires">Liste des excipients à effet notoire</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Liste des excipients à effet notoire:</span> sodium.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT UTILISER FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucBonUsage">Instructions pour un bon usage</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bPosologie">Posologie, Mode et/ou voie(s) d'administration, Fréquence d'administration et Durée du traitement</a></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Posologie</span></span></p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Adulte</span></span></p>
+<p class=AmmCorpsTexte>Selon l'indication et la gravité de l'affection, la posologie varie de 2 à 3 ampoules par jour par voie intraveineuse lente ou par voie intramusculaire.</p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Enfant</span></span></p>
+<p class=AmmCorpsTexte>Voie intraveineuse: 0,5 à 1 mg/kg par jour.</p>
+<p class=AmmCorpsTexte>SE CONFORMER STRICTEMENT A LA PRESCRIPTION MEDICALE DANS TOUS LES CAS.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Mode d'administration</span></span></p>
+<p class=AmmCorpsTexte>Voie intraveineuse lente ou voie intramusculaire.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Fréquence d'administration</span></span></p>
+<p class=AmmCorpsTexte>SE CONFORMER STRICTEMENT A LA PRESCRIPTION MEDICALE.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Durée du traitement</span></span></p>
+<p class=AmmCorpsTexte>SE CONFORMER STRICTEMENT A LA PRESCRIPTION MEDICALE.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucSurdosage">Symptômes et instructions en cas de surdosage</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Si vous avez pris plus de FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) que vous n'auriez dû:</span></p>
+<p class=AmmCorpsTexte>Prévenir immédiatement votre médecin.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInstrucOmission">Instructions en cas d'omission d'une ou de plusieurs doses</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bRisqueSevrage">Risque de syndrome de sevrage</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bEffetsIndesirablesDesc">Description des effets indésirables</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279017">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactions cutanées ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleurs lombaires ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hypokaliémie (<span class='italique'>quantité insuffisante de potassium dans le sang</span>) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>quelques rares cas de modifications du bilan sanguin: leucopénie (<span class='italique'>quantité insuffisante de globules blancs</span>), thrombopénie (<span class='italique'>taux anormalement bas de plaquettes</span>) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>élévation discrète de l'uricémie pouvant causer exceptionnellement une crise de goutte ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>élévation de la glycémie (<span class='italique'>quantité de sucre dans le sang</span>),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>déshydratation, élévation de l'urée sanguine, hyponatrémie (<span class='italique'>quantité basse de sodium dans le sang</span>), hypovolémie (<span class='italique'>volume total bas de sang contenu dans le corps</span>) accompagnée d'hypotension orthostatique (<span class='italique'>chute de la pression artérielle lors du passage à la position debout pouvant s'accompagner de vertiges</span>),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas d'insuffisance hépatique, possibilité de survenue d'encéphalopathie hépatique (<span class='italique'>affection neurologique observée au cours de maladies sévères du foie</span>),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>possibilité de troubles digestifs,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>possibilité de baisses transitoires de l'acuité auditive lors de l'administration de doses très élevées de ce produit, notamment lorsque la vitesse d'injection recommandée n'a pas été respectée,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>exceptionnellement, atteinte de l'audition lors de l'administration conjointe d'antibiotiques du groupe des aminosides.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vertiges, évanouissement et pertes de conscience (causés par une chute de pression artérielle symptomatique) : fréquence inconnue.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pustulose exanthématique aiguë généralisée (PEAG) (éruption fébrile aiguë due au médicament) : fréquence inconnue.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Surdité (pouvant être irréversible) : peu fréquent.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou à votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet:<span style='color:red'> </span><a href="http://www.ansm.sante.fr"><span lang=PT>www.ansm.sante.fr</span></a></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte>Tenir hors de la portée et de la vue des enfants.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDatePeremption">Date de péremption </a></p>
+<p class=AmmCorpsTexte>Ne pas utiliser FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) après la date de péremption mentionnée sur la boîte.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bCondConservation">Conditions de conservation </a></p>
+<p class=AmmCorpsTexte><span class='souligne'>Après ouverture</span>: le produit doit être utilisé immédiatement.</p>
+<p class=AmmCorpsTexte>Conserver les ampoules dans l'emballage extérieur, à l'abri de la lumière.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDeterioration">Si nécessaire, mises en garde contre certains signes visibles de détérioration</a></p>
+<p class=AmmCorpsTexte>Ne pas utiliser en cas de brunissement de la solution.</p>
+<p class=AmmCorpsTexte>Les médicaments ne doivent pas être jetés au tout à l'égout ou avec les ordures ménagères. Demandez à votre pharmacien ce qu'il faut faire des médicaments inutilisés. Ces mesures permettront de protéger l'environnement.</p>
+<h2><a name="Ann3bInfoSupp">6. INFORMATIONS SUPPLEMENTAIRES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmNoticeTitre1"><a name="Ann3bListSubs">Liste complète des substances actives et des excipients</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Que contient FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) ?</span></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>La substance active est:</span></span></p>
+<p class=AmmComposition>Furosémide ....................................................................................................................................... 20 mg</p>
+<p class=AmmComposition align=center style='text-align:center'>Pour une ampoule de 2 ml.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Les autres composants sont:</span></span></p>
+<p class=AmmCorpsTexte>Chlorure de sodium, hydroxyde de sodium, eau pour préparations injectables.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bFormePharma">Forme pharmaceutique et contenu</a></p>
+<p class=AmmCorpsTexte><span class='gras'>Qu'est-ce que FUROSEMIDE LAVOISIER 20 mg/2 ml, solution injectable (IM-IV) et contenu de l'emballage extérieur ?</span></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de solution injectable (IM-IV) en ampoule de 2 ml. </p>
+<p class=AmmCorpsTexte>Boîte de 1, 5, 25, 50 ou 100.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bNomAdrTitu">Nom et adresse du titulaire de l'autorisation de mise sur le marché et du titulaire de l'autorisation de fabrication responsable de la libération des lots, si différent</a></p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bTitu">Titulaire</a></p>
+<p class=AmmTitulaireNom><a name="_Toc142279026">LABORATOIRES CHAIX ET DU MARAIS</a></p>
+<p class=AmmTitulaireAdresse>7 RUE PASQUIER</p>
+<p class=AmmCorpsTexte>75008 PARIS</p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bExpl">Exploitant</a></p>
+<p class=AmmTitulaireNom><a name="_Toc142279027">LABORATOIRES CHAIX ET DU MARAIS </a></p>
+<p class=AmmTitulaireAdresse>2 allée Henri Hugon </p>
+<p class=AmmTitulaireAdresse>ZI des Gailletrous</p>
+<p class=AmmCorpsTexte>41260 LA CHAUSSEE SAINT VICTOR</p>
+<p class="AmmAnnexeTitre2Bis"><a name="Ann3bFab">Fabricant</a></p>
+<p class=AmmTitulaireNom>Laboratoires CHAIX et DU MARAIS</p>
+<p class=AmmTitulaireAdresse>Zone Industrielle des Gailletrous</p>
+<p class=AmmTitulaireAdresse>41260 LA CHAUSSEE-SAINT-VICTOR</p>
+<p class=AmmCorpsTexte> </p>
+<p class="AmmNoticeTitre1"><a name="Ann3bNomAdrMed">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDateApprob">Date d’approbation de la notice</a></p>
+<p class=AmmCorpsTexte><span class='gras'>La dernière date à laquelle cette notice a été approuvée est le {date}.</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bAMMExcep">AMM sous circonstances exceptionnelles</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bInternet">Informations Internet</a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’Afssaps (France).</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bProfSante">Informations réservées aux professionnels de santé</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bAutres">Autres</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexte> </p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>

@@ -1,0 +1,498 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-61101964">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+<!-- Suivi Google Analytics -->
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociale et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociale et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - Médicaments génériques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - Médicaments génériques" title="Visiter [medicaments.gouv.fr] - Médicaments génériques" />
+	</a>
+</div-->
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        Dernière <span title=" 2.2.4
+">mise à jour</span> le 20/04/2020	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=61101964' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=61101964&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=61101964&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 09/10/2019</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><span lang=EN-US>Céfuroxime sodique</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant d’utiliser ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin, votre pharmacien ou votre infirmier/ère.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant d'utiliser CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment utiliser CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique : Antibactériens pour usage systémique, céphalosporines de deuxième génération, code ATC : J01DC02</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279004">La céfuroxime est un antibiotique utilisé chez l’adulte et l’enfant. Il agit en détruisant les bactéries responsables d’infections. Il appartient à la famille des médicaments appelés céphalosporines.</a></p>
+<p class=AmmCorpsTexteGras>La céfuroxime est utilisée pour traiter les infections : </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des poumons ou des bronches </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des voies urinaires </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de la peau et des tissus mous </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de l’abdomen </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>La céfuroxime est également utilisée : </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pour prévenir les infections au cours d’une intervention chirurgicale.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Votre médecin pourra effectuer des tests afin d'identifier le type de bactérie responsable de votre infection et contrôler pendant votre traitement si la bactérie est sensible à la céfuroxime.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT D’UTILISER CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">N’utilisez jamais CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique (hypersensible) à un <span class=AmmCorpsTexteGrasCar>antibiotique de la famille des céphalosporines</span> ou à l’un des autres composants contenus dans CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez déjà eu une réaction allergique sévère (d'hypersensibilité) à tout autre type d'antibiotique de la famille des bêta-lactamines (pénicillines, monobactames et carbapénèmes).</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Informez votre médecin</span> avant de débuter votre traitement par la céfuroxime si vous pensez être dans l’un de ces cas. La céfuroxime ne doit pas vous être administrée.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin, pharmacien ou votre infirmier/ère avant d’utiliser </span>CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion si <span lang=FR-BE>:</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>vous êtes âgés;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>vous avez une altération de la fonction rénale. Vous pouvez avoir besoin de tests sanguins supplémentaires pour surveiller la façon dont vos reins fonctionnent pendant que vous prenez céfuroxime. </span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=FR-BE>Au cours de votre traitement par la céfuroxime, vous devez être attentif à la survenue de certains symptômes tels que des réactions allergiques, des éruptions cutanées, des troubles gastro-intestinaux tels que des diarrhées, ou des infections fongiques. Cela permettra par une prise en charge précoce de réduire les risques potentiels associés à ces symptômes. Voir &quot;Situations nécessitant votre vigilance&quot; à la rubrique 4. Si vous avez eu une réaction allergique à d'autres antibiotiques tels que la pénicilline, vous pouvez être également allergique à la céfuroxime.</span></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>En cas d'analyse de sang ou d'urine </span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>La céfuroxime peut fausser les résultats des tests pour le contrôle du taux de sucre dans l'urine ou dans le sang, ainsi que d’un test sanguin appelé test de Coombs. </span></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>Si vous devez subir ces tests : </span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Informez la personne effectuant le prélèvement que l’on vous a administré de la céfuroxime.</span></p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament. Ceci inclut les médicaments obtenus sans ordonnance. </p>
+<p class=AmmCorpsTexte>Certains médicaments peuvent modifier le mode d’action de la céfuroxime ou augmenter la probabilité d’avoir des effets indésirables. Ceux-ci incluent :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>les antibiotiques du groupe des aminosides, </span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>les diurétiques comme le furosémide, </span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>le probénécide, </span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>les anticoagulants oraux.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class=AmmCorpsTexteGrasCar>Informez votre médecin</span> si cela vous concerne. Des contrôles supplémentaires peuvent être nécessaires pour surveiller votre fonction rénale tout au long de votre traitement par la céfuroxime.</p>
+<p class=AmmCorpsTexteGras>CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion avec des aliments, des boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse et allaitement</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin, pharmacien ou infirmier/ère avant de prendre ce médicament.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Votre médecin évaluera le bénéfice d'un traitement par la céfuroxime par rapport au risque encouru pour votre bébé.</span></p>
+<p class=AmmCorpsTexte><span class='souligne'><span lang=FR-BE>Grossesse</span></span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ce médicament ne sera utilisé pendant la grossesse que sur les conseils de votre médecin.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous découvrez que vous êtes enceinte pendant le traitement, consultez votre médecin car lui seul peut juger de la nécessité de le poursuivre.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Demandez conseil à votre médecin ou à votre infirmier/ère ou à votre pharmacien avant de prendre tout médicament.</span></p>
+<p class=AmmCorpsTexte><span class='souligne'><span lang=FR-BE>Allaitement</span></span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>L'allaitement est possible en cas d'administration de ce médicament.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si le nouveau-né présente des troubles tels que diarrhée, éruption sur la peau, candidose (affection due à certains champignons microscopiques), avertissez immédiatement votre médecin qui vous conseillera sur la conduite à tenir car ces effets sur votre enfant sont peut-être dus au médicament.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Demandez conseil à votre médecin ou à votre infirmier/ère ou à votre pharmacien avant de prendre tout médicament.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Ne conduisez pas de véhicules et n’utilisez pas de machines si vous ne vous sentez pas bien.</p>
+<p class=AmmCorpsTexteGras>CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion contient du sodium</p>
+<p class=AmmCorpsTexte>Ce médicament contient 54,2 mg de sodium par gramme de céfuroxime soit 81,3 mg de sodium par flacon de 1,5 g. Vous devez en tenir compte si vous suivez un régime contrôlé en sodium.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT UTILISER CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">La céfuroxime est habituellement administrée par un médecin ou par un(e) infirmier(ère). Elle peut être administrée en goutte-à-goutte (perfusion intraveineuse) ou en injection directement dans une veine ou dans un muscle.</a></p>
+<p class=AmmCorpsTexte><span class='souligne'>Dose habituelle </span></p>
+<p class=AmmCorpsTexte>Votre médecin décidera de la dose de céfuroxime appropriée à votre cas, en fonction : de la sévérité et du type d’infection, selon que vous soyez déjà traité par d'autre(s) antibiotique(s), de votre poids et de votre âge, du bon fonctionnement de vos reins.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Nouveau-nés (0 à 3 semaines) </span></p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Pour chaque 1 kg de poids corporel du bébé</span>, il lui sera administré 30 à 100 mg de céfuroxime par jour, répartis en deux ou trois prises.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Bébés (plus de 3 semaines) et enfants </span></p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Pour chaque 1 kg de poids corporel du bébé ou de l'enfant</span>, il lui sera administré 30 à 100 mg de céfuroxime par jour, répartis en trois ou quatre prises.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Adultes et adolescents </span></p>
+<p class=AmmCorpsTexte>750 mg à 1,5 g de céfuroxime par prise, deux, trois ou quatre fois par jours. Dose maximale : 6 g par jour.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Patients souffrant de problèmes rénaux </span></p>
+<p class=AmmCorpsTexte>Si vous souffrez d’un problème rénal, votre médecin pourra adapter votre dose. </p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Parlez-en à votre médecin</span> si tel est votre cas.</p>
+<p class=AmmCorpsTexteGras>Si vous avez utilisé plus de CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>Étant donné que c’est un médecin ou un(e) infirmier(e) qui vous administrera CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion, il est peu probable que la dose administrée ne soit pas correcte. Toutefois, si vous ressentez des effets indésirables ou si vous pensez que vous avez reçu une quantité trop importante, prévenez immédiatement votre médecin.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez d’utiliser CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion</p>
+<p class=AmmCorpsTexte><a name="_Toc142279020">Sans objet.</a></p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez d’utiliser CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>Situations nécessitant votre vigilance </span></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>Contactez immédiatement un médecin ou un(e) infirmier(ère) si vous présentez l’un de ces symptômes :</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Un petit nombre de patients traités par la céfuroxime ont développé des réactions allergiques ou des réactions cutanées potentiellement graves. </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'><span lang=FR-BE>réactions allergiques sévères</span></span><span lang=FR-BE>. Les signes incluent une éruption cutanée associant des lésions surélevées et des démangeaisons, un gonflement, parfois au niveau du visage ou de la bouche, provoquant des difficultés pour respirer.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'><span lang=FR-BE>éruption cutanée</span></span><span lang=FR-BE>, pouvant former des cloques, ayant l’apparence de petites cibles (petites taches centrales foncées entourées d’une zone plus pâle bordée d’un anneau sombre). </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'><span lang=FR-BE>éruption cutanée étendue</span></span><span lang=FR-BE> avec cloques et la peau qui pèle. (Ces signes peuvent être ceux d’un <span class='italique'>syndrome de Stevens-Johnson</span> ou d’une <span class='italique'>nécrose épidermique toxique</span>). </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'><span lang=FR-BE>infections fongiques</span></span><span lang=FR-BE> : en de rares occasions, des médicaments tels que la céfuroxime peuvent provoquer une prolifération de levures (<span class='italique'>Candida</span>) dans l’organisme, responsables d’infections fongiques (telles que le muguet). Cet effet indésirable est plus susceptible de survenir au cours d’un traitement par la céfuroxime sur une longue période. </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'><span lang=FR-BE>inflammation du côlon (gros intestin)</span></span><span lang=FR-BE>, provoquant des diarrhées habituellement accompagnées de sang et de mucus, douleurs abdominales </span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span lang=FR-BE>Autres effets indésirables </span></p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar><span lang=FR-BE>Effets indésirables fréquents :</span></span><span lang=FR-BE> peuvent concerner <span class=AmmCorpsTexteGrasCar>jusqu’à 1 personne sur 10</span> : </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>douleur au site d’injection, gonflement et rougeur le long d’une veine. </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>augmentation de substances (<span class='italique'>enzymes</span>) produites par le foie. </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>modification du nombre de vos globules blancs (<span class='italique'>neutropénie ou éosinophilie</span>). </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>baisse du taux d’hémoglobine (<span class='italique'>un composant du sang</span>).</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class=AmmCorpsTexteGrasCar><span lang=FR-BE>Effets indésirables peu fréquents</span></span><span lang=FR-BE> : peuvent concerner <span class=AmmCorpsTexteGrasCar>jusqu’à 1 personne sur 100</span> :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>éruption cutanée, démangeaisons, éruption avec boutons (<span class='italique'>urticaire</span>). </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>diarrhées, nausées, douleurs abdominales. </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>faible taux de globules blancs (<span class='italique'>leucopénie</span>) pouvant se traduire par des infections plus fréquentes.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>augmentation du taux de bilirubine (<span class='italique'>une substance produite par le foie</span>). </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>test de Coombs anormalement positif. </span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class=AmmCorpsTexteGrasCar><span lang=FR-BE>Effets indésirables</span></span><span lang=FR-BE> survenus chez un très petit nombre de sujets, mais dont la fréquence exacte est indéterminée : </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>température élevée (<span class='italique'>fièvre</span>) </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>inflammation au niveau des reins ou des vaisseaux sanguins </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>diminution du nombre de plaquettes sanguines (cellules aidant la coagulation du sang - <span class='italique'>thrombocytopénie</span>) </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>destruction trop rapide des globules rouges (<span class='italique'>anémie hémolytique</span>)</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>élévation des taux d’urée et de créatinine dans le sang, et diminution de la clairance de la créatinine.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou à votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="http://www.signalement-sante.gouv.fr">www.signalement-sante.gouv.fr</a></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur le conditionnement extérieur après EXP. La date de péremption fait référence au dernier jour du mois mentionné.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ce médicament doit être conservé à une température inférieure à 25°C et à l'abri de la lumière.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Après reconstitution avec le solvant (eau pour préparation injectable) la solution doit être utilisée immédiatement ou conservée, pas plus de 24 heures, à une température comprise entre +2 et +8°C.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout ni avec les ordures ménagères. Demandez à votre pharmacien d'éliminer les médicaments que vous n'utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition>Céfuroxime sodique .......................................................................................................... 1578 mg</p>
+<p class=AmmComposition>Quantité correspondant à céfuroxime ................................................................................. 1500 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un flacon de poudre.</p>
+<p class=AmmCorpsTexte>Teneur en sodium par flacon : 81,3 mg.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que CEFUROXIME MYLAN 1,5 g, poudre pour solution pour perfusion et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de poudre pour solution pour perfusion. Boîte de 1 ou 10 flacons.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031">MYLAN SAS</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>117, ALLEE DES PARCS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>69800 SAINT-PRIEST</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>FRANCE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>MYLAN SAS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>117, ALLEE DES PARCS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>69800 SAINT-PRIEST</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>FRANCE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033"><span lang=EN-US>WESSLING HUNGARY KFT.</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US style='layout-grid-mode:line'>ANONYMUS UTCA 6</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US style='layout-grid-mode:line'>1045 BUDAPEST</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US style='layout-grid-mode:line'>HONGRIE</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=EN-US>ou</span></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>LABORATORIO REIG JOFRE S.A.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>CALLE JARAMA,</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>111° POLIGONO INDUSTRIAL</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>45007 TOLEDO</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ESPAGNE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'> </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ou</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'> </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span class='gras'>MITIM S.R.L.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>VIA CACCIAMALI, 34-38</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>25125 BRESCIA</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ITALIE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+<p class=AmmCorpsTexte>Les informations suivantes sont destinées exclusivement aux professionnels de santé :</p>
+<p class=AmmCorpsTexte>Perfusion : utiliser, pour préparer la solution, le flacon de perfusion dans lequel se trouve la poudre de CEFUROXIME MYLAN. Y ajouter 10 ml d’eau pour préparations injectables. Diluer la solution obtenue avec 40 ml d’eau pour préparations injectables. Passer la totalité de la solution ainsi obtenue en 20 à 30 minutes.</p>
+<p class=AmmCorpsTexte>La céfuroxime sodique est compatible avec la plupart des solutions couramment utilisées pour les injections.</p>
+<p class=AmmCorpsTexte>La céfuroxime sodique et les aminosides ne doivent pas être mélangés dans la même seringue ou la même poche à perfusion.</p>
+<p class=AmmCorpsTexteGras>Conseil d’éducation sanitaire :</p>
+<p class=AmmCorpsTexteGras>QUE SAVOIR SUR LES ANTIBIOTIQUES ?</p>
+<p class=AmmCorpsTexte>Les antibiotiques sont efficaces pour combattre les infections dues aux bactéries. Ils ne sont pas efficaces contre les infections dues aux virus. </p>
+<p class=AmmCorpsTexte>Aussi, votre médecin a choisi de vous prescrire cet antibiotique parce qu’il convient précisément à votre cas et à votre maladie actuelle.</p>
+<p class=AmmCorpsTexte>Les bactéries ont la capacité de survivre ou de se reproduire malgré l’action d’un antibiotique. Ce phénomène est appelé résistance : il rend certains traitements antibiotiques inactifs. </p>
+<p class=AmmCorpsTexte>La résistance s’accroît par l’usage abusif ou inapproprié des antibiotiques. </p>
+<p class=AmmCorpsTexte>Vous risquez de favoriser l’apparition de bactéries résistantes et donc de retarder votre guérison ou même de rendre inactif ce médicament, si vous ne respectez pas :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>la dose à prendre,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les moments de prise,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>et la durée de traitement.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>En conséquence, pour préserver l’efficacité de ce médicament :</p>
+<p class=AmmCorpsTexteGras>1- N’utilisez un antibiotique que lorsque votre médecin vous l’a prescrit.</p>
+<p class=AmmCorpsTexteGras>2- Respectez strictement votre ordonnance.</p>
+<p class=AmmCorpsTexteGras>3- Ne réutilisez pas un antibiotique sans prescription médicale même si vous pensez combattre une maladie apparemment semblable.</p>
+<p class=AmmCorpsTexteGras>4- Ne donnez jamais votre antibiotique à une autre personne, il n’est peut-être pas adapté à sa maladie.</p>
+<p class=AmmCorpsTexteGras>5- Une fois votre traitement terminé, rapportez à votre pharmacien toutes les boîtes entamées pour une destruction correcte et appropriée de ce médicament.</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+//Customisation des fonctions xiti en fonction de la configuration
+function cs_xt_click(object, arg, level2_id, click_label, click_type, url, open_blank){
+	var label = "" + click_label;
+	xt_click(object, arg, level2_id, label, click_type, url, open_blank);
+}
+
+function cs_xt_med(arg, level2_id, click_label, click_type){
+	var label = "" + click_label;
+	xt_med(arg, level2_id, label, click_type);
+}
+
+function cs_xt_form(form, arg, level2_id, click_label, typeClick, submit){
+	var label = "" + click_label;
+	xt_form(form, arg, level2_id, label, typeClick, submit);
+}
+
+
+//Initialisation variables pour les marqueurs de type clic
+var liens = [];
+var liensSpecifiques = [];
+
+</script>
+	
+
+<script type="text/javascript">
+	
+////#1673: Marquage Xiti/Clic
+//Ajout des marqueurs sur au moins plus d'une page
+var liensCommun = [
+	{id: 'lien_ministere', libelle: 'icone_ministere', open_blank: true, typeClick: 'S'},
+	{id: 'lien_medicament_gouv', libelle: 'medicament_gouv', open_blank: true, typeClick: 'S'},
+	{id: 'lien_accueil', libelle: 'lien_accueil'},
+	{id: 'lien_glossaire', libelle: 'lien_glossaire'},
+	{id: 'lien_aide', libelle: 'lien_aide'},
+	{id: 'lien_ansm', libelle: 'lien_ansm', open_blank: true, typeClick: 'S'},
+	{id: 'lien_has', libelle: 'lien_has', open_blank: true, typeClick: 'S'},
+	{id: 'lien_assurance_maladie', libelle: 'lien_assu-maladie', open_blank: true, typeClick: 'S'},
+	{id: 'lien_fiche_info', libelle: 'onglet_fiche-info'},
+	{id: 'lien_rcp', libelle: 'onglet_rcp'},
+	{id: 'lien_notice', libelle: 'onglet_notice'}
+];
+
+
+//Fusionner les liens spécifiques avec les commons
+liens = liensSpecifiques.concat(liensCommun);
+
+//Enregistrer les éléments qui doivent être audités
+for (var index in liens){
+	 var lien = liens[index];
+	(function (objet_lien){
+		
+		var items = [];
+		
+		//Récupérer les items en fonction de la stratégie
+		if (objet_lien.id){
+			var item = document.getElementById(objet_lien.id);
+			if (item){
+				items.push(document.getElementById(objet_lien.id));
+			}
+		}else if(objet_lien.class){
+			items = document.getElementsByClassName(objet_lien.class);
+		}
+		
+		//Ajouter le marqueur sur l'evenement de l'item
+		for(var i=0; i < items.length; i++){
+			
+			var item = items[i];
+			
+			//Par défaut, on met le marqueur sur le click
+			objet_lien.click = objet_lien.click == undefined? true: objet_lien.click;
+			
+			//Par défaut, on attribue un type de clic de navigation
+			var typeClick = objet_lien.typeClick == undefined? 'N': objet_lien.typeClick;
+			
+			if (objet_lien.click){
+				
+				item.addEventListener('click', function(){
+										
+					//Utilisation de la fonction xt_med dans certains cas
+					if (objet_lien.use_partial_function){
+						cs_xt_med('C', '2', objet_lien.libelle, typeClick);		
+					}else{
+						var open_blank = objet_lien.open_blank ? 1: null;
+						return cs_xt_click(this, 'C', '2', objet_lien.libelle, typeClick, null, open_blank);
+					}
+					
+				});
+			}  
+			
+			//Gestion des marqueurs sur le mouseenter
+			if (objet_lien.mouseenter){
+				item.addEventListener('mouseenter', function(){
+					cs_xt_med('C', '2', objet_lien.libelle, typeClick);
+				});
+			}
+			
+		}
+		
+	})(lien);
+}
+
+////Fin #1673: Marquage Xiti/Clic
+
+
+////#1673: Marquage Xiti/Page
+xtnv = document;
+xtsd = "http://logc407";
+xtsite = "567041";
+xtn2 = "2";
+xtpage = "pg_AffichageDoc";
+xtdi = "";
+xt_multc = "";
+xt_an = "";
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+////Fin #1673: Marquage Xiti/Page
+
+</script>
+
+<script type="text/javascript" src="scripts/xtcore.js"></script>
+
+<noscript>
+<img width="1" height="1" alt="" src="http://logc407.xiti.com/hit.xiti?s=567041&s2=&p=&di=&an=&ac=" >
+</noscript></body>
+</html>
