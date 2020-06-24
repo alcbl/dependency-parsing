@@ -23,4 +23,4 @@ dev_loss = parser_model.train(train_dataset, dev_dataset, 400)
 
 Y = parser_model.predict(test_dataset)
 for index, document in enumerate(test_dataset.documents):
-    print(document.compute_accuracy(Y[index]))
+    print("Accuracy: " + document.compute_accuracy(Y[index]))
